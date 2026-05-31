@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<additional><tlLogic id="0" type="static" programID="myProgram" offset="0"><phase duration="30" state="GGGrrrGGGrrr" /><phase duration="4" state="yyyrrryyyrrr" /><phase duration="30" state="rrrGGGrrrGGG" /><phase duration="4" state="rrryyyrrryyy" /></tlLogic></additional>

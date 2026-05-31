@@ -1,0 +1,18 @@
+{
+  "data_path": "data/quito_behavior/micro_behavior.csv",
+  "n_scenarios": 1,
+  "seed": 42,
+  "output_dir": "results\\quito_scenarios",
+  "timestamp": "2026-05-24T18:05:51.252110",
+  "distributions": {
+    "accel_magnitude": {
+      "type": "empirical"
+    },
+    "jerk": {
+      "type": "empirical"
+    },
+    "speed": {
+      "type": "empirical"
+    }
+  }
+}

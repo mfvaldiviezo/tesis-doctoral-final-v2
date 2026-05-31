@@ -1,0 +1,3 @@
+# Archivos de rutas SUMO (.rou.xml)
+# Generados por src/copulas/ (escenarios de estrés) o SUMO randomTrips.
+# Ejemplo: baseline_flow.rou.xml, stress_scenario_001.rou.xml

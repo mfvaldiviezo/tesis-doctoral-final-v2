@@ -1,0 +1,7 @@
+,avg_delay,avg_delay,throughput,throughput,gini_index,gini_index,cvar_95,cvar_95
+,mean,std,mean,std,mean,std,mean,std
+scenario,,,,,,,,
+baseline_0pct,34.348,13.37,202.667,26.274,0.189,0.034,44.293,12.694
+imprudent_15pct,41.215,14.15,185.321,24.115,0.218,0.039,52.881,14.231
+imprudent_30pct,49.814,15.39,168.045,22.814,0.254,0.043,63.427,16.882
+imprudent_50pct,62.487,18.05,141.256,19.345,0.312,0.052,79.914,21.054

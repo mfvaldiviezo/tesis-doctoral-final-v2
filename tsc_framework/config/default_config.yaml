@@ -1,0 +1,25 @@
+network:
+  benchmark:
+    network_file: sumo_configs/networks/hangzhou_4x4.net.xml
+    route_files_dir: sumo_configs/routes/hangzhou
+    tls_id: B1
+
+sumo:
+  step_length: 5
+  end_time: 3600
+  gui: false
+
+env:
+  reward_weights:
+    delay: 0.4
+    gini: 0.15
+    cvar: 0.2
+    queue_length: 0.25
+
+training:
+  total_timesteps: 100000
+  n_envs: 1
+  seed: 42
+
+evaluation:
+  eval_freq: 100000

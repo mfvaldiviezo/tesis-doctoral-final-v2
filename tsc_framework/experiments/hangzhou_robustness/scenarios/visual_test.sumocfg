@@ -1,0 +1,9 @@
+<configuration>
+    <input>
+        <net-file value="C:\Proyecto_Tesis_Final_V1\traffic_project\tsc_framework\experiments\hangzhou_robustness\scenarios\test_grid.net.xml"/>
+        <additional-files value="C:\Proyecto_Tesis_Final_V1\traffic_project\tsc_framework\experiments\hangzhou_robustness\scenarios\visual_fallback.add.xml"/>
+    </input>
+    <time>
+        <end value="3600"/>
+    </time>
+</configuration>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-05-23T17:15:14.664187-05:00 by Eclipse SUMO netgenerate 1.26.0
+<netgenerateConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netgenerateConfiguration.xsd">
+
+    <grid_network>
+        <grid value="true"/>
+        <grid.number value="4"/>
+        <grid.length value="500"/>
+    </grid_network>
+
+    <output>
+        <output-file value="experiments/hangzhou_robustness/scenarios/hangzhou_4x4_tls.net.xml"/>
+        <plain-output-prefix value="true"/>
+    </output>
+
+    <tls_building>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+</netgenerateConfiguration>
+-->
+
+<tlLogics version="1.20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tllogic_file.xsd">
+</tlLogics>

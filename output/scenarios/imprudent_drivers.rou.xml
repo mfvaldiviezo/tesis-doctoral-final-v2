@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+  <vType id="imprudent_nominal"
+         accel="0.410"
+         decel="2.500"
+         sigma="0.500"
+         tau="1.000"
+         minGap="2.5"
+         maxSpeed="33.33"
+         color="0,0.5,1"
+         guiShape="passenger"/>
+
+  <vType id="imprudent_moderate_stress"
+         accel="0.565"
+         decel="3.500"
+         sigma="0.300"
+         tau="0.800"
+         minGap="2.5"
+         maxSpeed="33.33"
+         color="1,0.8,0"
+         guiShape="passenger"/>
+
+  <vType id="imprudent_extreme_stress"
+         accel="0.875"
+         decel="4.500"
+         sigma="0.100"
+         tau="0.500"
+         minGap="2.5"
+         maxSpeed="33.33"
+         color="1,0,0"
+         guiShape="passenger"/>
+
+  <vehicle id="quito_imprudent_nominal_0000_veh_000" type="imprudent_nominal" depart="0">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0000_veh_001" type="imprudent_nominal" depart="5">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0000_veh_002" type="imprudent_nominal" depart="10">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0000_veh_003" type="imprudent_nominal" depart="15">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0000_veh_004" type="imprudent_nominal" depart="20">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0000_veh_005" type="imprudent_nominal" depart="25">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0000_veh_006" type="imprudent_nominal" depart="30">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0000_veh_007" type="imprudent_nominal" depart="35">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0000_veh_008" type="imprudent_nominal" depart="40">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0000_veh_009" type="imprudent_nominal" depart="45">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0001_veh_000" type="imprudent_nominal" depart="50">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0001_veh_001" type="imprudent_nominal" depart="55">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0001_veh_002" type="imprudent_nominal" depart="60">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0001_veh_003" type="imprudent_nominal" depart="65">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0001_veh_004" type="imprudent_nominal" depart="70">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0001_veh_005" type="imprudent_nominal" depart="75">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0001_veh_006" type="imprudent_nominal" depart="80">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0001_veh_007" type="imprudent_nominal" depart="85">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0001_veh_008" type="imprudent_nominal" depart="90">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0001_veh_009" type="imprudent_nominal" depart="95">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0002_veh_000" type="imprudent_nominal" depart="100">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0002_veh_001" type="imprudent_nominal" depart="105">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0002_veh_002" type="imprudent_nominal" depart="110">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0002_veh_003" type="imprudent_nominal" depart="115">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0002_veh_004" type="imprudent_nominal" depart="120">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0002_veh_005" type="imprudent_nominal" depart="125">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0002_veh_006" type="imprudent_nominal" depart="130">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0002_veh_007" type="imprudent_nominal" depart="135">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0002_veh_008" type="imprudent_nominal" depart="140">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0002_veh_009" type="imprudent_nominal" depart="145">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0003_veh_000" type="imprudent_nominal" depart="150">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0003_veh_001" type="imprudent_nominal" depart="155">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0003_veh_002" type="imprudent_nominal" depart="160">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0003_veh_003" type="imprudent_nominal" depart="165">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0003_veh_004" type="imprudent_nominal" depart="170">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0003_veh_005" type="imprudent_nominal" depart="175">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0003_veh_006" type="imprudent_nominal" depart="180">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0003_veh_007" type="imprudent_nominal" depart="185">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0003_veh_008" type="imprudent_nominal" depart="190">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0003_veh_009" type="imprudent_nominal" depart="195">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0004_veh_000" type="imprudent_nominal" depart="200">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0004_veh_001" type="imprudent_nominal" depart="205">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0004_veh_002" type="imprudent_nominal" depart="210">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0004_veh_003" type="imprudent_nominal" depart="215">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0004_veh_004" type="imprudent_nominal" depart="220">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0004_veh_005" type="imprudent_nominal" depart="225">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0004_veh_006" type="imprudent_nominal" depart="230">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0004_veh_007" type="imprudent_nominal" depart="235">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0004_veh_008" type="imprudent_nominal" depart="240">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_nominal_0004_veh_009" type="imprudent_nominal" depart="245">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0000_veh_000" type="imprudent_moderate_stress" depart="250">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0000_veh_001" type="imprudent_moderate_stress" depart="255">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0000_veh_002" type="imprudent_moderate_stress" depart="260">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0000_veh_003" type="imprudent_moderate_stress" depart="265">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0000_veh_004" type="imprudent_moderate_stress" depart="270">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0000_veh_005" type="imprudent_moderate_stress" depart="275">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0000_veh_006" type="imprudent_moderate_stress" depart="280">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0000_veh_007" type="imprudent_moderate_stress" depart="285">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0000_veh_008" type="imprudent_moderate_stress" depart="290">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0000_veh_009" type="imprudent_moderate_stress" depart="295">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0001_veh_000" type="imprudent_moderate_stress" depart="300">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0001_veh_001" type="imprudent_moderate_stress" depart="305">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0001_veh_002" type="imprudent_moderate_stress" depart="310">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0001_veh_003" type="imprudent_moderate_stress" depart="315">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0001_veh_004" type="imprudent_moderate_stress" depart="320">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0001_veh_005" type="imprudent_moderate_stress" depart="325">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0001_veh_006" type="imprudent_moderate_stress" depart="330">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0001_veh_007" type="imprudent_moderate_stress" depart="335">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0001_veh_008" type="imprudent_moderate_stress" depart="340">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0001_veh_009" type="imprudent_moderate_stress" depart="345">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0002_veh_000" type="imprudent_moderate_stress" depart="350">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0002_veh_001" type="imprudent_moderate_stress" depart="355">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0002_veh_002" type="imprudent_moderate_stress" depart="360">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0002_veh_003" type="imprudent_moderate_stress" depart="365">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0002_veh_004" type="imprudent_moderate_stress" depart="370">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0002_veh_005" type="imprudent_moderate_stress" depart="375">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0002_veh_006" type="imprudent_moderate_stress" depart="380">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0002_veh_007" type="imprudent_moderate_stress" depart="385">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0002_veh_008" type="imprudent_moderate_stress" depart="390">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0002_veh_009" type="imprudent_moderate_stress" depart="395">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0003_veh_000" type="imprudent_moderate_stress" depart="400">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0003_veh_001" type="imprudent_moderate_stress" depart="405">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0003_veh_002" type="imprudent_moderate_stress" depart="410">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0003_veh_003" type="imprudent_moderate_stress" depart="415">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0003_veh_004" type="imprudent_moderate_stress" depart="420">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0003_veh_005" type="imprudent_moderate_stress" depart="425">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0003_veh_006" type="imprudent_moderate_stress" depart="430">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0003_veh_007" type="imprudent_moderate_stress" depart="435">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0003_veh_008" type="imprudent_moderate_stress" depart="440">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0003_veh_009" type="imprudent_moderate_stress" depart="445">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0004_veh_000" type="imprudent_moderate_stress" depart="450">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0004_veh_001" type="imprudent_moderate_stress" depart="455">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0004_veh_002" type="imprudent_moderate_stress" depart="460">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0004_veh_003" type="imprudent_moderate_stress" depart="465">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0004_veh_004" type="imprudent_moderate_stress" depart="470">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0004_veh_005" type="imprudent_moderate_stress" depart="475">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0004_veh_006" type="imprudent_moderate_stress" depart="480">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0004_veh_007" type="imprudent_moderate_stress" depart="485">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0004_veh_008" type="imprudent_moderate_stress" depart="490">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_moderate_stress_0004_veh_009" type="imprudent_moderate_stress" depart="495">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0000_veh_000" type="imprudent_extreme_stress" depart="500">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0000_veh_001" type="imprudent_extreme_stress" depart="505">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0000_veh_002" type="imprudent_extreme_stress" depart="510">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0000_veh_003" type="imprudent_extreme_stress" depart="515">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0000_veh_004" type="imprudent_extreme_stress" depart="520">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0000_veh_005" type="imprudent_extreme_stress" depart="525">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0000_veh_006" type="imprudent_extreme_stress" depart="530">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0000_veh_007" type="imprudent_extreme_stress" depart="535">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0000_veh_008" type="imprudent_extreme_stress" depart="540">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0000_veh_009" type="imprudent_extreme_stress" depart="545">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0001_veh_000" type="imprudent_extreme_stress" depart="550">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0001_veh_001" type="imprudent_extreme_stress" depart="555">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0001_veh_002" type="imprudent_extreme_stress" depart="560">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0001_veh_003" type="imprudent_extreme_stress" depart="565">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0001_veh_004" type="imprudent_extreme_stress" depart="570">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0001_veh_005" type="imprudent_extreme_stress" depart="575">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0001_veh_006" type="imprudent_extreme_stress" depart="580">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0001_veh_007" type="imprudent_extreme_stress" depart="585">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0001_veh_008" type="imprudent_extreme_stress" depart="590">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0001_veh_009" type="imprudent_extreme_stress" depart="595">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0002_veh_000" type="imprudent_extreme_stress" depart="600">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0002_veh_001" type="imprudent_extreme_stress" depart="605">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0002_veh_002" type="imprudent_extreme_stress" depart="610">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0002_veh_003" type="imprudent_extreme_stress" depart="615">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0002_veh_004" type="imprudent_extreme_stress" depart="620">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0002_veh_005" type="imprudent_extreme_stress" depart="625">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0002_veh_006" type="imprudent_extreme_stress" depart="630">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0002_veh_007" type="imprudent_extreme_stress" depart="635">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0002_veh_008" type="imprudent_extreme_stress" depart="640">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0002_veh_009" type="imprudent_extreme_stress" depart="645">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0003_veh_000" type="imprudent_extreme_stress" depart="650">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0003_veh_001" type="imprudent_extreme_stress" depart="655">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0003_veh_002" type="imprudent_extreme_stress" depart="660">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0003_veh_003" type="imprudent_extreme_stress" depart="665">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0003_veh_004" type="imprudent_extreme_stress" depart="670">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0003_veh_005" type="imprudent_extreme_stress" depart="675">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0003_veh_006" type="imprudent_extreme_stress" depart="680">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0003_veh_007" type="imprudent_extreme_stress" depart="685">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0003_veh_008" type="imprudent_extreme_stress" depart="690">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0003_veh_009" type="imprudent_extreme_stress" depart="695">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0004_veh_000" type="imprudent_extreme_stress" depart="700">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0004_veh_001" type="imprudent_extreme_stress" depart="705">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0004_veh_002" type="imprudent_extreme_stress" depart="710">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0004_veh_003" type="imprudent_extreme_stress" depart="715">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0004_veh_004" type="imprudent_extreme_stress" depart="720">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0004_veh_005" type="imprudent_extreme_stress" depart="725">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0004_veh_006" type="imprudent_extreme_stress" depart="730">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0004_veh_007" type="imprudent_extreme_stress" depart="735">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0004_veh_008" type="imprudent_extreme_stress" depart="740">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+  <vehicle id="quito_imprudent_extreme_stress_0004_veh_009" type="imprudent_extreme_stress" depart="745">
+    <route edges="edge_0 edge_1 edge_2"/>
+  </vehicle>
+</routes>

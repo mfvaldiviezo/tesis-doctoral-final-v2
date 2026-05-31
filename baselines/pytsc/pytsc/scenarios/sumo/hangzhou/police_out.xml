@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-05-25T13:43:55.403077-05:00 by Eclipse SUMO sumo 1.26.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Proyecto_Tesis_Final_V1\traffic_project\baselines\pytsc\pytsc\backends\sumo\../..\scenarios\sumo\hangzhou\hangzhou.net.xml"/>
+        <route-files value="C:\Proyecto_Tesis_Final_V1\traffic_project\baselines\pytsc\pytsc\backends\sumo\../..\scenarios\sumo\hangzhou\hangzhou_normal.rou.xml"/>
+        <additional-files value="C:\Proyecto_Tesis_Final_V1\traffic_project\baselines\pytsc\pytsc\backends\sumo\../..\scenarios\sumo\hangzhou\latam_infrastructure.add.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+    </time>
+
+    <processing>
+        <time-to-teleport value="10000"/>
+    </processing>
+
+    <report>
+        <no-warnings value="True"/>
+        <duration-log.disable value="True"/>
+        <no-step-log value="True"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="64879"/>
+    </traci_server>
+
+    <gui_only>
+        <quit-on-end value="True"/>
+        <start value="true"/>
+    </gui_only>
+
+</sumoConfiguration>
+-->
+
+<detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e2_file.xsd">
+</detector>

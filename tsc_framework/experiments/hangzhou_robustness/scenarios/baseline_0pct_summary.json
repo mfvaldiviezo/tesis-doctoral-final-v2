@@ -1,0 +1,18 @@
+{
+  "scenario_name": "baseline_0pct",
+  "generation_timestamp": "2026-05-23T14:50:17.364904",
+  "configuration": {
+    "mix_ratio": 0.0,
+    "seed": 42,
+    "net_file": "C:\\Proyecto_Tesis_Final_V1\\traffic_project\\tsc_framework\\sumo_configs\\networks\\hangzhou_4x4.net.xml",
+    "route_file": "C:\\Proyecto_Tesis_Final_V1\\traffic_project\\tsc_framework\\sumo_configs\\routes\\hangzhou\\hangzhou_dense.rou.xml",
+    "imprudent_file": "C:\\Proyecto_Tesis_Final_V1\\traffic_project\\tsc_framework\\results\\quito_scenarios\\imprudent_drivers_fixed.rou.xml"
+  },
+  "statistics": {
+    "total_vehicles": 3600,
+    "imprudent_vehicles": 0,
+    "normal_vehicles": 3600,
+    "imprudent_percentage": 0.0
+  },
+  "description": "Escenario con 0% de vehículos con comportamiento imprudente basado en datos reales de Quito, Ecuador."
+}

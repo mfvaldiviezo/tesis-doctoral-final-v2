@@ -1,0 +1,14 @@
+# https://github.com/Pi-Star-Lab/RESCO/tree/main
+# SUMO parameters
+sumo:
+  render: False
+  sumo_config_file: cologne8.sumocfg
+  sumo_net_file: cologne8.net.xml
+
+# Network parameters
+network:
+  network_type: real # (synthetic, real)
+
+misc:
+  return_lane_stats: False
+  return_agent_stats: False

@@ -1,0 +1,9 @@
+# SUMO parameters
+sumo:
+  sumo_net_file: hangzhou.net.xml
+  sumo_config_file: hangzhou_normal.sumocfg
+  random_game: False
+
+# Network parameters
+network:
+  network_type: real # (synthetic, real)

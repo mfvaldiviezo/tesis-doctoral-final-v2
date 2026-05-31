@@ -1,0 +1,13 @@
+{
+  "seed": 42,
+  "n_scenarios_per_level": 1000,
+  "stress_levels": [
+    "nominal",
+    "moderate_stress",
+    "extreme_stress"
+  ],
+  "total_scenarios": 3000,
+  "total_vehicles": 30000,
+  "source_data": "data\\quito_behavior\\micro_behavior.csv",
+  "method": "distributional_sampling_v1"
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+  <!-- Escenario 038 Hangzhou 4x4 seed=80 -->
+  <vType id="car" accel="2.6" decel="4.5" length="5.0" minGap="2.5" maxSpeed="13.89" sigma="0.5"/>
+  <route id="r_WE_0" edges="A0B0 B0C0 C0D0"/>
+  <route id="r_WE_1" edges="A1B1 B1C1 C1D1"/>
+  <route id="r_WE_2" edges="A2B2 B2C2 C2D2"/>
+  <route id="r_WE_3" edges="A3B3 B3C3 C3D3"/>
+  <route id="r_EW_0" edges="D0C0 C0B0 B0A0"/>
+  <route id="r_EW_1" edges="D1C1 C1B1 B1A1"/>
+  <route id="r_EW_2" edges="D2C2 C2B2 B2A2"/>
+  <route id="r_EW_3" edges="D3C3 C3B3 B3A3"/>
+  <route id="r_SN_A" edges="A0A1 A1A2 A2A3"/>
+  <route id="r_SN_B" edges="B0B1 B1B2 B2B3"/>
+  <route id="r_SN_C" edges="C0C1 C1C2 C2C3"/>
+  <route id="r_SN_D" edges="D0D1 D1D2 D2D3"/>
+  <route id="r_NS_A" edges="A3A2 A2A1 A1A0"/>
+  <route id="r_NS_B" edges="B3B2 B2B1 B1B0"/>
+  <route id="r_NS_C" edges="C3C2 C2C1 C1C0"/>
+  <route id="r_NS_D" edges="D3D2 D2D1 D1D0"/>
+  <flow id="f_000" route="r_WE_0" type="car" begin="0" end="1800" period="10.34" number="174"/>
+  <flow id="f_001" route="r_WE_1" type="car" begin="0" end="1800" period="11.57" number="155"/>
+  <flow id="f_002" route="r_WE_2" type="car" begin="0" end="1800" period="12.33" number="146"/>
+  <flow id="f_003" route="r_WE_3" type="car" begin="0" end="1800" period="13.47" number="133"/>
+  <flow id="f_004" route="r_EW_0" type="car" begin="0" end="1800" period="10.78" number="166"/>
+  <flow id="f_005" route="r_EW_1" type="car" begin="0" end="1800" period="11.53" number="156"/>
+  <flow id="f_006" route="r_EW_2" type="car" begin="0" end="1800" period="10.81" number="166"/>
+  <flow id="f_007" route="r_EW_3" type="car" begin="0" end="1800" period="11.61" number="155"/>
+  <flow id="f_008" route="r_SN_A" type="car" begin="0" end="1800" period="12.93" number="139"/>
+  <flow id="f_009" route="r_SN_B" type="car" begin="0" end="1800" period="13.62" number="132"/>
+  <flow id="f_010" route="r_SN_C" type="car" begin="0" end="1800" period="13.33" number="135"/>
+  <flow id="f_011" route="r_SN_D" type="car" begin="0" end="1800" period="13.37" number="134"/>
+  <flow id="f_012" route="r_NS_A" type="car" begin="0" end="1800" period="9.35" number="192"/>
+  <flow id="f_013" route="r_NS_B" type="car" begin="0" end="1800" period="10.20" number="176"/>
+  <flow id="f_014" route="r_NS_C" type="car" begin="0" end="1800" period="13.41" number="134"/>
+  <flow id="f_015" route="r_NS_D" type="car" begin="0" end="1800" period="11.67" number="154"/>
+  <vehicle id="v000" type="car" route="r_WE_1" depart="0"/>
+  <vehicle id="v001" type="car" route="r_SN_B" depart="5"/>
+</routes>

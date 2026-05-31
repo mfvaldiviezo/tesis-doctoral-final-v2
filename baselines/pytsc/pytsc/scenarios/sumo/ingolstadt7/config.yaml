@@ -1,0 +1,10 @@
+# https://github.com/Pi-Star-Lab/RESCO/tree/main
+# SUMO parameters
+sumo:
+  render: False
+  sumo_config_file: ingolstadt7.sumocfg
+  sumo_net_file: ingolstadt7.net.xml
+
+# Network parameters
+network:
+  network_type: real # (synthetic, real)

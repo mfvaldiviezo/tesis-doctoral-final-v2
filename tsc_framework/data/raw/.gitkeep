@@ -1,0 +1,3 @@
+# Este directorio almacena datasets originales de tráfico (CSV, XML, etc.).
+# NO modificar ni eliminar archivos una vez depositados aquí.
+# Fuentes típicas: detectores de lazo inductivo, cámaras, SUMO synthetic data.

@@ -1,0 +1,9 @@
+﻿<viewsettings>
+    <scheme name="real world"/>
+    <delay value="50"/>
+    <zoom value="1.0"/>
+    <showTrafficLights value="true"/>
+    <showLaneDetails value="false"/>
+    <drawLinkTLIndex value="true"/>
+    <drawLinkTLInternal value="true"/>
+</viewsettings>

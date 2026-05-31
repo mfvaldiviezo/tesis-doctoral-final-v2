@@ -1,0 +1,1988 @@
+
+--- PAGINA 1 ---
+Nombre de la universidad
+Facultad o escuela
+Título de la tesis doctoral
+Autor: Nombre del autor
+Director: Nombre del director
+Tesis presentada para la obtención del grado de
+Doctor en [Área o Programa]
+Ciudad, País
+mayo de 2026
+
+--- PAGINA 2 ---
+Dedicatoria
+Escribe aquí tu dedicatoria.
+i
+
+--- PAGINA 3 ---
+Agradecimientos
+Escribe aquí tus agradecimientos.
+ii
+
+--- PAGINA 4 ---
+Resumen
+Redacta aquí un resumen estructurado de tu tesis, incluyendo problema, objetivo, metodología,
+resultados principales y conclusiones.
+iii
+
+--- PAGINA 5 ---
+Abstract
+Write here the English abstract of your dissertation, including problem, objective, methodology,
+main results, and conclusions.
+iv
+
+--- PAGINA 6 ---
+Índice general
+Dedicatoria i
+Agradecimientosii
+Resumen iii
+Abstract iv
+1. Introducción 1
+1.1. Contexto y Relevancia del Problema . . . . . . . . . . . . . . . . . . . . . . . . . 1
+1.2. Planteamiento del Problema . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+1.3. Objetivos de la Investigación . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+1.4. Hipótesis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+1.5. Justificación . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+1.6. Estructura del Documento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+2. Revisión Sistemática de Literatura: resultados de la extracción y síntesis te-
+mática 9
+2.1. Delimitación y Propósito de la Revisión . . . . . . . . . . . . . . . . . . . . . . . 9
+2.2. Diseño del Protocolo de Búsqueda y Cribado . . . . . . . . . . . . . . . . . . . . 10
+2.2.1. Fuentes de Información y Estrategia de Búsqueda . . . . . . . . . . . . . . 10
+2.2.2. Criterios de Elegibilidad . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+v
+
+--- PAGINA 7 ---
+Índice general
+2.2.3. Flujo de Selección . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+2.3. Evaluación de la Calidad Metodológica del Corpus Primario . . . . . . . . . . . . 11
+2.3.1. Instrumento de Evaluación . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+2.3.2. Distribución de Puntuaciones . . . . . . . . . . . . . . . . . . . . . . . . . 12
+2.4. Caracterización del Corpus Empírico (n= 190) . . . . . . . . . . . . . . . . . . . 12
+2.4.1. Entornos de Simulación y Validación . . . . . . . . . . . . . . . . . . . . . 12
+2.4.2. Algoritmos de RL y Arquitecturas Dominantes . . . . . . . . . . . . . . . 13
+2.4.3. Transparencia y Reproducibilidad . . . . . . . . . . . . . . . . . . . . . . . 13
+2.5. Resultados de la Meta-Revisión de Revisiones Existentes . . . . . . . . . . . . . . 14
+2.5.1. Corpus de Revisiones Identificadas . . . . . . . . . . . . . . . . . . . . . . 14
+2.5.2. Revisiones de alta relevancia (Grupo A) . . . . . . . . . . . . . . . . . . . 14
+2.5.3. Revisiones de relevancia media (Grupo B) . . . . . . . . . . . . . . . . . . 15
+2.5.4. Síntesis de la Meta-Revisión . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+2.6. Síntesis de la Evidencia por Pregunta de Investigación (n= 190) . . . . . . . . . 16
+2.7. Brechas del Estado del Arte y Posicionamiento de la Tesis . . . . . . . . . . . . . 17
+2.8. Síntesis del Capítulo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+3. Marco Teórico 20
+3.1. Fundamentos del Sistema o Modelo Propuesto . . . . . . . . . . . . . . . . . . . . 20
+3.2. Modelado Matemático del Problema . . . . . . . . . . . . . . . . . . . . . . . . . 21
+3.2.1. Formulación MDP para Control Semafórico Urbano . . . . . . . . . . . . . 21
+3.3. Modelos de Aprendizaje o Predicción . . . . . . . . . . . . . . . . . . . . . . . . . 22
+3.3.1. Arquitectura Principal: Vine Copulas para Generación de Escenarios . . . 22
+3.4. Aprendizaje por Refuerzo, Optimización o Control . . . . . . . . . . . . . . . . . 23
+3.4.1. Formulación del Problema Risk-Aware . . . . . . . . . . . . . . . . . . . . 23
+3.4.2. Algoritmo Principal: PPO/SAC con Penalización CVaR . . . . . . . . . . 24
+vi
+
+--- PAGINA 8 ---
+Índice general
+3.5. Modelado de Dependencias o Incertidumbre . . . . . . . . . . . . . . . . . . . . . 24
+3.5.1. Estructura del Modelo Probabilístico o Estadístico . . . . . . . . . . . . . 24
+3.6. Equidad, Robustez o Criterios Éticos . . . . . . . . . . . . . . . . . . . . . . . . . 25
+3.6.1. Métricas de Evaluación Ética o de Robustez . . . . . . . . . . . . . . . . . 25
+3.6.2. Función de Recompensa Ajustada (Gini + CVaR) . . . . . . . . . . . . . 25
+3.7. Modelos de Comportamiento o Escenario . . . . . . . . . . . . . . . . . . . . . . . 26
+3.7.1. Perfil 1: Conducción Anómala y Desobediencia Vial . . . . . . . . . . . . . 26
+3.7.2. Perfil 2: Eventos Exógenos y Fallos de Infraestructura . . . . . . . . . . . 26
+3.8. Modelo Híbrido de Optimización o Integración . . . . . . . . . . . . . . . . . . . 26
+3.9. Algoritmo de Entrenamiento Unificado . . . . . . . . . . . . . . . . . . . . . . . . 27
+3.10. Conclusión del Marco Teórico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+4. Metodología 29
+4.1. Diseño General del Sistema . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+4.2. Pipeline de Datos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+4.2.1. Fuentes de Datos y Entorno Experimental . . . . . . . . . . . . . . . . . . 30
+4.2.2. Preprocesamiento y Validación PRISMA (Representación del Estado) . . 31
+4.3. Implementación del Modelo Híbrido . . . . . . . . . . . . . . . . . . . . . . . . . 32
+4.3.1. Entrenamiento del Módulo de Copulas . . . . . . . . . . . . . . . . . . . . 32
+4.3.2. Configuración del Agente RL Ligero . . . . . . . . . . . . . . . . . . . . . 33
+4.3.3. Integración del Módulo de Transferencia Interregional . . . . . . . . . . . 34
+4.4. Diseño Experimental . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+4.4.1. Escenarios de Validación . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+4.4.2. Protocolo de Entrenamiento y Paralelización . . . . . . . . . . . . . . . . 36
+4.5. Métricas de Evaluación . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+4.5.1. Rendimiento Técnico . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+vii
+
+--- PAGINA 9 ---
+Índice general
+4.5.2. Equidad Algorítmica y Robustez . . . . . . . . . . . . . . . . . . . . . . . 37
+4.6. Herramientas y Configuración de Software . . . . . . . . . . . . . . . . . . . . . . 37
+4.7. Diagrama de Flujo del Sistema . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+4.8. Protocolo de Validación Estadística . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+4.9. Consideraciones Éticas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+4.10. Conclusión Metodológica . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+5. Resultados y Discusión 41
+5.1. Configuración Experimental . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+5.2. Evaluación del Módulo de Generación de Escenarios . . . . . . . . . . . . . . . . 41
+5.3. Evaluación del Módulo de Decisión o Control . . . . . . . . . . . . . . . . . . . . 41
+5.4. Evaluación del Módulo de Equidad o Robustez . . . . . . . . . . . . . . . . . . . 41
+5.5. Comparativa con Modelos Tradicionales . . . . . . . . . . . . . . . . . . . . . . . 41
+5.6. Análisis Estadístico y Robustez . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+5.7. Discusión de Resultados . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+5.8. Limitaciones . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+5.9. Conclusión del Capítulo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+6. Discusión 43
+6.1. Interpretación de los Resultados Clave . . . . . . . . . . . . . . . . . . . . . . . . 43
+6.2. Comparación con el Estado del Arte . . . . . . . . . . . . . . . . . . . . . . . . . 43
+6.2.1. Ventajas sobre Métodos Existentes . . . . . . . . . . . . . . . . . . . . . . 43
+6.2.2. Limitaciones Persistentes . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+6.3. Implicaciones Teóricas y Prácticas . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+6.3.1. Contribuciones al Campo . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+6.3.2. Impacto Aplicado o Socioeconómico . . . . . . . . . . . . . . . . . . . . . 43
+viii
+
+--- PAGINA 10 ---
+Índice general
+6.4. Limitaciones y Sesgos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+6.4.1. Dependencia de Datos o Supuestos . . . . . . . . . . . . . . . . . . . . . . 44
+6.4.2. Sesgos en Perfiles, Muestras o Anotaciones . . . . . . . . . . . . . . . . . . 44
+6.5. Lecciones Aprendidas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+6.6. Recomendaciones para Políticas Públicas o Implementación . . . . . . . . . . . . 44
+6.7. Futuras Líneas de Investigación . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+6.8. Conclusión Final . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+7. Conclusiones y Trabajo Futuro 45
+7.1. Síntesis de Contribuciones Clave . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+7.2. Cumplimiento de Objetivos e Hipótesis . . . . . . . . . . . . . . . . . . . . . . . . 45
+7.3. Limitaciones y Desafíos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+7.4. Recomendaciones para Implementación Práctica . . . . . . . . . . . . . . . . . . . 45
+7.5. Trabajo Futuro . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+7.6. Reflexión Final . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+A. Anexos 51
+A.1. Protocolo de Búsqueda y Cadenas de Consulta . . . . . . . . . . . . . . . . . . . 51
+A.2. Matriz de Extracción SLR (Corpus Primario) . . . . . . . . . . . . . . . . . . . . 52
+A.3. Diagrama PRISMA 2020 (Fase 1 y Fase 2) . . . . . . . . . . . . . . . . . . . . . . 53
+A.4. Hiperparámetros y Configuración de Entrenamiento . . . . . . . . . . . . . . . . . 54
+A.5. Código Fuente y Repositorio Complementario . . . . . . . . . . . . . . . . . . . . 55
+ix
+
+--- PAGINA 11 ---
+Índice de figuras
+x
+
+--- PAGINA 12 ---
+Índice de cuadros
+2.1. Resumen cuantitativo del flujo de selección en las dos fases de la revisión . . . . . 11
+2.2. Distribución de calidad metodológica del corpus primario (n= 190) . . . . . . . . 12
+2.3. Plataformas de simulación predominantes en el corpus primario (n= 190) . . . . 13
+2.4. Revisiones de alta relevancia (Grupo A,n= 16) . . . . . . . . . . . . . . . . . . . 15
+2.5. Revisiones de relevancia media (Grupo B,n= 12) . . . . . . . . . . . . . . . . . 16
+2.6. Cobertura temática del corpus primario según pregunta de investigación (n= 190) 17
+xi
+
+--- PAGINA 13 ---
+Capítulo 1
+Introducción
+1.1. Contexto y Relevancia del Problema
+La gestión del tráfico urbano constituye un problema de decisión secuencial de alta complejidad,
+en el que interactúan demanda no estacionaria, restricciones de infraestructura, heterogeneidad
+modal, eventos exógenos y comportamientos humanos difícilmente reducibles a patrones regu-
+lares. En este contexto, la congestión no debe entenderse únicamente como un fenómeno de
+ineficiencia operativa, sino como una manifestación sistémica de desequilibrios entre capacidad
+vial, control, información disponible y variabilidad conductual. Sus efectos trascienden el aumen-
+to del tiempo de viaje: degradan la productividad urbana, incrementan el consumo energético,
+amplifican emisiones contaminantes y distribuyen de manera desigual los costos de movilidad
+entre distintos grupos y territorios.
+En la última década, el control semafórico basado en Aprendizaje por Refuerzo (RL), y par-
+ticularmente sus variantes profundas y multiagente, ha sido propuesto como una alternativa
+prometedora a los esquemas de tiempo fijo o actuados. Su atractivo reside en la posibilidad de
+aprender políticas adaptativas a partir de la interacción continua con el entorno, optimizando
+señales en tiempo real bajo criterios como demora, presión o longitud de cola. Sin embargo, el
+rendimiento reportado por una parte importante del estado del arte se sostiene sobre una condi-
+ción metodológica que rara vez se problematiza con la profundidad necesaria: la mayor parte de
+los experimentos se diseña y valida sobre entornos simulados cuya física vehicular, topología de
+red y supuestos conductuales responden predominantemente a contextos idealizados, altamente
+instrumentados y cercanos a realidades eurocéntricas o norteamericanas.
+Esta observación es especialmente crítica para América Latina. En muchas ciudades de la re-
+gión, la operación del tráfico está determinada por redes viales irregulares, intersecciones con
+geometrías no canónicas, cobertura sensorial incompleta, mantenimiento heterogéneo de la infra-
+estructura y una cultura vial caracterizada por alta variabilidad conductual. Fenómenos como
+la invasión de intersecciones, el bloqueo de caja, el uso oportunista de brechas, la desobediencia
+parcial de fases, los tiempos de reacción atípicos y la interferencia recurrente entre modos no son
+1
+
+--- PAGINA 14 ---
+Capítulo 1. Introducción
+meras desviaciones marginales respecto del régimen nominal; constituyen patrones operativos
+recurrentes que alteran la propagación de colas, la estabilidad de las fases y la formación de
+bloqueos aguas arriba. Por ello, tratarlos como simple ruido estocástico o eliminarlos durante la
+calibración produce un sesgo de representación que deteriora la validez externa de los modelos
+de IA aplicados al control semafórico.
+El problema de fondo no es solo la insuficiencia de datos, sino un sesgo estructural de simula-
+ción. Simuladores de microtráfico ampliamente utilizados, como SUMO, permiten una calibra-
+cióndetalladaysonherramientasindispensablesparainvestigaciónreproducible;noobstante,sus
+configuraciones por defecto descansan sobre modelos de seguimiento vehicular, aceptación de bre-
+chas y obediencia semafórica que privilegian regularidad cinemática y cumplimiento normativo.
+Cuando estos supuestos no se tensionan explícitamente, el agente de RL tiende a sobreajustarse
+a entornos excesivamente ordenados y, en consecuencia, aprende políticas eficaces para tráfico
+disciplinado, pero frágiles frente a contextos donde la incertidumbre operacional surge precisa-
+mente de la interacción entre infraestructura limitada y comportamiento humano no ideal. En
+términos metodológicos, ello implica unoverfittingno solo al simulador, sino a una ontología vial
+implícita que no representa adecuadamente la realidad urbana latinoamericana.
+Desde esta perspectiva, la presente tesis parte de una premisa distinta: los comportamientos
+viales adversos no deben excluirse del modelo ni describirse en clave moral, sino incorporarse co-
+mo anomalías estructuradas relevantes para la dinámica del sistema. Esto significa parametrizar
+probabilísticamente dependencias entre demanda, incidentes, incumplimientos operativos, ruido
+sensorial y perturbaciones contextuales, de manera que el entorno de entrenamiento no reproduz-
+ca únicamente condiciones medias, sino también perfiles de estrés plausibles. Bajo este enfoque,
+la inteligencia artificial no se concibe como un mecanismo que corrige conductas individuales,
+sino como un sistema de gestión de riesgo sistémico capaz de operar de forma robusta cuando la
+red se aproxima a estados de congestión crítica, spillback o pérdida de equidad distributiva.
+A partir de la revisión sistemática preliminar realizada sobre literatura reciente en control sema-
+fórico inteligente, se identifican cinco limitaciones que restringen la transferencia de los avances
+actuales a contextos urbanos reales y, en particular, a escenarios latinoamericanos:
+1. Sesgodesimulaciónyvalidezexternalimitada:granpartedelosmodelosseentrena
+en entornos con obediencia vehicular cuasi perfecta, sensórica abundante y topologías
+regulares, lo que dificulta extrapolar los resultados a redes urbanas con mayor fricción
+operacional.
+2. Explicabilidad insuficiente:los enfoques de mayor rendimiento suelen depender de ar-
+quitecturas opacas, lo que dificulta auditar por qué una política falla o se vuelve inestable
+ante eventos no nominales.
+3. Robustez entendida solo como rendimiento promedio:numerosos trabajos opti-
+mizan demora o throughput medios, pero modelan de forma débil las pérdidas de cola, el
+riesgo de spillback y la degradación extrema del servicio.
+2
+
+--- PAGINA 15 ---
+Capítulo 1. Introducción
+4. Equidad tratada como objetivo secundario:la distribución de demoras entre movi-
+mientos, accesos o grupos modales suele quedar subordinada a la eficiencia agregada, aun
+cuando esa distribución condiciona la legitimidad operativa del sistema.
+5. Dependencia de configuraciones computacionales poco transferibles:los resul-
+tados más competitivos suelen apoyarse en configuraciones de entrenamiento e inferencia
+difíciles de desplegar en infraestructura urbana con recursos restringidos.
+En consecuencia, la relevancia de esta investigación no radica únicamente en mejorar métricas
+clásicas de tráfico, sino en replantear el problema del control semafórico adaptativo bajo una
+noción más realista de entorno: una red urbana donde la incertidumbre, la fricción conductual y
+la heterogeneidad infraestructural son condiciones constitutivas del sistema y no perturbaciones
+excepcionales. Esta reformulación exige un marco metodológico que combine aprendizaje por
+refuerzo, modelado probabilístico de dependencias, optimización sensible al riesgo y métricas
+explícitas de equidad distributiva.
+1.2. Planteamiento del Problema
+El problema científico central de esta tesis puede formularse en los siguientes términos: existe una
+brecha sustantiva entre el desempeño reportado por los sistemas de control semafórico basados
+en RL dentro de entornos simulados convencionales y su capacidad real para operar de manera
+robusta, interpretable y socialmente aceptable en redes urbanas caracterizadas por observación
+incompleta, infraestructura heterogénea y alta variabilidad conductual. Dicha brecha es especial-
+mente relevante en ciudades latinoamericanas, donde la cultura vial no puede modelarse como
+una perturbación residual de baja probabilidad, sino como un conjunto de anomalías recurrentes
+que alteran estructuralmente la dinámica del flujo.
+En este contexto, el problema no consiste solamente en minimizar demoras promedio. Desde una
+perspectiva de control, el desafío es aprender políticas que mantengan estabilidad operacional
+cuando emergen colas de alta severidad, bloqueos de intersección, pérdida de coordinación entre
+nodos vecinos y degradación desigual del servicio entre movimientos competidores. En otras
+palabras, el objetivo es evitar que una mejora agregada en eficiencia esconda una transferencia
+local del riesgo hacia accesos secundarios, corredores vulnerables o zonas donde el spillback puede
+propagarse a la red adyacente.
+Bajo esta formulación, la tesis adopta una lectura no punitiva del problema. El sistema propuesto
+no buscacorregirnisancionarcomportamientos individuales, sino absorber sus efectos sistémi-
+cos mediante una política de control resiliente. Para ello, los comportamientos adversos —como
+invasión de intersecciones, bloqueo de caja, tiempos de reacción atípicos, pérdidas sensoriales
+o incrementos súbitos de demanda— se modelan como anomalías estructuradas con dependen-
+cias estadísticas explícitas. El uso deVine Copulasresponde precisamente a esta necesidad:
+representar interacciones no lineales entre variables operativas y contextuales para inyectar en
+3
+
+--- PAGINA 16 ---
+Capítulo 1. Introducción
+simulación escenarios de estrés más próximos a la dinámica real que aquellos generados bajo
+supuestos gaussianos o ruido independiente.
+Sobre esta base, el problema central de investigación se expresa así:
+¿Cómo diseñar un framework de control semafórico basado en Aprendizaje por Re-
+fuerzo que, en presencia de anomalías estructuradas propias de contextos urbanos
+reales y particularmente latinoamericanos, aprenda políticas interpretables, compu-
+tacionalmente viables y resilientes al riesgo sistémico, minimizando simultáneamente
+el colapso operacional extremo y la degradación de la equidad distributiva?
+Para operacionalizar esta pregunta general, el problema se descompone en cinco dimensiones
+analíticas:
+Dimensión Problema específico Pregunta de investigación
+D1:
+Representación
+probabilística
+Las perturbaciones operativas
+suelen modelarse como ruido
+independiente o escenarios ad
+hoc, sin capturar dependencias
+reales entre demanda, incidentes
+y comportamiento vial.
+¿Cómo modelar anomalías
+estructuradas de forma
+interpretable y estadísticamente
+consistente para generar perfiles
+de estrés realistas?
+D2: Riesgo
+sistémico
+La optimización basada en
+esperanza favorece políticas
+eficientes en promedio, pero
+vulnerables ante colas extremas,
+spillback y pérdida de
+estabilidad local.
+¿Cómo incorporar medidas de
+riesgo de cola, como CVaR, para
+aprender políticas resistentes a
+episodios operacionales severos?
+D3: Equidad
+distributiva
+La minimización de demora
+agregada puede concentrar
+sistemáticamente el costo de
+congestión sobre ciertos
+movimientos, accesos o grupos
+modales.
+¿Cómo integrar el índice de Gini
+en la función objetivo para evitar
+el colapso de la equidad bajo
+estrés?
+D4:
+Transferibilidad
+y viabilidad
+Muchos enfoques dependen de
+arquitecturas y requisitos
+computacionales difíciles de
+desplegar fuera de laboratorios o
+grandes ciudades altamente
+instrumentadas.
+¿Cómo diseñar una solución
+metodológicamente sólida y a la
+vez viable para contextos con
+sensórica e infraestructura
+limitadas?
+4
+
+--- PAGINA 17 ---
+Capítulo 1. Introducción
+Dimensión Problema específico Pregunta de investigación
+D5: Validez
+externa
+Los agentes entrenados en
+simuladores calibrados bajo
+obediencia ideal presentan
+fragilidad cuando enfrentan
+culturas viales más caóticas o
+redes menos regulares.
+¿Qué mecanismos permiten cerrar
+la brecha entre desempeño
+simulado y comportamiento
+esperado en entornos urbanos
+latinoamericanos?
+El valor científico del problema reside en que ninguna de estas dimensiones es independiente de
+las demás. Una política puede ser eficiente, pero inaceptable si desplaza el riesgo hacia nodos
+vulnerables; puede ser robusta, pero impracticable si requiere infraestructura de cómputo inexis-
+tente; o puede ser explicable, pero irrelevante si se entrena sobre un universo simulado que omite
+la dinámica conductual real. Por ello, la tesis propone un enfoque integrado donde el modelado
+probabilístico conVine Copulas, la optimización de riesgo con CVaR y la equidad distributi-
+va basada en Gini operan como componentes complementarios de una misma formulación de
+control.
+1.3. Objetivos de la Investigación
+Objetivo general
+Desarrollar y validar un framework de control semafórico basado en Aprendizaje por Refuerzo
+que sea interpretable, computacionalmente viable y robusto frente a anomalías estructuradas de
+tráfico, mediante la integración de modelado probabilístico conVine Copulas, optimización de
+riesgo con CVaR y métricas de equidad distributiva basadas en el índice de Gini, con especial
+atención a la adaptación a contextos urbanos latinoamericanos.
+Objetivos específicos
+OE1:Construir un modelo basado enVine Copulasque represente dependencias entre deman-
+da, incidentes, perturbaciones operativas y comportamientos viales adversos, permitiendo
+generar escenarios de estrés realistas y auditables.(RQ1, RQ5)
+OE2:DiseñareimplementaragentesdeRL,particularmentePPOySAC,confuncionesobjetivo
+sensibles al riesgo que incorporen penalización CVaR para reducir la probabilidad de
+colapso operacional extremo y propagación de spillback.(RQ2)
+OE3:Integrar métricas de equidad distributiva, en particular el índice de Gini, dentro de la
+recompensa o función de valor, evaluando su efecto sobre la distribución de demoras y
+servicio entre movimientos competidores.(RQ3)
+5
+
+--- PAGINA 18 ---
+Capítulo 1. Introducción
+OE4:Analizar la viabilidad computacional y la capacidad de transferencia del framework pro-
+puesto en escenarios con sensórica limitada e infraestructura heterogénea, comparándolo
+con enfoques de mayor complejidad arquitectónica.(RQ4, RQ5)
+1.4. Hipótesis
+Se formulan cuatro hipótesis comprobables empíricamente que guiarán el diseño experimental de
+la tesis.
+No. Hipótesis Dimensión
+H1Un modelo basado enVine Copulasrepresenta con
+mayor fidelidad e interpretabilidad la dependencia entre
+anomalías estructuradas de tráfico que enfoques
+generativos opacos, mejorando la generación de
+escenarios de estrés y la calibración en contextos con
+información limitada.
+Representación
+probabilística
+H2Un controlador de RL optimizado con CVaR reduce de
+manera más consistente el riesgo de colapso operacional
+extremo y la propagación de spillback que un controlador
+entrenado únicamente bajo criterio de retorno esperado.
+Riesgo sistémico
+H3La incorporación explícita del índice de Gini en la
+función objetivo mejora la distribución del servicio entre
+movimientos y accesos sin deteriorar de forma crítica la
+eficiencia global del sistema.
+Equidad distributiva
+H4Un framework diseñado con estados agregados, modelado
+probabilístico interpretable y optimización sensible al
+riesgo ofrece mejor compromiso entre robustez,
+transferibilidad y costo computacional que enfoques
+basados en arquitecturas masivas entrenadas bajo
+supuestos de simulación idealizados.
+Validez externa y
+viabilidad
+1.5. Justificación
+La justificación de esta tesis se apoya en una motivación científica, metodológica, tecnológica
+y territorial. En primer lugar, desde el punto de vista científico, el trabajo aborda una limita-
+ción persistente del campo: la tendencia a evaluar controladores semafóricos inteligentes sobre
+entornos cuya estructura de incertidumbre y comportamiento vial no representa adecuadamen-
+te las condiciones de operación de una parte sustantiva del mundo urbano. Esta brecha entre
+simulación y realidad no es un detalle experimental menor; compromete la validez externa de
+6
+
+--- PAGINA 19 ---
+Capítulo 1. Introducción
+los resultados y limita la capacidad de la disciplina para producir conocimiento transferible a
+contextos distintos de aquellos para los que los simuladores fueron originalmente calibrados.
+En segundo lugar, la tesis está metodológicamente justificada porque propone una formulación
+integrada del problema que articula tres dimensiones que en la literatura suelen aparecer aisladas:
+dependencia probabilística, riesgo de cola y equidad distributiva. El modelado conVine Copulas
+permite abandonar la representación simplificada de las anomalías como ruido independiente
+y capturar, en cambio, estructuras conjuntas entre demanda, incidentes, sensórica imperfecta
+y comportamiento vial. La optimización basada en CVaR introduce una noción explícita de
+gestión de riesgo sistémico, adecuada para un dominio donde los promedios pueden ocultar
+episodios críticos de congestión. Finalmente, la incorporación del índice de Gini evita que la
+política aprendida reduzca la demora agregada a costa de concentrar el deterioro del servicio en
+movimientos minoritarios o accesos periféricos. Esta integración dota al framework propuesto de
+un fundamento conceptual más sólido que el de enfoques centrados exclusivamente en eficiencia
+promedio.
+En tercer lugar, la investigación posee relevancia tecnológica porque prioriza soluciones poten-
+cialmente desplegables en infraestructura urbana con recursos restringidos. En muchas ciudades
+latinoamericanas, la digitalización del control de tráfico avanza de manera desigual, con hardware
+heterogéneo, sensórica incompleta y restricciones presupuestarias que impiden adoptar arquitec-
+turas de gran escala sin una fuerte adaptación local. En este escenario, una contribución doctoral
+de alto valor no es aquella que maximiza rendimiento bajo condiciones ideales de laboratorio, sino
+aquella que preserva robustez y trazabilidad con requerimientos computacionales compatibles con
+despliegues progresivos y realistas.
+En cuarto lugar, la tesis posee relevancia territorial y social. Incorporar explícitamente la cultura
+vial latinoamericana como objeto de modelado —y no como residuo a eliminar— supone un
+cambio de enfoque con implicaciones epistemológicas y prácticas. Epistemológicas, porque cues-
+tiona la universalización acrítica de supuestos conductuales derivados de contextos altamente
+regulados. Prácticas, porque permite diseñar políticas de control más resilientes ante condiciones
+donde la congestión, el bloqueo de intersecciones y la degradación desigual del servicio afectan
+de manera directa a poblaciones con menor margen de adaptación, incluido el transporte público
+y los usuarios de corredores secundarios. En este sentido, la equidad no se plantea como una
+extensión normativa superficial, sino como una condición necesaria de legitimidad operativa.
+Por último, la tesis es pertinente porque propone un lenguaje de evaluación más adecuado para
+sistemas urbanos complejos. En lugar de describir el problema en términos de cumplimiento o
+incumplimiento individual, lo reformula como un problema de gestión de riesgo sistémico en redes
+congestionadas. Esta decisión conceptual evita lecturas moralistas y sitúa la contribución de la
+inteligencia artificial en el plano que le corresponde: no imponer disciplina sobre los usuarios, sino
+estabilizar la operación del sistema cuando la red se enfrenta a condiciones adversas, minimizar la
+probabilidad de colapso extremo y contener la propagación espacial de los costos de congestión.
+Bajo esta óptica, la investigación aspira a producir una aportación doctoral rigurosa, transferible
+y relevante para el diseño de sistemas de control urbano más robustos y más justos.
+7
+
+--- PAGINA 20 ---
+Capítulo 1. Introducción
+1.6. Estructura del Documento
+La presente memoria doctoral se organiza en siete capítulos y anexos complementarios, siguiendo
+una progresión lógica desde la fundamentación teórica hasta la validación experimental y la
+discusión crítica:
+Capítulo 1: Introducción.Contextualiza el problema, formula las preguntas de inves-
+tigación, establece objetivos e hipótesis, y justifica la relevancia científica y práctica del
+estudio.
+Capítulo 2: Estado del Arte.Presenta la revisión sistemática de literatura bajo pro-
+tocolo PRISMA 2020, caracteriza el corpus empírico, evalúa la calidad metodológica y
+sintetiza las brechas operativas que fundamentan la propuesta.
+Capítulo 3: Marco Teórico.Detalla los fundamentos matemáticos y computacionales
+del modelo: formulación MDP para TSC, arquitectura de Vine Copulas para dependen-
+cia de colas, optimización CVaR en RL, métricas de equidad resiliente y esquemas de
+transferencia eficiente.
+Capítulo 4: Metodología.Describe el diseño experimental, el pipeline de datos, la
+implementaciónmodulardelsistemahíbrido,losprotocolosdeentrenamiento,lasmétricas
+de evaluación por dimensión y el plan de validación estadística.
+Capítulo5:ResultadosyDiscusión.Exponeloshallazgosexperimentalesorganizados
+por preguntas de investigación, e incluye análisis comparativo con baselines, pruebas de
+robustez y evaluación de eficiencia computacional.
+Capítulo 6: Discusión.Interpreta los resultados a la luz del estado del arte, analiza
+implicaciones teóricas y prácticas, identifica limitaciones persistentes y formula recomen-
+daciones para políticas públicas y despliegue urbano.
+Capítulo 7: Conclusiones y Trabajo Futuro.Sintetiza las contribuciones, verifica el
+cumplimiento de objetivos e hipótesis, plantea líneas de investigación futura y ofrece una
+reflexión final sobre el rol de la IA ética en ciudades inteligentes.
+Anexos.Incluyen cadenas de búsqueda documentadas, la matriz completa de extracción
+SLR, la configuración de hiperparámetros, diagramas PRISMA editables y enlaces al
+repositorio de código y datos.
+8
+
+--- PAGINA 21 ---
+Capítulo 2
+Revisión Sistemática de Literatura:
+resultados de la extracción y síntesis
+temática
+2.1. Delimitación y Propósito de la Revisión
+La revisión sistemática de literatura que sustenta esta tesis se desarrolló en dos fases secuenciales,
+siguiendo la metodología propuesta por Torres-Carrión et al. (2018), la cual adapta el protocolo
+de Kitchenham (2004, 2009) y mantiene coherencia con el estándar de reporte PRISMA 2020
+de Page et al. (2021). A diferencia de una revisión lineal centrada exclusivamente en estudios
+primarios, la revisión distingue con claridad dos niveles analíticos complementarios: unaFase
+1 de meta-revisión, orientada a examinar las revisiones sistemáticas,surveysystate-of-the-
+art reviewsya publicadas, y unaFase 2 de SLR primaria, centrada en artículos empíricos
+originales sobre control semafórico urbano basado en aprendizaje por refuerzo.
+El propósito de esta revisión es doble. En primer lugar, laFase 1busca identificar, clasificar
+y analizar las revisiones existentes en torno al control semafórico inteligente con RL, prestando
+especial atención a cinco ejes que estructuran la tesis: explicabilidad, equidad, robustez, trans-
+ferencia interregional y eficiencia computacional. Esta fase cumple una función de validación de
+novedad, pues permite determinar qué combinaciones temáticas ya han sido cubiertas por la
+literatura secundaria y qué vacíos persisten. En segundo lugar, laFase 2construye un corpus de
+estudios empíricos originales que permite caracterizar el estado del arte experimental, cuantifi-
+car la cobertura de las preguntas de investigación RQ1–RQ5 y extraer tendencias metodológicas
+relevantes para el diseño delframeworkdoctoral.
+La exposición se organiza conforme a esta lógica bifásica. La Section 2.2 presenta el protocolo de
+búsquedaycribado,juntoconunresumencuantitativoconsolidadodeambasfases.LaSection2.3
+detalla la evaluación de calidad aplicada exclusivamente a los estudios primarios de la Fase 2. La
+9
+
+--- PAGINA 22 ---
+Capítulo 2. Revisión Sistemática de Literatura: resultados de la extracción y síntesis temática
+Section 2.4 caracteriza el corpus empírico final (n= 190) en términos de entornos de simulación,
+familias algorítmicas y reproducibilidad. La Section 2.5 expone los resultados de la meta-revisión,
+incluyendolaclasificacióndelas72revisionesidentificadasengruposderelevancia.LaSection2.6
+sintetiza la evidencia primaria por pregunta de investigación. Finalmente, las Sections 2.7 and 2.8
+integran los hallazgos en forma de brechas operativas y una síntesis integradora.
+2.2. Diseño del Protocolo de Búsqueda y Cribado
+2.2.1. Fuentes de Información y Estrategia de Búsqueda
+La búsqueda se realizó en cuatro bases de datos académicas indexadas de alta relevancia para in-
+geniería, informática y sistemas inteligentes:Scopus,IEEE Xplore,Web of ScienceyACM
+Digital Library. Las cadenas de búsqueda combinaron descriptores asociados a tres bloques
+conceptuales. El primero reunió términos vinculados con control semafórico y gestión de tráfico
+urbano, comotraffic signal control,adaptive traffic control,intersection managementyurban traf-
+fic. El segundo integró conceptos propios del aprendizaje por refuerzo y la inteligencia artificial,
+entre ellosreinforcement learning,deep reinforcement learning,multi-agent reinforcement lear-
+ningyartificial intelligence. El tercer bloque incorporó términos específicos de las dimensiones
+analíticas de la tesis, tales comoexplainable AI,fairness,equity,robustness,risk,CVaR,transfer
+learning,generalization,edge computing,lightweight,anomaly detectionydriver behavior.
+Para laFase 1 (meta-revisión)se añadió un filtro explícito de tipo documental, orientado a
+recuperarsystematic reviews,surveys,state-of-the-art reviewsyliterature reviews. En laFase
+2 (SLR primaria)se conservaron las mismas familias de términos, pero se eliminó la restric-
+ción por tipo de documento, con el fin de capturar estudios empíricos originales susceptibles de
+evaluación metodológica detallada.
+2.2.2. Criterios de Elegibilidad
+En laFase 2, los criterios de inclusión exigieron que los documentos fueran artículos de revista o
+ponencias de conferencia con experimentación empírica o validación por simulación; que estuvie-
+ran centrados en control semafórico urbano basado en RL, DRL o aprendizaje multiagente; que
+reportaran métricas cuantitativas de desempeño —como demora, longitud de cola,throughputo
+tiempo de viaje— junto con al menos una línea base; y que describieran con suficiente detalle el
+entorno experimental, el algoritmo y las condiciones de evaluación.
+Los criterios de exclusión de la Fase 2 eliminaron estudios duplicados entre bases de datos,
+trabajos fuera del alcance del problema semafórico urbano —por ejemplo,eco-driving, tráfico
+aéreo o conducción autónoma sin componente de control semafórico—, documentos sin evidencia
+cuantitativaverificableosinvalidación,yartículosconevaluaciónmetodológicainferioralumbral
+de aceptación fijado en QA<3.0.
+10
+
+--- PAGINA 23 ---
+Capítulo 2. Revisión Sistemática de Literatura: resultados de la extracción y síntesis temática
+En laFase 1, los criterios fueron de naturaleza cualitativa. Se incluyeron revisiones que abor-
+daran al menos uno de los ejes centrales de la tesis —control semafórico con RL, equidad,
+robustez, transferencia y eficienciaedge— y se excluyeron aquellas centradas en dominios cuya
+transferencia conceptual al problema semafórico resultaba débil o no justificable, como redes de
+telecomunicaciones, ciberseguridad, minería de datos genérica o tráfico aéreo y marítimo.
+2.2.3. Flujo de Selección
+La Table 2.1 resume el flujo de selección consolidado para ambas fases, manteniendo la lógica de
+identificación, depuración, cribado, elegibilidad e inclusión propia de PRISMA 2020.
+Tabla 2.1: Resumen cuantitativo del flujo de selección en las dos fases de la revisión
+Fase Objetivo Registros
+inicia-
+les
+Tras
+depura-
+ción
+Tras criba-
+do/elegibilidad
+Incluidos
+Fase 1:
+meta-revisión
+Identificar revisiones
+existentes (surveys, SLR y
+state-of-the-art)
+101 72 72 72
+Fase 2: SLR
+primaria
+Estudios empíricos de control
+semafórico con RL
+290 269 230 190
+Los290 registros inicialesde la Fase 2 proceden de la búsqueda en las cuatro bases de datos.
+Tras eliminar duplicados y aplicar el cribado por título y resumen,230 estudiospasaron a
+evaluación a texto completo mediante el instrumento de calidad. De ellos,40fueron excluidos
+por no alcanzar el umbral mínimo, lo que dio lugar a un corpus primario final de190 estudios
+empíricos. En paralelo, la Fase 1 permitió consolidar72 revisiones únicascomo base para la
+validación del vacío de conocimiento.
+2.3. Evaluación de la Calidad Metodológica del Corpus Primario
+2.3.1. Instrumento de Evaluación
+La calidad metodológica de los 230 estudios primarios que superaron el cribado inicial se evaluó
+mediante un instrumento de cinco criterios binarios, adaptado de Kitchenham et al. (2009) y
+Bacca et al. (2014). Cada criterio recibió una puntuación de 0 o 1, de modo que la puntuación
+total por estudio osciló entre 0 y 5. Los criterios fueron los siguientes:
+1. descripción explícita del entorno de simulación, incluyendo simulador, topología y pará-
+metros relevantes;
+11
+
+--- PAGINA 24 ---
+Capítulo 2. Revisión Sistemática de Literatura: resultados de la extracción y síntesis temática
+2. reproducibilidad, entendida como disponibilidad de código abierto o descripción suficien-
+temente detallada para replicación;
+3. reporte de métricas cuantitativas de desempeño;
+4. comparación con al menos una línea base pertinente;
+5. justificación de la selección algorítmica o arquitectónica.
+Sobre la base de esta escala se fijó un umbral de inclusión deQA≥3.0. Esta decisión metodo-
+lógica permitió preservar el equilibrio entre amplitud del corpus y rigor analítico, evitando que
+estudios con descripción insuficiente o evidencia limitada distorsionaran la síntesis principal.
+2.3.2. Distribución de Puntuaciones
+La Table 2.2 muestra la distribución de calidad metodológica del corpus primario finalmente
+incluido. Los 40 estudios con QA inferior al umbral fueron excluidos de la síntesis cuantitativa
+principal, aunque su descarte se documentó en la matriz de extracción para mantener trazabilidad
+del procedimiento.
+Tabla 2.2: Distribución de calidad metodológica del corpus primario (n= 190)
+Puntuación QA Calificación Frecuencia Porcentaje sobren= 190
+5/5 Excelente 26 13.7%
+4/5 Bueno 88 46.3%
+3/5 Aceptable 76 40.0%
+Total incluido 190 100.0%
+(Excluidos QA = 2/5 o 1/5) Limitado/Insuficiente 40 —
+En conjunto, el60.0%del corpus incluido presenta calidad buena o excelente. Este resultado
+aporta una base metodológica suficientemente sólida para sustentar inferencias sobre tendencias
+experimentales, brechas temáticas y patrones de diseño algorítmico dentro del estado del arte
+analizado.
+2.4. Caracterización del Corpus Empírico (n= 190)
+2.4.1. Entornos de Simulación y Validación
+Los estudios primarios muestran una marcada concentración en plataformas de microtráfico
+consolidadas. La Table 2.3 resume los simuladores predominantes dentro del corpus final.
+12
+
+--- PAGINA 25 ---
+Capítulo 2. Revisión Sistemática de Literatura: resultados de la extracción y síntesis temática
+Tabla 2.3: Plataformas de simulación predominantes en el corpus primario (n= 190)
+Simulador Frecuencia Porcentaje
+SUMO (Simulation of Urban MObility) 136 71.6%
+CityFlow 30 15.8%
+Otros (VISSIM, Aimsun, PARAMICS, etc.) 23 12.1%
+No reportado 1 0.5%
+La clara preponderancia deSUMOjustifica su selección como plataforma experimental de refe-
+rencia en la tesis. Al mismo tiempo, la presencia deCityFlowcomo segunda opción confirma un
+interés creciente por configuraciones de mayor escala, especialmente en escenarios multiagente.
+No obstante, la evidencia también sugiere una dependencia importante de configuraciones de
+simulación altamente controladas, lo que limita la representación de contextos operativos más
+heterogéneos.
+2.4.2. Algoritmos de RL y Arquitecturas Dominantes
+Desde el punto de vista algorítmico, el corpus presenta un predominio de enfoquesvalue-based,
+especialmente DQN y sus variantes. Sobre los 190 estudios incluidos, se identificaron101 estu-
+dioscon presencia de métodos de esta familia, equivalentes al53.2%del corpus. En segundo
+lugar aparecen los enfoques basados en gradiente de política, con43 estudiosque emplean PPO
+(22.6%) y10 estudiosque utilizan SAC (5.3%). El resto se distribuye entre A2C, DDPG, TD3
+y otras combinaciones híbridas o comparativas.
+Esta distribución confirma dos patrones relevantes. Por una parte, persiste una tradición consoli-
+dada de diseño basada en DQN, favorecida por su simplicidad relativa y su temprana adopción en
+control semafórico inteligente. Por otra, se observa un desplazamiento progresivo hacia arquitec-
+turas como PPO y SAC cuando el problema exige mayor estabilidad de entrenamiento, manejo
+de espacios de acción más complejos o coordinación multiagente con restricciones operativas
+adicionales.
+2.4.3. Transparencia y Reproducibilidad
+En materia de apertura metodológica, la literatura continúa mostrando limitaciones significati-
+vas. Solo45 de los 190 estudiosincluidos, equivalentes al23.7%, reportan código abierto,
+repositorios verificables o materiales suficientes para facilitar una replicación independiente. Este
+resultado refuerza la necesidad de que la presente tesis adopte una estrategia explícita de trans-
+parencia documental, trazabilidad experimental y disponibilidad de artefactos reproducibles.
+13
+
+--- PAGINA 26 ---
+Capítulo 2. Revisión Sistemática de Literatura: resultados de la extracción y síntesis temática
+2.5. Resultados de la Meta-Revisión de Revisiones Existentes
+2.5.1. Corpus de Revisiones Identificadas
+La búsqueda de revisiones sistemáticas,surveysystate-of-the-art reviewsprodujo101 regis-
+tros iniciales. Tras eliminar duplicados y aplicar un cribado por título y resumen, se retuvieron
+72 revisiones únicas, publicadas entre 2008 y 2025. Posteriormente, estas revisiones se clasi-
+ficaron según su alineación con las preguntas de investigación de la tesis: RQ1, explicabilidad;
+RQ2, transferencia y generalización interregional; RQ3, robustez y riesgo; RQ4, equidad; y RQ5,
+eficiencia computacional.
+Con base en esa alineación se definieron tres grupos de relevancia. ElGrupo Areúne 16 re-
+visiones de alta relevancia que abordan de forma directa al menos uno de los ejes centrales de
+la tesis. ElGrupo Bincluye 12 revisiones de relevancia media, útiles como soporte contextual
+o metodológico. ElGrupo Cagrupa 44 revisiones de baja relevancia, excluidas de la discu-
+sión principal por pertenecer a dominios periféricos o poco transferibles al problema de control
+semafórico urbano.
+2.5.2. Revisiones de alta relevancia (Grupo A)
+La Table 2.4 presenta las 16 revisiones clasificadas en el Grupo A, junto con su foco principal y
+su relación con las preguntas de investigación.
+14
+
+--- PAGINA 27 ---
+Capítulo 2. Revisión Sistemática de Literatura: resultados de la extracción y síntesis temática
+Tabla 2.4: Revisiones de alta relevancia (Grupo A,n= 16)
+Referencia Autor(es) Año Enfoque principal Relación con RQ
+Maheshwari
+et al. (2025)
+Maheshwari et al. 2025 Simulación urbana con ML y
+caso RL en semáforos
+RQ2, RQ5
+Vihurskyi (2024) Vihurskyi 2024 Optimización de tráfico urbano
+con ML, RL y anomalías
+RQ1, RQ3, RQ5
+Rong et al.
+(2025)
+Rong et al. 2025 IA generativa en ITS y discusión
+de explicabilidad
+RQ1
+Zhang et al.
+(2024)
+Zhang et al. 2024 RL y CAVs para control
+cooperativo de semáforos
+RQ2, RQ4
+Gheorghe and
+Soica (2025)
+Gheorghe y Soica 2025 AI/IoT en control adaptativo de
+tráfico
+RQ3, RQ5
+Ozioko et al.
+(2022)
+Ozioko et al. 2022 Coordinación de intersecciones
+con tráfico mixto
+RQ2, RQ3
+Ali et al. (2025) Ali et al. 2025Federated learningpara CAVs y
+transferencia
+RQ2, RQ5
+Jain and Pandey
+(2025)
+Jain y Pandey 2025 Optimización de tráfico con IA y
+discusión comparativa
+RQ1, RQ3
+Si et al. (2025) Si et al. 2025Deep learningpara TSC con
+federated/meta-learning
+RQ2, RQ5
+Saini and
+Srivastava
+(2025)
+Saini y Srivastava 2025 Optimización en tiempo real con
+deep learningy edge
+RQ5
+Thamaraiselvi
+et al. (2025)
+Thamaraiselvi et
+al.
+2025 RL para TSC, IoT y sistemas
+adaptativos
+RQ3, RQ4
+Zhao et al.
+(2024)
+Zhao et al. 2024 DRL para TSC y revisión de
+cinco años
+RQ3, RQ4
+Han et al. (2023) Han et al. 2023 Desafíos de implementación de
+RL en TSC
+RQ2, RQ5
+Noaeen et al.
+(2022)
+Noaeen et al. 2022 SLR de RL en redes urbanas RQ3, RQ4
+Liu et al. (2024) Liu et al. 2024 DRL para navegación en
+intersecciones con AVs
+RQ2
+Miao et al.
+(2021)
+Miao et al. 2021 DRL para TSC en contextos
+singley multiagente
+RQ3
+Del análisis del Grupo A emergen tres hallazgos centrales. En primer lugar,la explicabilidad
+y la equidad ocupan un lugar claramente marginaldentro de la literatura secundaria.
+Aunque revisiones recientes como las de Rong et al. (2025) o Jain y Pandey (2025) mencionan
+la importancia de la transparencia, ninguna operacionaliza la equidad mediante indicadores dis-
+tributivos explícitos ni desarrolla mecanismos de auditoría en línea compatibles con el control
+semafórico adaptativo. En segundo lugar,la robustez suele abordarse como tolerancia a
+perturbaciones observadas, pero no como gestión formal del riesgo extremo; en consecuencia,
+la literatura revisada carece de tratamientos explícitos basados en medidas coherentes de riesgo
+como CVaR. En tercer lugar,la transferencia interregional y la eficiencia para despliegue
+en infraestructuraedgeaparecen de forma recurrente como desafíos abiertos, pero sin una
+propuesta integradora que articule ambos requisitos con criterios de interpretabilidad y justicia
+operacional.
+2.5.3. Revisiones de relevancia media (Grupo B)
+LaTable2.5sintetizalas12revisionesclasificadascomoderelevanciamedia.Aunquenojustifican
+por sí mismas el vacío central de la tesis, sí aportan contexto metodológico valioso en predicción
+de tráfico,edge analytics, sensado y dependencias espaciotemporales.
+15
+
+--- PAGINA 28 ---
+Capítulo 2. Revisión Sistemática de Literatura: resultados de la extracción y síntesis temática
+Tabla 2.5: Revisiones de relevancia media (Grupo B,n= 12)
+Referencia Autor(es) Año Aportación complementaria
+Pravin and S
+(2025)
+Pravin y Nancy Noella 2025 Predicción de tráfico con métodos ML/DL
+Bakir et al.
+(2024)
+Bakir et al. 2024 Modelos de predicción de congestión
+Grigorev et al.
+(2024)
+Grigorev et al. 2024 Duración de incidentes y modelado de
+anomalías
+Badidi et al.
+(2023)
+Badidi et al. 2023Edge video analyticscon hardware limitado
+Bisio et al.
+(2022)
+Bisio et al. 2022 Monitoreo con drones y sensado
+Cui et al. (2023) Cui et al. 2023 Correlación espaciotemporal y
+dependencias
+Sirohi et al.
+(2020)
+Sirohi et al. 2020 CNN para ITS y tareas de percepción
+Razali et al.
+(2021)
+Razali et al. 2021 Predicción de flujo con ML/DL
+Cui et al. (2022) Cui et al. 2022 Patrones de movilidad vehicular
+Noroozi et al.
+(2023)
+Noroozi et al. 2023 Automatización y consumo energético
+Vikruthi et al.
+(2024)
+Vikruthi et al. 2024 Priorización de vehículos de emergencia
+con DL
+Jiang et al.
+(2021)
+Jiang et al. 2021Benchmarkde predicción DL-Traff
+2.5.4. Síntesis de la Meta-Revisión
+La síntesis de la Fase 1 permite afirmar queninguna de las 72 revisiones analizadas integra
+simultáneamentelos cinco componentes que estructuran la propuesta doctoral:(i)modelado
+probabilístico interpretable basado enVine Copulaspara generación de escenarios de estrés;
+(ii)optimización sensible al riesgo mediante CVaR;(iii)equidad operacional explícita mediante
+índice de Gini;(iv)transferencia interregional con requerimientos computacionales ligeros; y(v)
+viabilidad de despliegue en infraestructuraedge. Este vacío de conocimiento no solo justifica la
+continuidad hacia la SLR primaria, sino que también delimita con mayor precisión el espacio de
+contribución original de la tesis.
+2.6. Síntesis de la Evidencia por Pregunta de Investigación (n=
+190)
+La Table 2.6 cuantifica la cobertura de cada pregunta de investigación dentro de los 190 estu-
+dios empíricos incluidos. La clasificación se basa en las etiquetas consolidadas en la matriz de
+extracción temática del corpus.
+16
+
+--- PAGINA 29 ---
+Capítulo 2. Revisión Sistemática de Literatura: resultados de la extracción y síntesis temática
+Tabla 2.6: Cobertura temática del corpus primario según pregunta de investigación (n= 190)
+Dimensión analítica Frecuencia Porcentaje sobren= 190
+RQ1: Explicabilidad / XAI9 4.7%
+RQ2: Transferencia / generalización
+interregional
+18 9.5%
+RQ3: Robustez / manejo de anomalías110 57.9%
+RQ4: Equidad /fairnessdistributiva24 12.6%
+RQ5: Eficiencia computacional / edge
+computing
+25 13.2%
+Código abierto / reproducibilidad 45 23.7%
+Los resultados muestran quela robustez (RQ3)es la dimensión más desarrollada, con pre-
+sencia en el 57.9% del corpus. Sin embargo, la mayoría de estos trabajos entiende la robustez
+como tolerancia a perturbaciones observadas —por ejemplo, variaciones de demanda o fallos
+de sensado— y no como gestión formal del riesgo extremo. Solo un subconjunto muy reduci-
+do incorpora medidas compatibles con la lógica de riesgo de cola que la tesis plantea mediante
+CVaR.
+En contraste,la explicabilidad (RQ1)presenta una cobertura mínima, de apenas 4.7%. Los
+pocos estudios que la abordan, entre ellos contribuciones como las de Schreiber et al. (2022) o
+Yang et al. (2024), recurren principalmente a mecanismospost-hoc, como análisis de importancia
+o máscaras de atención, sin ofrecer explicaciones en línea ni trazabilidad operativa durante la
+toma de decisiones del agente.La equidad (RQ4)también mantiene una presencia limitada.
+Aunque algunos trabajos, como Chen et al. (2021) y Fang et al. (2022), introducen señales
+de justicia distributiva, en la mayoría de los casos esta dimensión se trata como un objetivo
+secundario o una corrección ex-post, y no como un componente estructural de la recompensa.
+Finalmente,la transferencia interregional (RQ2)yla eficiencia computacional para
+desplieguesedge(RQ5)muestran coberturas inferiores al 15%, lo que confirma su carácter
+emergente dentro del estado del arte. La evidencia disponible sugiere, por tanto, un escenario
+desequilibrado: abundan los estudios orientados a optimizar métricas promedio bajo condiciones
+controladas,mientrasescaseanaquellosquearticulansimultáneamenteinterpretabilidad,justicia,
+adaptación entre contextos y viabilidad computacional realista.
+2.7. Brechas del Estado del Arte y Posicionamiento de la Tesis
+La integración de los resultados de la Fase 1 y la Fase 2 permite identificar cinco brechas opera-
+tivas que estructuran el posicionamiento innovador de la tesis.
+1.Ausencia de un modelo generativo interpretable para escenarios de estrés.La
+literatura primaria y secundaria recurre mayoritariamente a ruido independiente, GANs
+opacas otransformersde alta complejidad para generar condiciones adversas. Ninguno
+17
+
+--- PAGINA 30 ---
+Capítulo 2. Revisión Sistemática de Literatura: resultados de la extracción y síntesis temática
+de los enfoques revisados utilizaVine Copulaspara capturar dependencias no lineales y
+de cola pesada de forma transparente. Esta brecha se vincula de manera directa con RQ1
+y RQ3.
+2.Falta de gestión explícita del riesgo de cola en el control semafórico.Aunque
+la robustez es la dimensión más tratada, ningún estudio revisado incorpora CVaR como
+penalizaciónexplícitaenlafunciónobjetivodelagentedeRL. Laomisiónesespecialmente
+relevante en redes congestionadas, donde los promedios pueden ocultar eventos extremos
+con consecuencias sistémicas severas. Esta brecha responde a RQ3.
+3.Equidad distributiva tratada como objetivo secundario opost-hoc.Solo un nú-
+mero muy reducido de estudios incorpora señales de justicia en la recompensa, y ninguno
+emplea el índice de Gini como penalización explícita sobre desigualdades en tiempos de es-
+pera entre movimientos o accesos. Tampoco se evalúa de forma sistemática la degradación
+de la equidad bajo condiciones de estrés. Esta brecha se relaciona con RQ4.
+4.Transferencia interregional con requisitos computacionales poco realistas.Los
+enfoques existentes —comofine-tuning, meta-RL ofederated learning— suelen depender
+de arquitecturas pesadas y de grandes volúmenes de datos. La literatura revisada no
+explora soluciones ligeras basadas en recalibración de estructuras probabilísticas que per-
+mitan adaptación rápida a nuevas regiones con pocos datos locales. Esta brecha conecta
+con RQ2 y RQ5.
+5.Validación dominada por entornos idealizados.El predominio de SUMO con con-
+figuraciones por defecto presupone, en muchos casos, obediencia vehicular casi perfecta,
+sensórica abundante y topologías regulares. La literatura rara vez incorpora compor-
+tamientos anómalos estructurados —como invasión de intersección, bloqueo de caja o
+tiempos de reacción atípicos— que resultan especialmente pertinentes para contextos ur-
+banos latinoamericanos. Esta brecha atraviesa de manera transversal las cinco preguntas
+de investigación.
+En respuesta a estas brechas, la tesis propone unframeworkintegrado que combinaVine Copulas
+para generación interpretable de escenarios de estrés, optimización CVaR para gestión del riesgo
+de cola, índice de Gini en la función de recompensa para promover equidad resiliente, un agente
+RL ligero basado en PPO/SAC con estados agregados y ejecución en CPU, y un módulo de
+transferencia sustentado en recalibración probabilística con baja dependencia de datos locales.
+De este modo, la contribución doctoral se posiciona no como una mera mejora incremental sobre
+el rendimiento promedio, sino como una reformulación del problema bajo criterios simultáneos
+de robustez, equidad, interpretabilidad y viabilidad operativa.
+18
+
+--- PAGINA 31 ---
+Capítulo 2. Revisión Sistemática de Literatura: resultados de la extracción y síntesis temática
+2.8. Síntesis del Capítulo
+Los resultados de la revisión sistemática desarrollada en dos fases permiten establecer cinco con-
+clusiones principales.Primero, la meta-revisión de 72 revisiones existentes confirma un vacío
+de conocimiento claro: ninguna propuesta previa integra en un mismo marco modelado proba-
+bilístico interpretable, optimización del riesgo de cola, equidad explícita, transferencia ligera y
+eficiencia para despliegueedge.Segundo, la SLR primaria de 190 estudios empíricos cuantifica
+la baja cobertura de las dimensiones más cercanas a la contribución doctoral, especialmente ex-
+plicabilidad, transferencia, equidad y eficiencia computacional, mientras que la robustez aparece
+con frecuencia pero sin una formulación formal del riesgo extremo.Tercero, SUMO emerge co-
+mo el simulador dominante, lo que justifica su uso en la fase experimental de la tesis, aunque la
+literatura revisada rara vez lo calibra para representar comportamientos anómalos o contextos
+de infraestructura limitada.Cuarto, la transparencia y reproducibilidad continúan siendo insu-
+ficientes, dado que menos de una cuarta parte del corpus libera código o materiales verificables.
+Quinto, las brechas identificadas fundamentan directamente el diseño delframeworkhíbrido
+desarrollado en los capítulos siguientes.
+En consecuencia, la evidencia extraída y sintetizada en este capítulo no solo confirma la vigencia
+y pertinencia del problema de investigación, sino que también justifica de manera directa la
+arquitectura conceptual y metodológica que se desarrolla en los capítulos dedicados al marco
+teórico y a la metodología experimental.
+19
+
+--- PAGINA 32 ---
+Capítulo 3
+Marco Teórico
+3.1. Fundamentos del Sistema o Modelo Propuesto
+La gestión semafórica urbana es un problema de decisión secuencial bajo incertidumbre en el
+que el estado del sistema cambia de forma continua por la interacción entre demanda vehicular,
+estructura de red, eventos exógenos y restricciones operativas. En la literatura científica reciente,
+el aprendizaje por refuerzo profundo ha demostrado ventajas frente a controladores estáticos o
+puramente heurísticos al aprender políticas adaptativas directamente desde la interacción con
+simuladores de tráfico. Sin embargo, el mismo estado del arte muestra cuatro limitaciones per-
+sistentes: escasa explicabilidad, débil tratamiento de la equidad, sensibilidad a observaciones
+incompletas o ruidosas y dificultades de escalabilidad hacia redes urbanas amplias (Schreiber
+et al., 2022; Chen et al., 2021; Guo et al., 2023; Wang et al., 2021).
+Con base en las fuentes científicas seleccionadas del SLR, este marco teórico adopta una visión
+integrada del control semafórico inteligente. Primero, la política debe serexplicable, de modo que
+las variables de tráfico que motivan cada decisión puedan auditarse y relacionarse con el com-
+portamiento del agente, tal como muestran Schreiber et al. mediante aproximadores de función
+interpretables y explicaciones poshoc con SHAP (Schreiber et al., 2022). Segundo, la política
+debe serequitativa, es decir, no limitarse a minimizar la demora agregada sino considerar la dis-
+tribución de los beneficios entre corrientes mayoritarias y minoritarias, siguiendo la línea de Chen
+et al. y Fang et al., quienes introducen señales de recompensa sensibles a justicia distributiva
+y duración de fase (Chen et al., 2021; Fang et al., 2022). Tercero, el sistema debe serrobusto
+frente a observabilidad parcial, ruido y eventos inesperados, como plantea el enfoque ontológico
+de Guo et al. para despliegues en el borde (Guo et al., 2023). Cuarto, el método debe preservar
+escalabilidad y cooperaciónen redes extensas, atributo desarrollado por Wang et al. mediante
+aprendizaje multiagente con aproximación de campo medio (Wang et al., 2021).
+Desde esta perspectiva, el modelo propuesto en la tesis se sustenta en cinco principios teóricos:
+(i)representación estructurada del estado,(ii)optimización secuencial mediante aprendizaje por
+refuerzo,(iii)modelado explícito de riesgo y eventos extremos,(iv)incorporación de criterios de
+20
+
+--- PAGINA 33 ---
+Capítulo 3. Marco Teórico
+equidad en la función objetivo y(v)compatibilidad con infraestructuraedgey con escenarios
+urbanos parcialmente observables. Estos principios no se plantean como componentes indepen-
+dientes, sino como restricciones conjuntas que deben cumplirse en toda formulación rigurosa del
+control semafórico inteligente.
+3.2. Modelado Matemático del Problema
+Se modela la red vial como un grafo dirigidoG= (V, E), donde cada nodov∈Vrepresenta una
+intersección controlada y cada aristae∈Erepresenta un tramo vial o carril con capacidad finita.
+La dinámica del sistema depende del patrón de llegadas, del enrutamiento entre enlaces, de la fase
+activa en cada intersección y de perturbaciones exógenas. En este contexto, el objetivo general
+consiste en aprender una políticaπque asigne acciones de control semafórico para minimizar
+congestión, demoras y riesgo operacional sin sacrificar equidad entre usuarios.
+Seai∈Vuna intersección. Para cada intervalo de decisiónt, se observan magnitudes locales
+como longitud de cola, tiempo de espera, presión entre carriles de entrada y salida, fase actual
+y tiempo transcurrido desde el último cambio. La formulación del problema requiere equilibrar
+dos necesidades contrapuestas: por un lado, un estado suficientemente rico para capturar la
+dinámica del flujo; por otro, una representación compacta que permita entrenamiento estable
+e inferencia eficiente. La evidencia reportada por Fang et al., Guo et al. y Wang et al. sugiere
+que las representaciones estructuradas basadas en presión, duración de fase, vecindad y variables
+agregadas son más apropiadas que representaciones visuales de alta dimensión para contextos
+operativos realistas (Fang et al., 2022; Guo et al., 2023; Wang et al., 2021).
+3.2.1. Formulación MDP para Control Semafórico Urbano
+El problema se formula como un Proceso de Decisión de Markov (MDP) definido por la tupla:
+M=⟨S,A,P,R, γ⟩,
+dondeSes el espacio de estados,Ael espacio de acciones,P(s t+1 |s t, at)la dinámica de
+transición,Rla recompensa inmediata yγ∈(0,1)el factor de descuento.
+Para una interseccióni, se propone un estado local de la forma:
+si,t =
+
+qi,t,w i,t,p i,t, ϕi,t, τi,t,z i,t
+
+,
+dondeq i,t representa longitudes de cola por carril,w i,t tiempos de espera acumulados,p i,t
+presión de tráfico,ϕi,t la fase activa,τi,t la edad de la fase yzi,t variables contextuales o latentes
+asociadas con ruido, incidencias o prioridad operacional. La inclusión de presión y duración
+de fase sigue la evidencia deMonitorLight, donde ambas variables mejoran la sensibilidad del
+controlador ante condiciones estacionarias y transitorias (Fang et al., 2022). La incorporación de
+21
+
+--- PAGINA 34 ---
+Capítulo 3. Marco Teórico
+variables latentes o semánticas se justifica por el enfoque de observación aumentada de Guo et
+al., orientado a resolver información incompleta y eventos inesperados (Guo et al., 2023).
+El espacio de acciones puede formularse de dos maneras. En una versión discreta, el agente se-
+lecciona la siguiente fase admisible. En una versión continua o semidiscreta, además determina
+la duración del verde o la partición temporal entre movimientos compatibles. La segunda al-
+ternativa es teóricamente más expresiva cuando se desea evitar cambios innecesarios y adaptar
+la señalización a patrones asimétricos de demanda. Por ello, el marco propuesto favorece una
+acción del tipoa i,t = (ϕ i,t+1, gi,t+1), dondeg i,t+1 denota el tiempo verde ogreen splitsujeto a
+restricciones de seguridad operacional:
+gm´ ın≤g i,t+1 ≤g m´ ax.
+Latransicióndelsistemanoesconocidaenformaanalíticacerrada,puesdependedeinteracciones
+no lineales entre demanda, propagación de colas, comportamiento de los conductores y decisiones
+simultáneas de múltiples intersecciones. Por ello, el simulador o entorno digital actúa como
+aproximación deP. Esta aproximación es consistente con la práctica experimental observada en
+los estudios del SLR, que emplean SUMO, CityFlow u otros entornos de simulación como soporte
+del aprendizaje (Schreiber et al., 2022; Chen et al., 2021; Guo et al., 2023; Fang et al., 2022;
+Wang et al., 2021).
+3.3. Modelos de Aprendizaje o Predicción
+La selección del modelo de aprendizaje no puede reducirse a la obtención del menor tiempo
+promedio de viaje. En el contexto urbano, un controlador útil debe ofrecer capacidad de genera-
+lización, estabilidad de entrenamiento y cierta trazabilidad sobre las razones de sus decisiones.
+Schreiber et al. muestran que la elección del aproximador de función afecta simultáneamente el
+rendimiento y la explicabilidad del agente, lo que obliga a considerar la arquitectura no solo por
+precisión sino también por auditabilidad (Schreiber et al., 2022).
+En este marco, el aprendizaje se concibe como un proceso de aproximación funcional sobre
+políticas y/o funciones de valor. Cuando el espacio de acciones es discreto, las familias tipo DQN
+resultan naturales; cuando la acción incluye tiempos continuos de verde, son más apropiados
+métodos actor–critic o gradiente de política. En ambos casos, el aprendizaje debe apoyarse sobre
+estados agregados y compactos para reducir la varianza de estimación y facilitar el despliegue
+computacional.
+3.3.1. Arquitectura Principal: Vine Copulas para Generación de Escenarios
+El capítulo adopta una arquitectura teórica en la que el aprendizaje por refuerzo se complementa
+con un módulo probabilístico de generación de escenarios. La motivación es que las variables de
+22
+
+--- PAGINA 35 ---
+Capítulo 3. Marco Teórico
+tráfico urbano presentan dependencias no lineales, colas pesadas y variaciones conjuntas que
+rara vez pueden representarse correctamente mediante supuestos gaussianos. En consecuencia,
+una familia devine copulasresulta adecuada para modelar dependencias entre flujos de entrada,
+tiempos de llegada, eventos incidentales y perturbaciones contextuales, conservando flexibilidad
+estructural.
+Formalmente, siX= (X 1, . . . , Xd)es el vector de variables aleatorias que describe condiciones
+de tráfico y contexto, su distribución conjunta puede descomponerse como:
+FX(x1, . . . , xd) =C
+ 
+F1(x1), . . . , Fd(xd)
+
+,
+dondeF j son distribuciones marginales yCes una cópula que captura la dependencia. El uso
+deregular vinespermite factorizarCen cópulas bivariadas condicionales, generando escenarios
+sintéticos plausibles para entrenar y someter a estrés la política de control. Aunque las fuentes del
+SLR empleadas en este capítulo no desarrollan cópulas explícitamente, sí justifican la necesidad
+de modelar incertidumbre estructurada, ruido y eventos inesperados en tráfico urbano (Guo et al.,
+2023; Fang et al., 2022). Por tanto, el módulo de cópulas se integra como extensión probabilística
+coherente con la evidencia revisada.
+3.4. Aprendizaje por Refuerzo, Optimización o Control
+La teoría del aprendizaje por refuerzo proporciona el marco para encontrar políticas que maxi-
+micen un retorno esperado acumulado. Sin embargo, en aplicaciones urbanas críticas, optimizar
+solamente la esperanza del retorno puede inducir políticas frágiles ante escenarios extremos. Una
+reducción del promedio de demora puede coexistir con episodios severos de congestión localiza-
+da, inanición de accesos secundarios o colapso temporal de una zona de la red. Esta observación
+motiva una formulación explícitamente sensible al riesgo.
+3.4.1. Formulación del Problema Risk-Aware
+SeaR t la recompensa instantánea yGt =P∞
+k=0 γkRt+k el retorno descontado. En la formulación
+clásica, se busca:
+m´ ax
+π
+Eπ[Gt].
+En este trabajo, el criterio se amplía para incorporar aversión al riesgo sobre pérdidas operaciona-
+les extremas. SiLt representa una variable de pérdida asociada con demoras severas, sobrepresión
+o desequilibrio extremo, puede emplearse la medidaConditional Value at Risk(CVaR):
+CVaRα(L) =E
+
+L|L≥VaR α(L)
+
+, α∈(0,1).
+23
+
+--- PAGINA 36 ---
+Capítulo 3. Marco Teórico
+Así, el objetivo se expresa como una optimización multiobjetivo regularizada:
+m´ ax
+π
+Eπ[Gt]−λ r CVaRα(Lt),
+dondeλ r >0pondera la penalización por riesgo. Esta formulación protege al sistema contra
+episodios de cola y favorece políticas más conservadoras frente a eventos de alta severidad, un
+requisito alineado con los hallazgos de robustez y respuesta rápida reportados para escenarios
+inesperados (Guo et al., 2023; Wang et al., 2021).
+3.4.2. Algoritmo Principal: PPO/SAC con Penalización CVaR
+El marco teórico admite dos familias algorítmicas principales. Si la acción incorpora decisiones
+continuas de duración de verde,Soft Actor-Critic(SAC) ofrece una base adecuada por su efi-
+ciencia muestral y su tratamiento entropizado de la exploración. Si la política se representa con
+restricciones de actualización más conservadoras,Proximal Policy Optimization(PPO) constitu-
+ye una alternativa robusta. En ambos casos, la función objetivo del agente se modifica mediante
+un término de penalización por riesgo y, cuando corresponda, por inequidad distributiva.
+Desde el punto de vista conceptual, esta elección prolonga dos hallazgos del SLR: la utilidad de
+representaciones compactas e interpretables para la estimación de valor (Schreiber et al., 2022)
+y la conveniencia de diseñar mecanismos de estabilidad y cooperación cuando el sistema escala
+a múltiples intersecciones (Wang et al., 2021). En una extensión multiagente, la política global
+puede factorizarse en agentes locales con intercambio limitado de estado vecino, preservando
+escalabilidad sin perder coordinación táctica.
+3.5. Modelado de Dependencias o Incertidumbre
+La incertidumbre relevante en control semafórico no se restringe a la variabilidad de llegadas.
+Tambiénincluyefallosparcialesdesensado,ruidodemedición,eventosincidentalesyperturbacio-
+nes espacio-temporales que alteran simultáneamente varias corrientes. Ignorar estas dependencias
+lleva a políticas sobreajustadas a condiciones promedio y con bajo desempeño en explotación.
+3.5.1. Estructura del Modelo Probabilístico o Estadístico
+Elmodeloprobabilísticopropuestocombinadosniveles.Enelnivelmarginal,cadavariabledetrá-
+fico se ajusta mediante distribuciones empíricas o paramétricas flexibles para capturar asimetría
+y colas pesadas. En el nivel conjunto, una estructura de cópulas tipo vine modela dependencias
+entre intersecciones, accesos y perturbaciones contextuales. Esta representación permite mues-
+trear escenarios con dependencias realistas y evaluar la política sobre configuraciones ordinarias
+y adversas.
+24
+
+--- PAGINA 37 ---
+Capítulo 3. Marco Teórico
+En términos operativos, el vector de incertidumbreξt puede incluir demanda por movimiento,
+ruido de sensor, tasa de vehículos prioritarios y probabilidad de incidente. Entonces, la transición
+se reescribe como:
+st+1 ∼ P(· |s t, at,ξ t).
+La consideración explícita deξt es consistente con el enfoque de Guo et al., donde la observabi-
+lidad parcial y los eventos inesperados dejan de ser ruido residual y pasan a constituir parte del
+problema de decisión (Guo et al., 2023).
+3.6. Equidad, Robustez o Criterios Éticos
+La equidad constituye un criterio sustantivo y no accesorio dentro del control semafórico urbano.
+Una política que minimiza la demora total pero sacrifica sistemáticamente un subconjunto de
+usuarios puede ser eficiente en promedio y, al mismo tiempo, socialmente inaceptable. La lite-
+ratura científica revisada demuestra que la inclusión de señales de justicia distributiva modifica
+de manera significativa la conducta del agente y evita estrategias utilitaristas extremas (Chen
+et al., 2021; Fang et al., 2022).
+3.6.1. Métricas de Evaluación Ética o de Robustez
+La evaluación del sistema se organiza en tres grupos de métricas. El primer grupo mide eficiencia
+global: tiempo medio de viaje, demora promedio, longitud de cola, velocidad media y throughput,
+métricas ampliamente utilizadas en los estudios del SLR (Schreiber et al., 2022; Chen et al.,
+2021; Guo et al., 2023; Wang et al., 2021). El segundo grupo mide equidad distributiva mediante
+índices como Jain o coeficientes de desigualdad aplicados a tiempos de espera y servicio por
+movimiento (Chen et al., 2021). El tercer grupo mide robustez con estadísticas de dispersión y
+cola, por ejemplo máximo tiempo de espera, desviación estándar de demoras, percentiles altos y
+pérdidas extremas asociadas conCVaRα, de manera coherente con escenarios ruidosos, parciales
+o inesperados (Guo et al., 2023; Wang et al., 2021).
+3.6.2. Función de Recompensa Ajustada (Gini + CVaR)
+La recompensa instantánea se diseña como una combinación de eficiencia, equidad y riesgo. Una
+formulación general es:
+Rt =−λ 1 Delayt −λ 2 Pressuret −λ 3 Ginit −λ 4 CVaRα(Lt),
+dondeλ j >0son coeficientes de ponderación. El términoGinit penaliza distribuciones desiguales
+del tiempo de espera entre corrientes o grupos de usuarios, mientras que el término de CVaR
+penaliza pérdidas extremas. Esta estructura generaliza la lógica de equidad propuesta por Chen
+25
+
+--- PAGINA 38 ---
+Capítulo 3. Marco Teórico
+et al. y Fang et al., pero la amplía con un componente explícito de riesgo operacional (Chen
+et al., 2021; Fang et al., 2022).
+Desde una perspectiva normativa, esta función evita que el agente aprenda políticas que bene-
+ficien desproporcionadamente las arterias principales a costa de accesos secundarios, peatones
+o vehículos con menor volumen. Al mismo tiempo, el término de riesgo desalienta decisiones
+agresivas que pueden reducir el promedio de demora a cambio de aumentar la probabilidad de
+bloqueo severo.
+3.7. Modelos de Comportamiento o Escenario
+La validez de una política de control depende de su capacidad para responder a comportamientos
+no nominales. Por ello, el entrenamiento y la validación deben considerar perfiles de operación
+adversos y no solo condiciones promedio.
+3.7.1. Perfil 1: Conducción Anómala y Desobediencia Vial
+Este perfil incorpora aceleraciones atípicas, tiempos de reacción heterogéneos, invasión de in-
+tersección, incumplimiento parcial de fase y detección imperfecta. Teóricamente, su inclusión
+permite evaluar si la política conserva estabilidad cuando la relación entre observación y estado
+real se degrada. El sustento para este perfil se encuentra en la evidencia de Guo et al. sobre
+observaciones ruidosas y parciales, y en la necesidad de estados ricos que no dependan de una
+única fuente sensorial (Guo et al., 2023).
+3.7.2. Perfil 2: Eventos Exógenos y Fallos de Infraestructura
+Este segundo perfil contempla accidentes, aumentos súbitos de demanda, indisponibilidad de
+sensores, prioridad a vehículos de emergencia y perturbaciones de red. La motivación teórica
+es evaluar la resiliencia de la política frente a cambios estructurales breves pero severos. Los
+escenarios inesperados analizados por Guo et al. y la preocupación por estabilidad y robustez en
+aprendizaje multiagente reportada por Wang et al. fundamentan la incorporación explícita de
+este tipo de perturbaciones (Guo et al., 2023; Wang et al., 2021).
+3.8. Modelo Híbrido de Optimización o Integración
+El modelo resultante es híbrido porque integra una capa de percepción estructurada, una capa
+probabilística de generación de escenarios y una capa de decisión basada en aprendizaje por
+refuerzosensibleaequidadyriesgo.Lapercepciónestructuradaresumeelestadolocalyvecinal;el
+26
+
+--- PAGINA 39 ---
+Capítulo 3. Marco Teórico
+módulo probabilístico produce escenarios dependientes y adversos; el agente actor–critic aprende
+una política que optimiza eficiencia sin ignorar pérdidas extremas ni desigualdad distributiva.
+En su versión distribuida, cada intersección actúa como agente local con acceso a un estado
+ampliado por variables de vecindad y señales latentes. La coordinación puede lograrse mediante
+intercambiorestringidoderesúmenesdeestadoomediantemecanismosdecooperacióninspirados
+en aproximaciones de campo medio, siguiendo la lógica de escalabilidad presentada por Wang et
+al. (Wang et al., 2021). Esta integración permite trasladar el aprendizaje desde la optimización
+aislada de un cruce hacia la gestión coherente de corredores y subredes urbanas.
+3.9. Algoritmo de Entrenamiento Unificado
+El entrenamiento unificado se organiza en seis etapas. Primero, se estiman marginales y depen-
+dencias del entorno de tráfico a partir de datos históricos y contextuales. Segundo, se generan
+escenarios ordinarios y adversos mediante el modelo probabilístico. Tercero, se construye el estado
+estructurado incorporando colas, esperas, presión, duración de fase y variables latentes. Cuarto,
+se entrena la política con PPO o SAC utilizando la recompensa ajustada por equidad y riesgo.
+Quinto, se valida el controlador bajo perfiles de ruido, parcial observación y eventos exógenos.
+Sexto, se examina la interpretabilidad de la política a través del peso efectivo de sus variables
+de estado, en coherencia con la línea de explicabilidad reportada por Schreiber et al. (Schreiber
+et al., 2022).
+Este flujo unificado no pretende reemplazar las contribuciones previas del estado del arte, sino
+articularlas en una sola formulación teórica: explicabilidad para auditoría, equidad para legi-
+timidad operativa, robustez para despliegue real y escalabilidad para redes urbanas complejas
+(Schreiber et al., 2022; Chen et al., 2021; Guo et al., 2023; Fang et al., 2022; Wang et al., 2021).
+3.10. Conclusión del Marco Teórico
+El marco teórico desarrollado establece que el control semafórico inteligente debe entenderse
+como un problema de optimización secuencial multiobjetivo bajo incertidumbre estructurada.
+Las fuentes científicas del SLR muestran que la mejora en métricas agregadas de tráfico, aunque
+necesaria, es insuficiente cuando no va acompañada de explicabilidad, equidad, robustez y via-
+bilidad computacional (Schreiber et al., 2022; Chen et al., 2021; Guo et al., 2023; Fang et al.,
+2022; Wang et al., 2021). A partir de esa evidencia, el capítulo propone una formulación MDP
+ampliada con representación estructurada del estado, modelado probabilístico de dependencias,
+control sensible al riesgo y una recompensa que internaliza desigualdad distributiva.
+En consecuencia, el capítulo no solo fundamenta la metodología del trabajo, sino que delimita el
+tipo de sistema que se aspira a construir: un controlador semafórico científicamente sustentado,
+auditable, robusto ante perturbaciones y alineado con criterios de justicia operacional. Sobre
+27
+
+--- PAGINA 40 ---
+Capítulo 3. Marco Teórico
+esta base se desarrollará en el capítulo siguiente la estrategia metodológica de implementación,
+entrenamiento y validación experimental.
+28
+
+--- PAGINA 41 ---
+Capítulo 4
+Metodología
+4.1. Diseño General del Sistema
+La presente investigación adopta un diseño metodológico cuantitativo, experimental y compu-
+tacional orientado a evaluar un controlador semafórico inteligente bajo condiciones de operación
+no ideales. En coherencia con los objetivos planteados en el capítulo introductorio y con la for-
+mulación teórica desarrollada en el capítulo precedente, el problema se modela como un Proceso
+de Decisión de Markov parcialmente observable, donde el agente no accede al estado completo
+de la red, sino a una representación agregada y operativamente viable de la intersección bajo
+control. Esta decisión metodológica responde a dos restricciones centrales: por un lado, la dispo-
+nibilidad incompleta y ruidosa de información en entornos urbanos reales; por otro, la necesidad
+de construir un sistema desplegable sobre infraestructura computacional moderada, sin depender
+de sensores perfectos ni de arquitecturas de percepción de alta dimensionalidad (Schreiber et al.,
+2022; Guo et al., 2023; Fang et al., 2022).
+La arquitectura delframeworkse concibe como un sistema híbrido de tres capas estrechamen-
+te acopladas. La primera capa corresponde al entorno de simulación microscópica, responsable
+de reproducir la evolución temporal del tráfico, las interacciones entre vehículos y las restric-
+ciones físicas de la red. Esta capa no opera como un entorno determinista cerrado, sino como
+un medio experimental donde se inyecta variabilidad estocástica mediante archivos de demanda
+heterogéneos, perfiles de conducción adversa y perturbaciones exógenas. La segunda capa está
+constituida por un módulo probabilístico basado enVine Copulas, cuyo propósito es representar
+dependencias no lineales entre variables operativas y generar escenarios de estrés coherentes con
+una estructura conjunta más realista que la obtenida a partir de ruido independiente o supuestos
+gaussianos. La tercera capa corresponde a la política de decisión basada en Aprendizaje por
+Refuerzo Profundo, implementada mediante un esquema actor–critic y optimizada con una fun-
+ción de recompensa multiobjetivo que internaliza simultáneamente eficiencia, riesgo sistémico y
+equidad distributiva (Chen et al., 2021; Guo et al., 2023; Wang et al., 2021).
+En términos funcionales, el flujo metodológico puede describirse así. Primero, el simulador produ-
+29
+
+--- PAGINA 42 ---
+Capítulo 4. Metodología
+ce la dinámica base del tráfico sobre una red realista. Segundo, el módulo probabilístico perturba
+esa dinámica generando perfiles de estrés con dependencias explícitas entre demanda, tiempos
+de reacción, pérdidas sensoriales e incidentes. Tercero, a partir de la telemetría disponible se
+construye un estado compactos t que resume colas, esperas, presión y fase activa. Cuarto, el
+agente PPO procesa dicha representación y selecciona una acción discreta admisible. Quinto,
+la acción se aplica sobre el controlador semafórico mediante la interfaz TraCI, modificando la
+evolución subsecuente del sistema. Sexto, la recompensa resultante penaliza demora agregada,
+desigualdad y pérdidas extremas, retroalimentando el aprendizaje de la política. Este ciclo se
+repite sobre un conjunto amplio de escenarios hasta obtener un controlador estable frente a
+condiciones nominales y adversas.
+El diseño general se aleja deliberadamente de los enfoques que entienden el problema como mera
+minimización de demora promedio. La metodología asume que una política útil para contex-
+tos urbanos reales debe satisfacer cuatro propiedades simultáneas:(i)eficiencia operativa,(ii)
+robustez frente a eventos severos,(iii)equidad en la distribución del servicio y(iv)viabilidad
+computacional para despliegue progresivo. En consecuencia, el rendimiento del sistema no se
+juzga solo por promedios globales de viaje, sino también por su capacidad para evitar colas
+extremas, contenerspillback, reducir sesgos distributivos y mantener tiempos de inferencia com-
+patibles con esquemas de control en tiempo casi real (Chen et al., 2021; Fang et al., 2022; Guo
+et al., 2023).
+4.2. Pipeline de Datos
+4.2.1. Fuentes de Datos y Entorno Experimental
+Con el fin de maximizar la validez externa del estudio, los experimentos no se desarrollan sobre
+cuadrículas sintéticas elementales ni sobre intersecciones abstractas de cuatro accesos perfec-
+tamente balanceados. En su lugar, se emplea la red arterial de Hangzhou, China, ampliamente
+utilizada en investigación de control semafórico por su complejidad topológica y por la disponibi-
+lidad de escenarios de demanda consistentes para comparación experimental. La red seleccionada
+corresponde a una configuración de4×4intersecciones, con conectividad suficiente para reprodu-
+cir interdependencias espaciales entre nodos, propagación de colas y efectos de descoordinación
+local.
+Dentrodeestatopología,elentrenamientoylaevaluaciónsecentranenelnodointersection_2_2,
+ubicado en la zona central del grafo vial. Esta selección responde a criterios metodológicos
+específicos. Al situarse en una posición interior de la red, la intersección queda expuesta tanto
+a perturbaciones aguas arriba como a restricciones de descarga aguas abajo, lo que permite
+observar con mayor claridad fenómenos de bloqueo de caja, transferencia de congestión y pérdida
+de estabilidad local. Además, el nodo presenta 12 carriles de entrada controlados y ocho fases
+semafóricas admisibles, constituyendo un nivel de complejidad suficiente para evaluar la política
+30
+
+--- PAGINA 43 ---
+Capítulo 4. Metodología
+bajo alta dimensionalidad operativa, pero sin introducir una escala que dificulte la trazabilidad
+del aprendizaje o la interpretación de resultados.
+Para evitar el sobreajuste a un único patrón de llegadas, elpipelineutiliza un conjunto de 100
+archivos de enrutamiento estocástico en formato XML, cada uno con configuraciones distintas
+de demanda, proporciones de giro y distribución temporal de flujos. En cada episodio de en-
+trenamiento, el métodoreset()del entorno selecciona aleatoriamente uno de estos escenarios,
+exponiendo al agente a combinaciones diversas de densidad vehicular, asimetría direccional y
+presión sobre movimientos competidores. Esta estrategia incrementa la variabilidad de la expe-
+riencia de aprendizaje y reduce la probabilidad de que la política memorice un patrón específico
+de tráfico en lugar de aprender regularidades transferibles.
+Elusodemúltiplesescenariosrespondetambiénaunaconsideraciónestadística.Cuandoelagente
+se entrena siempre sobre una única serie de llegadas, la política puede adaptarse con precisión al
+régimen dominante de ese escenario, pero mostrar fragilidad al enfrentar ligeras desviaciones de
+intensidad, composición modal o correlación entre accesos. La rotación aleatoria entre archivos
+de demanda introduce una forma dedomain randomizationoperativa, apropiada para control
+semafórico, y crea una base empírica más adecuada para evaluar robustez y generalización en
+condiciones no estacionarias (Wang et al., 2021; Guo et al., 2023).
+4.2.2. Preprocesamiento y Validación PRISMA (Representación del Estado)
+El tratamiento de la información sigue un proceso de normalización y estructuración orientado
+a satisfacer simultáneamente consistencia matemática, estabilidad numérica e interpretabilidad
+operacional. A partir de la telemetría cruda proporcionada por SUMO y TraCI, se implementa
+una función de extracción que proyecta el estado dinámico del sistema hacia un espacio vectorial
+continuo fijos t ∈R 34. La dimensión de observación se mantiene constante a lo largo de todo el
+entrenamiento y de la evaluación, independientemente de las fluctuaciones particulares del epi-
+sodio, lo que garantiza compatibilidad con la arquitectura neuronal del agente y evita problemas
+derivados de entradas de tamaño variable.
+La construcción del vector de estado se apoya en variables recurrentemente validadas por la
+revisión sistemática de literatura y por los trabajos más robustos del campo. En particular, la
+representación integra cuatro grupos de magnitudes. El primer grupo corresponde adensidad
+y colas, capturadas mediante la longitud de cola acumulada en los 12 carriles de aproximación.
+Estasvariablesproporcionanunamedidadirectadelniveldesaturaciónlocalypermitenanticipar
+riesgo de desborde. El segundo grupo representatiempos de espera, definidos como tiempos
+de detención agregados por acceso y actualizados en tiempo real; estas magnitudes aproximan
+el costo temporal soportado por los usuarios y constituyen la base de la dimensión de equidad.
+El tercer grupo incorporapresión de tráfico, calculada como diferencia funcional entre la
+ocupación o demanda en entradas y la capacidad de descarga asociada a salidas, siguiendo la
+evidencia que muestra la utilidad de esta señal para capturar desequilibrios operativos entre
+movimientos (Fang et al., 2022). El cuarto grupo codifica elestado semafórico, mediante una
+31
+
+--- PAGINA 44 ---
+Capítulo 4. Metodología
+representaciónone-hotde la fase activa y la edad de la faseτi,t, lo que aporta contexto temporal
+imprescindible para decisiones de cambio seguras y evita oscilaciones excesivas de la política.
+Formalmente, la observación puede expresarse como:
+st =
+
+qt,w t,p t,ϕ t, τt
+
+,
+dondeq t representa el vector de colas,wt el vector de esperas agregadas,pt la señal de presión,
+ϕt la codificación discreta de la fase activa yτ t la duración acumulada de la fase en segun-
+dos. Antes de alimentar esta observación al agente, las variables continuas se escalan mediante
+transformaciones lineales acotadas o normalización basada en máximos operativos del entorno.
+Este paso reduce disparidades entre magnitudes, mejora el condicionamiento del problema de
+optimización y limita la sensibilidad del modelo a valores extremos espurios.
+Aunque el subtítulo menciona PRISMA, en este capítulo el término se utiliza como referente
+metodológico de validación conceptual de las variables seleccionadas, no como procedimiento de
+tamizaje documental propiamente dicho. Es decir, la representación del estado no surge de una
+elección ad hoc, sino de una triangulación entre evidencia del SLR, viabilidad computacional y
+relevancia operacional. En ese sentido, la selección de 34 características persigue una represen-
+tación compacta del MDP parcialmente observable, capaz de capturar los elementos suficientes
+para el control sin incurrir en la maldición de la dimensionalidad ni requerir sistemas sensoriales
+poco transferibles (Schreiber et al., 2022; Guo et al., 2023; Fang et al., 2022).
+4.3. Implementación del Modelo Híbrido
+4.3.1. Entrenamiento del Módulo de Copulas
+El primer componente de la implementación corresponde a la formalización probabilística de la
+incertidumbre operacional. En lugar de modelar perturbaciones como ruido blanco independien-
+te o como simples variaciones marginales en la demanda, la metodología utilizaregular vines
+para factorizar la distribución conjunta del sistema en una colección de cópulas bivariadas con-
+dicionales. Esta elección permite capturar dependencias asimétricas, no lineales y de cola pesada
+entre variables como intensidad de arribos, tiempos entre llegadas, fricción conductual, fallos
+sensoriales y eventos contextuales.
+El proceso de entrenamiento del módulo probabilístico se desarrolla en cuatro etapas. Primero, se
+identifican las variables operativas relevantes para la construcción de escenarios adversos. Segun-
+do, se ajustan distribuciones marginales apropiadas para cada variable, preservando sus dominios
+y patrones empíricos. Tercero, se estima la estructura de lavine, seleccionando secuencialmente
+las dependencias más informativas y las familias de cópulas más adecuadas según criterios de
+ajuste. Cuarto, una vez calibrado el modelo, se procede a muestrear realizaciones sintéticas que
+luego son inyectadas al simulador para construir episodios de entrenamiento y validación bajo
+32
+
+--- PAGINA 45 ---
+Capítulo 4. Metodología
+estrés.
+La ventaja central de este módulo no radica únicamente en generar variabilidad adicional, sino
+en hacerlo de forma interpretable. A diferencia de enfoques generativos opacos, la estructuravine
+hace explícitas las relaciones de dependencia entre pares de variables y permite auditar qué com-
+binaciones explican mejor la aparición de escenarios severos. Desde la perspectiva metodológica
+de la tesis, esta trazabilidad es fundamental porque la robustez del agente no depende solo de
+cuántos escenarios observa, sino también de la plausibilidad estadística de esos escenarios y de
+la capacidad del investigador para justificar su construcción.
+En la práctica, el módulo de copulas alimenta dos tipos de condiciones experimentales. Por un
+lado, genera perfiles de estrés moderado que amplían el soporte de entrenamiento respecto de
+la demanda histórica base. Por otro, produce episodios de cola extrema con mayor probabilidad
+de bloqueo de intersección, propagación de congestión o pérdida sensorial combinada. De este
+modo, la política no aprende exclusivamente sobre trayectorias medias, sino sobre distribuciones
+con colas relevantes para la gestión de riesgo sistémico.
+4.3.2. Configuración del Agente RL Ligero
+El núcleo algorítmico del sistema se implementa medianteProximal Policy Optimization(PPO),
+seleccionadoporsuestabilidadempírica,sudesempeñoconsistenteenespaciosdeaccióndiscretos
+y su facilidad para integrarse a entornos vectorizados. Dado que el espacio de observación es un
+vector unidimensional de baja a mediana dimensión, la arquitectura elegida para política y
+función de valor es un Perceptrón Multicapa, concretamente la políticaMlpPolicydisponible en
+stable-baselines3. Esta decisión evita complejidad innecesaria y se alinea con el objetivo de
+desarrollar una solución metodológicamente sólida y computacionalmente austera.
+En términos de infraestructura, se fuerza explícitamente la inferencia sobre CPU. Esta elección
+no obedece a una limitación accidental, sino a una consideración de ingeniería. Para tensores
+pequeños y decisiones rápidas, la sobrecarga asociada a transferencias entre memoria principal
+y GPU puede degradar la eficiencia total del sistema, especialmente en entornos donde el des-
+pliegue final no contará con aceleradores especializados. En contraste, la CPU ofrece latencias
+estables y mayor afinidad con esquemas deedge computing, condición relevante para controla-
+dores semafóricos reales desplegados en gabinetes o centros de control con recursos restringidos
+(Guo et al., 2023).
+El espacio de acción se define como un conjunto discreto:
+A={0,1,2,3},
+donde cada acción representa una configuración verde predominante compatible con el plan de
+fases de la intersección. Las transiciones entre acciones no se aplican de forma instantánea e
+irrestricta; se incorporan tiempos de ámbar y despeje para garantizar seguridad y realismo ope-
+33
+
+--- PAGINA 46 ---
+Capítulo 4. Metodología
+racional. Así, el agente decide sobre configuraciones admisibles, mientras que el entorno impone
+las restricciones físicas y normativas mínimas requeridas para evitar cambios inviables.
+El comportamiento del agente se modela mediante una función de recompensa que evita el
+utilitarismo clásico centrado exclusivamente en demora agregada. La recompensa instantánea se
+define como:
+Rt =−
+ 
+λ1
+nX
+i=1
+wi,t
+!
+−λ 2 Ginit −λ 3 CV aR α(Lt),
+dondew i,t es el tiempo de espera asociado al carril o accesoien el instantet,Gini t mide
+desigualdad distributiva del servicio yCV aRα(Lt)penaliza pérdidas extremas asociadas al nivel
+de congestión o longitud de cola agregada. Los coeficientesλj >0regulan el peso relativo de
+cada término y se ajustan experimentalmente para evitar que una dimensión anule a las demás.
+El componente de equidad se estima mediante el índice de Gini:
+Ginit =
+Pn
+i=1
+Pn
+j=1 |wi,t −w j,t|
+2n2 ¯wt
+,
+donde¯wt es la espera media sobre el conjunto de accesos considerados. Esta formulación penaliza
+distribuciones altamente desiguales del servicio incluso cuando la demora promedio global parece
+aceptable. En consecuencia, el agente aprende no solo a reducir costo agregado, sino también
+a contener la concentración sistemática del perjuicio sobre movimientos secundarios o accesos
+periféricos, en línea con la evidencia de enfoques de control sensibles a justicia distributiva (Chen
+et al., 2021).
+El término de riesgo se incorpora medianteCV aR α, utilizado como medida de cola para pe-
+nalizar episodios donde la pérdida excede un umbral operacional severo. En lugar de optimizar
+únicamente el valor esperado de la congestión, la política internaliza la severidad de los peores
+casos plausibles. Esta decisión es especialmente relevante en contextos urbanos donde el colapso
+local puede propagarse espacialmente y generar efectos en cascada sobre nodos vecinos. Bajo este
+diseño, una política con gran rendimiento promedio pero con alta fragilidad frente a episodios
+extremos resulta metodológicamente inferior a una política algo menos eficiente en promedio
+pero notablemente más estable ante estrés.
+4.3.3. Integración del Módulo de Transferencia Interregional
+Un desafío central del control semafórico basado en aprendizaje es la transferencia de políticas
+más allá del entorno de entrenamiento inmediato. Para atender esta limitación, elframeworkin-
+corpora un módulo de transferencia interregional orientado a evaluar la capacidad de adaptación
+zero-shoto con ajuste mínimo sobre configuraciones topológicas y distribuciones de demanda
+distintas de las observadas durante el aprendizaje base. El objetivo de esta capa no es solo
+medir precisión predictiva fuera de muestra, sino valorar hasta qué punto la política conserva
+regularidades de decisión útiles cuando cambia el contexto operativo.
+34
+
+--- PAGINA 47 ---
+Capítulo 4. Metodología
+Metodológicamente, esta integración se implementa exponiendo la política entrenada a entornos
+con variaciones controladas en geometría de accesos, intensidad de arribos, asimetrías direccio-
+nales y nivel de perturbación. La evaluación registra degradación relativa de métricas técnicas,
+de equidad y de riesgo respecto del dominio original. Este procedimiento permite distinguir entre
+tres tipos de comportamiento: políticas que generalizan razonablemente, políticas que requieren
+recalibración ligera y políticas fuertemente dependientes del entorno fuente.
+La transferencia interregional cumple además una función estratégica dentro de la tesis. Si el
+sistema pretende ser viable para ciudades con infraestructura heterogénea, no basta con reportar
+buen rendimiento en un único nodo cuidadosamente calibrado. Es necesario demostrar que la
+representación del estado, la función de recompensa y el esquema de entrenamiento inducen un
+comportamiento con cierto grado de invariancia estructural. En este sentido, la evaluación de
+transferencia no se concibe como un experimento accesorio, sino como parte del criterio de validez
+externa delframework(Wang et al., 2021; Guo et al., 2023).
+4.4. Diseño Experimental
+4.4.1. Escenarios de Validación
+El diseño experimental se organiza a partir de escenarios que combinan demanda heterogénea,
+perturbaciones operativas y perfiles de conducción no ideales. En lugar de evaluar el agente úni-
+camente en condiciones promedio, se construyen dos familias principales de validación orientadas
+a tensionar distintos componentes del sistema.
+ElPerfil 1: Conducción Anómalaintroduce aceleraciones atípicas, tiempos de reacción hete-
+rogéneos, aceptación irregular de brechas e incumplimiento parcial de fase. Este escenario busca
+representar fricción conductual recurrente en contextos donde la obediencia semafórica y la dis-
+ciplina vehicular no pueden asumirse como perfectas. Su incorporación es crucial para analizar
+si la política aprendida depende excesivamente de un régimen de tráfico ordenado o si, por el
+contrario, conserva estabilidad cuando la interacción entre vehículos se vuelve más errática.
+ElPerfil 2: Eventos Exógenosmodela aumentos súbitos de demanda, paso prioritario de
+vehículos de emergencia, pérdidas parciales de sensado e incidencias localizadas que reducen
+capacidad de descarga. Este perfil reproduce perturbaciones de baja frecuencia pero alto impacto,
+especialmente relevantes para evaluar riesgo de cola y propagación despillback. La comparación
+entre desempeño nominal y desempeño bajo eventos exógenos permite medir resiliencia operativa
+y sensibilidad del sistema a cambios abruptos del entorno (Guo et al., 2023; Wang et al., 2021).
+En ambos perfiles, los escenarios se instancian sobre múltiples semillas aleatorias y sobre distintos
+archivos de enrutamiento para evitar conclusiones dependientes de una única trayectoria de
+simulación. Este procedimiento produce una base experimental más robusta y facilita el análisis
+posterior de variabilidad, intervalos de confianza y significancia estadística.
+35
+
+--- PAGINA 48 ---
+Capítulo 4. Metodología
+4.4.2. Protocolo de Entrenamiento y Paralelización
+El entrenamiento principal se ejecuta durante 500,000timesteps, cantidad suficiente para obser-
+var convergencia funcional de la política sin incurrir en costos experimentales desproporcionados.
+Con el fin de acelerar la recolección de experiencia, se emplea vectorización asíncrona mediante
+SubprocVecEnv, permitiendo que múltiples instancias del entorno generen trayectorias en parale-
+lo. Esta decisión reduce el tiempo total de entrenamiento y mejora la diversidad de experiencias
+procesadas por el agente en cada ventana de actualización.
+La ejecución paralela de SUMO introduce, sin embargo, un problema técnico conocido: las coli-
+siones de puertos TCP y los conflictos entre conexiones TraCI concurrentes. Para resolverlo, la
+metodología implementa un protocolo de aislamiento por instancia. La inicialización del simu-
+lador delega la asignación de puertos a un mecanismo dinámico de búsqueda libre, equivalente
+agetFreeSocketPort(), mientras que cada cliente TraCI recibe un identificador único basa-
+do en UUID. Con ello se evita que dos procesos intenten abrir o reutilizar el mismo canal de
+comunicación, minimizandorace conditionsy errores intermitentes difíciles de reproducir.
+El ciclo de entrenamiento sigue la lógica estándar de PPO: recolección de trayectorias, estimación
+de ventajas, actualización por minibatches y recorte proximal de la política para estabilizar el
+cambio de parámetros entre iteraciones. Durante este proceso se registran, además del retorno
+acumulado, métricas auxiliares de demora, cola, desigualdad y riesgo. La monitorización continua
+de estas señales es importante porque una mejora del retorno agregado no garantiza, por sí sola,
+que la política esté aprendiendo comportamientos deseables respecto de los objetivos sustantivos
+de la tesis.
+Como criterio operativo, el entrenamiento se detiene al completar el presupuesto prefijado de
+interacciones y se reserva un conjunto separado de episodios para validación. La comparación
+entre desempeño durante entrenamiento y desempeño en validación permite detectar sobreajuste
+al conjunto de escenarios observados y verificar si las mejoras del agente se sostienen cuando
+enfrenta trayectorias no utilizadas para actualización de parámetros.
+4.5. Métricas de Evaluación
+4.5.1. Rendimiento Técnico
+La eficiencia global del sistema se cuantifica mediante un conjunto de métricas técnicas clásicas en
+controldetráfico.Enprimerlugar,semideeltiempomediodeviaje,queresumelaexperiencia
+integral del vehículo sobre la red o sobre el subcorredor analizado. En segundo lugar, se calcula la
+demora promedio por vehículo, útil para evaluar cuánto se desvía el sistema respecto de una
+circulaciónlibredecongestión. Entercerlugar, seregistralalongitud máximade cola,métrica
+especialmente sensible a estados de saturación y potencial bloqueo de intersecciones. Finalmente,
+se considera elthroughputtotal, entendido como el número de vehículos efectivamente servidos
+36
+
+--- PAGINA 49 ---
+Capítulo 4. Metodología
+o evacuados por el sistema durante la ventana de simulación.
+Estas métricas permiten comparar el desempeño del agente con líneas base ampliamente utiliza-
+das y facilitan la lectura ingenieril del resultado. No obstante, por sí mismas resultan insuficientes
+para responder a la pregunta central de la tesis. Una política puede mejorar throughput o demo-
+ra media y, aun así, amplificar desigualdad entre accesos o aumentar la probabilidad de colapso
+bajo eventos severos. Por ello, el análisis técnico se complementa necesariamente con medidas de
+equidad y robustez.
+4.5.2. Equidad Algorítmica y Robustez
+La evaluación ampliada del sistema incorpora dos dimensiones prioritarias: equidad distributiva
+y resiliencia frente a pérdidas extremas. Laequidad distributivase monitoriza mediante el
+índice de Gini calculado iterativamente sobre tiempos de espera o demoras por acceso. Valores
+bajos del índice indican una distribución más balanceada del costo temporal; valores altos evi-
+dencian concentración del perjuicio en subconjuntos específicos de movimientos. Esta métrica es
+consistente con el diseño de la recompensa y permite verificar si la política aprendida efectiva-
+mente reduce sesgos distributivos o si tales mejoras son solo aparentes a nivel agregado (Chen
+et al., 2021).
+Larobustez y el riesgo de colase evalúan mediante la desviación estándar de las demoras, la
+frecuencia de episodios con colas por encima de umbrales críticos y el cálculo deCV aRα sobre
+una variable de pérdida operacionalLt. Esta pérdida puede definirse en función de cola total,
+demora acumulada o combinación ponderada de ambas, dependiendo del experimento específico.
+El uso deCV aR α permite cuantificar no solo la magnitud promedio de la congestión, sino la
+severidad esperada condicionada a estar en la cola peor del comportamiento observado. Desde el
+punto de vista de la gestión urbana, esta es una medida más informativa que el promedio cuando
+interesa evitar estados de saturación extrema o propagación despillback.
+En conjunto, estas métricas conforman un marco de evaluación coherente con la lógica multiob-
+jetivo del estudio. El controlador se considera superior no cuando maximiza una sola variable,
+sino cuando logra un compromiso favorable entre eficiencia, estabilidad y justicia operacional.
+4.6. Herramientas y Configuración de Software
+Elframeworkse desarrolla íntegramente sobre un ecosistema de código abierto orientado a repro-
+ducibilidad experimental. La orquestación principal se implementa en Python 3.x, utilizado como
+lenguaje de integración entre simulación, modelado probabilístico, entrenamiento por refuerzo y
+análisis de resultados. La dinámica vehicular y el control microscópico de la red se ejecutan me-
+diante SUMO (Simulation of Urban MObility), mientras que la interacción programática con el
+simulador se realiza a través de la interfaz TraCI.
+37
+
+--- PAGINA 50 ---
+Capítulo 4. Metodología
+ElcomponentedeaprendizajeprofundoseimplementaconPyTorchylalibreríastable-baselines3,
+elegida por su estabilidad, mantenimiento activo y compatibilidad con PPO, entornos vectoriza-
+dos ycallbackspersonalizados. Para la monitorización de entrenamiento se utiliza TensorBoard,
+integrando registros específicos de retorno, demora, cola, índice de Gini y métricas de riesgo.
+Esta monitorización en tiempo real permite detectar inestabilidades tempranas, divergencias del
+aprendizaje o compromisos no deseados entre objetivos.
+Desde el punto de vista de configuración, el sistema prioriza reproducibilidad mediante fijación
+de semillas pseudoaleatorias, parametrización explícita del entorno y separación entre scripts
+de entrenamiento, validación y análisis. Asimismo, la decisión de ejecutar inferencia sobre CPU
+y de utilizar estados agregados de baja dimensionalidad reduce los requisitos de hardware y
+mejora la compatibilidad con despliegues en infraestructura urbana progresiva, donde el acceso
+a aceleradores de cómputo especializados suele ser limitado.
+4.7. Diagrama de Flujo del Sistema
+El proceso metodológico iterativo puede representarse como una secuencia de ocho bloques fun-
+cionales. Primero, la red de tráfico se instancia en SUMO junto con el archivo de demanda
+seleccionado para el episodio. Segundo, el módulo de generación de escenarios modifica o condi-
+ciona variables relevantes mediante la capa probabilística deVine Copulas. Tercero, la simulación
+evoluciona durante el intervalo de decisión y produce telemetría cruda del sistema. Cuarto, dicha
+telemetría se transforma en el estado estructuradost. Quinto, el agente PPO procesa ese vector
+y estima la distribución de probabilidad sobre las acciones disponibles. Sexto, se selecciona una
+acción discreta admisible y se aplica al controlador semafórico mediante TraCI. Séptimo, el en-
+torno calcula la recompensa instantánea penalizando ineficiencia, desigualdad y riesgo extremo.
+Octavo, la transición obtenida se almacena para la actualización de la política y el ciclo vuelve
+a comenzar.
+Conceptualmente, el diagrama de flujo muestra que el sistema no está compuesto por módulos
+independientes que operan en serie sin retroalimentación, sino por un circuito cerrado donde
+simulación, modelado probabilístico y aprendizaje se condicionan mutuamente. La salida del
+módulo de copulas afecta el entorno; el entorno afecta la observación; la observación afecta
+la política; y la política modifica de nuevo el entorno a través del control semafórico. Esta
+representación es importante porque ilustra que la robustez buscada emerge de la interacción
+entre capas, no de un componente aislado.
+4.8. Protocolo de Validación Estadística
+La validación empírica se realiza mediante comparación sistemática contra tres líneas base me-
+todológicas:(i)un controlador estático pretemporizado,(ii)un esquema actuado tradicional y
+38
+
+--- PAGINA 51 ---
+Capítulo 4. Metodología
+(iii)un agente RL entrenado únicamente para maximizar retorno esperado sin penalización ex-
+plícita por inequidad ni riesgo extremo. Esta selección permite evaluar de forma gradual el valor
+añadido de cada componente delframework: adaptación, sensibilidad distributiva y control de
+cola.
+Cada configuración experimental se ejecuta sobre múltiples episodios y semillas, registrando la
+distribución de resultados para todas las métricas principales. Sobre esta base se construyen in-
+tervalos de confianza y se aplican pruebas de significancia apropiadas para comparar medias o
+medianas según la forma empírica de los datos. Cuando los supuestos de normalidad y homoce-
+dasticidad resultan razonables, se emplean contrastes paramétricos; en caso contrario, se recurre
+a alternativas no paramétricas. Adicionalmente, se reportan tamaños de efecto para evitar inter-
+pretaciones basadas únicamente en significancia estadística.
+El protocolo incorpora una segunda dimensión de validación: análisis de estabilidad entre escena-
+rios. No basta con que el controlador supere a las líneas base en promedio; también debe mostrar
+variabilidad controlada entre perfiles de estrés y degradación razonable al cambiar de dominio.
+Por ello, los resultados se presentan tanto en forma agregada como desagregada por escenario,
+permitiendo identificar si la mejora se sostiene de manera consistente o si depende de condiciones
+experimentales demasiado específicas.
+4.9. Consideraciones Éticas
+La metodología integra consideraciones éticas desde el diseño del objetivo de optimización y
+no como una evaluación externa posterior. Esta decisión parte del reconocimiento de que un
+controlador puramenteutilitaristapuede reducir lademora totaldel sistema acosta deconcentrar
+el costo de congestión en accesos periféricos, movimientos minoritarios o usuarios con menor
+capacidad de adaptación. En entornos urbanos reales, tal concentración no constituye un efecto
+colateraltrivial,sinounaformadeinequidadoperacionalconconsecuenciassocialesyterritoriales
+relevantes.
+La incorporación explícita del índice de Gini en la función de recompensa busca mitigar ese
+riesgo. En lugar de asumir que toda mejora agregada es socialmente deseable, elframework
+penaliza distribuciones excesivamente desiguales de espera, obligando al agente a internalizar
+la legitimidad distributiva de sus decisiones. De este modo, la inteligencia artificial se orienta
+a gestionar el sistema de forma más balanceada, no a imponer una lógica punitiva sobre los
+usuarios ni a reforzar sesgos preexistentes del entorno.
+También existe una dimensión ética asociada a la robustez. Un sistema frágil frente a eventos
+extremos puede afectar con mayor intensidad a sectores ya vulnerables de la red, por ejemplo
+corredores con alta dependencia de transporte público o zonas con pocas rutas alternativas. Por
+ello, la penalización por riesgo de cola no solo cumple una función técnica de estabilización, sino
+también una función normativa mínima: reducir la probabilidad de colapsos severos cuyo impacto
+39
+
+--- PAGINA 52 ---
+Capítulo 4. Metodología
+tiende a distribuirse de forma desigual.
+Finalmente, el carácter simulado del estudio evita el uso de datos personales sensibles y elimina
+riesgos directos sobre usuarios reales durante la etapa experimental. No obstante, la tesis reconoce
+que cualquier despliegue futuro requerirá auditoría contextual, calibración local y evaluación
+institucional adicional antes de una implementación operativa.
+4.10. Conclusión Metodológica
+La metodología desarrollada en este capítulo articula de forma coherente tres componentes cen-
+trales: modelado probabilístico de dependencias medianteVine Copulas, aprendizaje por refuerzo
+profundo con PPO y optimización sensible a riesgo y equidad. Lejos de constituir módulos su-
+perpuestos de manera aditiva, estos componentes configuran una arquitectura unificada diseñada
+para enfrentar la brecha entre simulación idealizada y operación urbana realista.
+Desde el punto de vista experimental, el uso de una red compleja, múltiples archivos de demanda,
+escenarios adversos, entrenamiento paralelo y protocolos de validación estadística proporciona
+una base robusta para evaluar el sistema con rigor. Desde el punto de vista algorítmico, la
+representación compacta del estado, la selección de una política ligera y la ejecución sobre CPU
+favorecen transferibilidad y viabilidad computacional. Desde el punto de vista sustantivo, la
+inclusión conjunta de demora, Gini yCV aRen la recompensa alinea el aprendizaje con una
+noción de desempeño más adecuada para sistemas urbanos complejos.
+Enconsecuencia,elcapítuloestableceelsoportemetodológiconecesarioparadesarrollaryevaluar
+un controlador semafórico eficiente, escalable y distributivamente más justo. Sobre esta base, el
+capítulo siguiente presentará los resultados empíricos obtenidos, contrastando el desempeño del
+frameworkpropuesto frente a líneas base convencionales en condiciones nominales y de estrés.
+40
+
+--- PAGINA 53 ---
+Capítulo 5
+Resultados y Discusión
+5.1. Configuración Experimental
+Presenta las condiciones finales bajo las cuales se obtuvieron los resultados.
+5.2. Evaluación del Módulo de Generación de Escenarios
+Incluye tablas, figuras y análisis cuantitativo del primer componente.
+5.3. Evaluación del Módulo de Decisión o Control
+Muestra resultados asociados al segundo componente o proceso principal.
+5.4. Evaluación del Módulo de Equidad o Robustez
+Analiza el desempeño respecto a criterios éticos o de estabilidad.
+5.5. Comparativa con Modelos Tradicionales
+Contrasta los resultados con líneas base, métodos clásicos o trabajos previos.
+41
+
+--- PAGINA 54 ---
+Capítulo 5. Resultados y Discusión
+5.6. Análisis Estadístico y Robustez
+Reporta pruebas estadísticas y discute la consistencia de los hallazgos.
+5.7. Discusión de Resultados
+Interpreta el significado de los resultados y relaciónalos con los objetivos e hipótesis.
+5.8. Limitaciones
+Identifica las principales limitaciones metodológicas, empíricas o computacionales.
+5.9. Conclusión del Capítulo
+Resume los aportes empíricos más importantes del capítulo.
+42
+
+--- PAGINA 55 ---
+Capítulo 6
+Discusión
+6.1. Interpretación de los Resultados Clave
+Profundiza en el valor científico de los hallazgos más relevantes.
+6.2. Comparación con el Estado del Arte
+6.2.1. Ventajas sobre Métodos Existentes
+Explica en qué supera tu propuesta a trabajos anteriores.
+6.2.2. Limitaciones Persistentes
+Señala qué problemas siguen abiertos pese a los avances obtenidos.
+6.3. Implicaciones Teóricas y Prácticas
+6.3.1. Contribuciones al Campo
+Describe las contribuciones conceptuales o metodológicas.
+6.3.2. Impacto Aplicado o Socioeconómico
+Discute la transferencia potencial del trabajo a contextos reales.
+43
+
+--- PAGINA 56 ---
+Capítulo 6. Discusión
+6.4. Limitaciones y Sesgos
+6.4.1. Dependencia de Datos o Supuestos
+Explica restricciones derivadas del diseño experimental o del conjunto de datos.
+6.4.2. Sesgos en Perfiles, Muestras o Anotaciones
+Describe sesgos potenciales y su efecto en la validez de la tesis.
+6.5. Lecciones Aprendidas
+Sintetiza aprendizajes metodológicos y prácticos del proceso doctoral.
+6.6. Recomendaciones para Políticas Públicas o Implementación
+Formula recomendaciones concretas para adopción institucional, industrial o social.
+6.7. Futuras Líneas de Investigación
+Identifica extensiones prometedoras de la tesis.
+6.8. Conclusión Final
+Cierra el capítulo con una valoración integral del alcance del trabajo.
+44
+
+--- PAGINA 57 ---
+Capítulo 7
+Conclusiones y Trabajo Futuro
+7.1. Síntesis de Contribuciones Clave
+Enumera las principales aportaciones originales de la tesis.
+7.2. Cumplimiento de Objetivos e Hipótesis
+Contrasta resultados obtenidos con objetivos e hipótesis iniciales.
+7.3. Limitaciones y Desafíos
+Resume las barreras identificadas y su impacto en la generalización del trabajo.
+7.4. Recomendaciones para Implementación Práctica
+Propón pasos concretos para la adopción o transferencia del modelo, método o sistema.
+7.5. Trabajo Futuro
+Describe nuevas líneas de investigación, mejoras técnicas o validaciones pendientes.
+45
+
+--- PAGINA 58 ---
+Capítulo 7. Conclusiones y Trabajo Futuro
+7.6. Reflexión Final
+Incluye un cierre académico y personal sobre el valor global de la investigación.
+46
+
+--- PAGINA 59 ---
+Bibliografía
+Asad Ali, Jianjun Huang, Ayesha Jabbar, Mubashir Ali, and Sijjad Ali. Federated learning
+for connected autonomous vehicles: enhancing mobility, safety, and sustainability.PHYSICA
+SCRIPTA, 100(7), JUL 1 2025. ISSN 0031-8949. doi: 10.1088/1402-4896/addca2.
+Elarbi Badidi, Karima Moumane, and Firdaous El Ghazi. Opportunities, applications, and
+challenges of edge-ai enabled video analytics in smart cities: A systematic review.IEEE
+ACCESS, 11:80543–80572, 2023. ISSN 2169-3536. doi: 10.1109/ACCESS.2023.3300658.
+Doha Bakir, Khalid Moussaid, Zouhair Chiba, and Noreddine Abghour. A comprehensive review
+of traffic congestion prediction models: Machine learning and statistical approaches. In2024
+IEEE International Conference on Computing (ICOCO), pages 539–545, 2024. doi: 10.1109/
+ICOCO62848.2024.10928197.
+Igor Bisio, Chiara Garibotto, Halar Haleem, Fabio Lavagetto, and Andrea Sciarrone. A systema-
+tic review of drone based road traffic monitoring system.IEEE ACCESS, 10:101537–101555,
+2022. ISSN 2169-3536. doi: 10.1109/ACCESS.2022.3207282.
+J Chen, Z Zhang, J Feng, and K Zhu. Fit: Fairness-aware intelligent traffic signal con-
+trol with deep reinforcement learning. In2021 IEEE 23rd Int Conf on High Perfor-
+mance Computing & Communications; 7th Int Conf on Data Science & Systems; 19th Int
+Conf on Smart City; 7th Int Conf on Dependability in Sensor, Cloud & Big Data Sys-
+tems & Application (HPCC/DSS/SmartCity/DependSys), pages 846–852. IEEE, 2021. doi:
+10.1109/HPCC-DSS-SmartCity-DependSys53884.2021.00136.
+Haipeng Cui, Qiang Meng, Teck-Hou Teng, and Xiaobo Yang. Spatiotemporal correlation mode-
+lling for machine learning-based traffic state predictions: state-of-the-art and beyond.TRANS-
+PORT REVIEWS, 43(4):780–804, JUL 4 2023. ISSN 0144-1647. doi: 10.1080/01441647.2023.
+2171151.
+Qimei Cui, Xingxing Hu, Wei Ni, Xiaofeng Tao, Ping Zhang, Tao Chen, Kwang-Cheng Chen,
+and Martin Haenggi. Vehicular mobility patterns and their applications to internet-of-vehicles:
+a comprehensive survey.SCIENCE CHINA-INFORMATION SCIENCES, 65(11), NOV 2022.
+ISSN 1674-733X. doi: 10.1007/s11432-021-3487-x.
+Zekuan Fang, Fan Zhang, Ting Wang, Xiang Lian, and Mingsong Chen. Monitorlight: Reinfor-
+cement learning-based traffic signal control using mixed pressure monitoring. InInternational
+47
+
+--- PAGINA 60 ---
+Bibliografía
+Conference on Information and Knowledge Management, Proceedings, pages 478–487. Associa-
+tion for Computing Machinery, 10 2022. ISBN 9781450392365. doi: 10.1145/3511808.3557400.
+Carmen Gheorghe and Adrian Soica. Revolutionizing urban mobility: A systematic review of ai,
+iot, and predictive analytics in adaptive traffic control systems for road networks.ELECTRO-
+NICS, 14(4), FEB 2025. ISSN 2079-9292. doi: 10.3390/electronics14040719.
+Artur Grigorev, Adriana-Simona Mihaita, and Fang Chen. Traffic incident duration prediction:
+A systematic review of techniques.JOURNAL OF ADVANCED TRANSPORTATION, 2024
+(1), 2024. ISSN 0197-6729. doi: 10.1155/atr/3748345.
+Jiaying Guo, Saeedeh Ghanadbashi, Shen Wang, and Fatemeh Golpayegani. Urban traffic sig-
+nal control at the edge: An ontology-enhanced deep reinforcement learning approach. In
+IEEE Conference on Intelligent Transportation Systems, Proceedings, ITSC, pages 6027–6033.
+Institute of Electrical and Electronics Engineers Inc., 2023. ISBN 9798350399462. doi:
+10.1109/ITSC57777.2023.10422573.
+YuHan,MengWang,andLudovicLeclercq. Leveragingreinforcementlearningfordynamictraffic
+control: A survey and challenges for field implementation.Communications in Transportation
+Research, 3, 2023. doi: 10.1016/j.commtr.2023.100104.
+Yash Jain and Kavita Pandey. Transforming urban mobility: A systematic review of ai-based
+traffic optimization techniques.ARCHIVES OF COMPUTATIONAL METHODS IN ENGI-
+NEERING, 2025 JUN 13 2025. ISSN 1134-3060. doi: 10.1007/s11831-025-10297-6.
+Renhe Jiang, Du Yin, Zhaonan Wang, Yizhuo Wang, Jiewen Deng, Hangchen Liu, Zekun Cai,
+Jinliang Deng, Xuan Song, and Ryosuke Shibasaki. Dl-traff: Survey and benchmark of deep
+learning models for urban traffic prediction. pages 4515 – 4525, 2021. doi: 10.1145/3459637.
+3482000.
+Yuqi Liu, Qichao Zhang, and Dongbin Zhao. A brief survey of deep reinforcement learning
+for intersection navigation of autonomous vehicles. pages 1844 – 1851, 2024. doi: 10.1109/
+DDCLS61622.2024.10606719.
+Harshit Maheshwari, Li Yang, and Richard W. Pazzi. Machine learning advancements in urban
+traffic simulation: A comprehensive survey.IEEE Open Journal of Intelligent Transportation
+Systems, 6:1027–1052, 2025. doi: 10.1109/OJITS.2025.3589208.
+Wei Miao, Long Li, and Zhiwen Wang. A survey on deep reinforcement learning for traffic signal
+control. pages 1092 – 1097, 2021. doi: 10.1109/CCDC52312.2021.9601529.
+Mohammad Noaeen, Atharva Naik, Liana Goodman, Jared Crebo, Taimoor Abrar, Zahra Sha-
+keri Hossein Abad, A. L. C. Bazzan, and Behrouz Homayoun Far. Reinforcement learning
+in urban network traffic signal control: A systematic literature review.Expert Systems with
+Applications, 199, 2022. doi: 10.1016/j.eswa.2022.116830.
+Mohammad Noroozi, Hanieh Rastegar Moghaddam, Ankit Shah, Hadi Charkhgard, Sudeep Sar-
+kar, Tapas K. Das, and Timothy Pohland. An ai-assisted systematic literature review of the
+48
+
+--- PAGINA 61 ---
+Bibliografía
+impact of vehicle automation on energy consumption.IEEE TRANSACTIONS ON INTE-
+LLIGENT VEHICLES, 8(6):3572–3592, JUN 2023. ISSN 2379-8858. doi: 10.1109/TIV.2023.
+3268300.
+Ekene F. Ozioko, Julian Kunkel, and Fredric Stahl. Road intersection coordination scheme for
+mixed traffic (human driven and driver-less vehicles): A systematic review. InINTELLIGENT
+COMPUTING, VOL 3, volume 508 ofLecture Notes in Networks and Systems, pages 67–94,
+2022. ISBN 978-3-031-10467-1. doi: 10.1007/978-3-031-10467-1_4.
+R. Anto Pravin and Nancy Noella R S. Review on traffic prediction framework using machine
+and deep learning algorithms. In2025 International Conference on Intelligent Computing and
+Control Systems (ICICCS), pages 684–691, 2025. doi: 10.1109/ICICCS65191.2025.10984630.
+Noor Afiza Mat Razali, Nuraini Shamsaimon, Khairul Khalil Ishak, Suzaimah Ramli, Mohd
+Fahmi Mohamad Amran, and Sazali Sukardi. Gap, techniques and evaluation: traffic flow
+prediction using machine learning and deep learning.JOURNAL OF BIG DATA, 8(1), DEC
+4 2021. ISSN 2196-1115. doi: 10.1186/s40537-021-00542-7.
+Rui Rong, Shoufeng Ma, Nianlu Ren, Qinping Lin, and Ning Jia. Generative artificial inte-
+lligence in intelligent transportation systems: A systematic review of applications.FRON-
+TIERS OF ENGINEERING MANAGEMENT, 2025 APR 28 2025. ISSN 2095-7513. doi:
+10.1007/s42524-025-4241-9.
+Anant Saini and Jyoti Srivastava. A survey on real-time traffic signal optimization using deep
+learning and vehicle tracking. pages 1330 – 1337, 2025. doi: 10.1109/ICICV64824.2025.
+11085920.
+Lincoln V. Schreiber, Lucas N. Alegre, Ana L.C. Bazzan, and Gabriel De O. Ramos. On
+the explainability and expressiveness of function approximation methods in rl-based traffic
+signal control. InProceedings of the International Joint Conference on Neural Networks.
+Institute of Electrical and Electronics Engineers Inc., 2022. ISBN 9781728186719. doi:
+10.1109/IJCNN55064.2022.9892422.
+Qinbatu Si, Lirun Yang, Jingjing Bao, Yangfei Lin, Wugedele Bao, and Celimuge Wu. A survey
+on deep learning-based traffic signal control.Journal of Circuits, Systems and Computers, 34
+(2), 2025. doi: 10.1142/S0218126625300016.
+Deepika Sirohi, Neeraj Kumar, and Prashant Singh Rana. Convolutional neural networks for
+5g-enabled intelligent transportation system : A systematic review.COMPUTER COMMU-
+NICATIONS, 153:459–498, MAR 1 2020. ISSN 0140-3664. doi: 10.1016/j.comcom.2020.01.058.
+K. Thamaraiselvi, Asha Rani Bohra, V. Vishal, Pawan Sai Sunkara, Balaji Sunku, and Bhav-
+sar Nityajignesh. Exploring traffic signal control: A comprehensive survey on reinforcement
+learning techniques. 2025. doi: 10.1109/ICIDeA64800.2025.10963194.
+Bohdan Vihurskyi. Optimizing urban traffic management with machine learning techniques: A
+systematic review. In2024 2nd International Conference on Advancement in Computation &
+49
+
+--- PAGINA 62 ---
+Bibliografía
+Computer Technologies (InCACCT), pages 403–408, 2024. doi: 10.1109/InCACCT61598.2024.
+10551137.
+Sriharsha Vikruthi, Maruthavanan S. Archana, and Rama Chaithanya Tanguturi. A survey on
+deep learning based vehicular traffic control systems. volume 2512, 2024. doi: 10.1063/5.
+0111949.
+Xiaoqiang Wang, Liangjun Ke, Zhimin Qiao, and Xinghua Chai. Large-scale traffic signal control
+using a novel multiagent reinforcement learning.IEEE Transactions on Cybernetics, 51:174–
+187, 1 2021. ISSN 21682275. doi: 10.1109/TCYB.2020.3015811.
+Kaiwen Zhang, Zhiyong Cui, and Wanjing Ma. A survey on reinforcement learning-based control
+for signalized intersections with connected automated vehicles.TRANSPORT REVIEWS, 44
+(6):1187–1208, NOV 1 2024. ISSN 0144-1647. doi: 10.1080/01441647.2024.2377637.
+Haiyan Zhao, Chengcheng Dong, Jian Cao, and Qingkui Chen. A survey on deep reinforcement
+learningapproachesfortrafficsignalcontrol.Engineering Applications of Artificial Intelligence,
+133, 2024. doi: 10.1016/j.engappai.2024.108100.
+50
+
+--- PAGINA 63 ---
+Apéndice A
+Anexos
+A.1. Protocolo de Búsqueda y Cadenas de Consulta
+Incluye aquí las bases de datos consultadas, criterios de inclusión y exclusión, y las cadenas de
+búsqueda utilizadas.
+51
+
+--- PAGINA 64 ---
+Apéndice A. Anexos
+A.2. Matriz de Extracción SLR (Corpus Primario)
+Presenta la matriz de extracción del corpus primario de estudios revisados.
+52
+
+--- PAGINA 65 ---
+Apéndice A. Anexos
+A.3. Diagrama PRISMA 2020 (Fase 1 y Fase 2)
+Incorpora el flujo de identificación, cribado, elegibilidad e inclusión de estudios.
+53
+
+--- PAGINA 66 ---
+Apéndice A. Anexos
+A.4. Hiperparámetros y Configuración de Entrenamiento
+Documenta la configuración experimental completa, semillas, hardware y parámetros finales.
+54
+
+--- PAGINA 67 ---
+Apéndice A. Anexos
+A.5. Código Fuente y Repositorio Complementario
+Añade aquí la referencia al repositorio, organización del código y materiales suplementarios.
+55

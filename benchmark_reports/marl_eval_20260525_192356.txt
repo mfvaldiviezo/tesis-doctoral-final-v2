@@ -1,0 +1,58 @@
+
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════
+                              EVALUACIÓN DE RESILIENCIA MARL — RED HANGZHOU 4×4                               
+           Tesis Doctoral | Capítulo 4.3.2 — Métricas: Eficiencia, Equidad (Gini) y Riesgo (CVaR95)           
+                                        Generado: 2026-05-25 19:23:56                                         
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+  ALGORITMO          ESCENARIO             THROUGHPUT/s   AVG QUEUE  GINI_temp    CVaR95  GINI_final  TIEMPO(s)   OK
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  CoLight            Ideal                       0.3870      39.073     0.4700    73.169      0.2129      279.1    ✓
+  CoLight            LATAM Caótico               0.3592      37.881     0.5000    77.626      0.1552      733.6    ✓
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  📊 ANÁLISIS DE DEGRADACIÓN  (Ideal → LATAM Caótico)
+───────────────────────────────────────────────────────────────────────────
+  ALGORITMO            Δ Throughput   Δ AvgQueue   Δ Gini_temp   Δ CVaR95   RESILIENCIA
+───────────────────────────────────────────────────────────────────────────
+  FIXED                       +7.4%        +0.5%         -3.4%      -1.7%       Alta  🟢
+  MAXPRESSURE                -14.6%        +0.4%         -1.0%      -0.1%       Media 🟡
+  IPPO                       +17.5%        -2.9%         +3.9%      -0.2%       Media 🟡
+  CoLight                     -7.2%        -3.0%         +6.4%      +6.1%       Alta  🟢
+───────────────────────────────────────────────────────────────────────────
+
+  🏆 RANKING POR EFICIENCIA (Throughput — mayor es mejor)
+──────────────────────────────────────────────────
+  🥇  CoLight         [ideal ]  Throughput=0.3870  Gini=0.47004  CVaR95=73.1689
+  🥈  CoLight         [latam ]  Throughput=0.3592  Gini=0.50002  CVaR95=77.6261
+  🥉  FIXED           [latam ]  Throughput=0.3024  Gini=0.51496  CVaR95=76.2477
+  #4  FIXED           [ideal ]  Throughput=0.2816  Gini=0.53309  CVaR95=77.5856
+  #5  IPPO            [latam ]  Throughput=0.0929  Gini=0.38968  CVaR95=88.2104
+  #6  IPPO            [ideal ]  Throughput=0.0791  Gini=0.37519  CVaR95=88.413
+  #7  MAXPRESSURE     [ideal ]  Throughput=0.0666  Gini=0.32535  CVaR95=87.973
+  #8  MAXPRESSURE     [latam ]  Throughput=0.0569  Gini=0.32195  CVaR95=87.8794
+──────────────────────────────────────────────────
+
+  ⚖️  RANKING POR EQUIDAD (Gini_temporal — menor es mejor)
+──────────────────────────────────────────────────
+  🥇  MAXPRESSURE     [latam ]  Gini = 0.32195
+  🥈  MAXPRESSURE     [ideal ]  Gini = 0.32535
+  🥉  IPPO            [ideal ]  Gini = 0.37519
+  #4  IPPO            [latam ]  Gini = 0.38968
+  #5  CoLight         [ideal ]  Gini = 0.47004
+  #6  CoLight         [latam ]  Gini = 0.50002
+  #7  FIXED           [latam ]  Gini = 0.51496
+  #8  FIXED           [ideal ]  Gini = 0.53309
+──────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════
+  📋 NOTAS METODOLÓGICAS (Capítulo 4.3.2):
+  • Throughput/step  : Vehículos que completan el recorrido por paso de simulación (↑ mejor)
+  • Avg Queue        : Longitud media de colas por semáforo por paso (↓ mejor)
+  • Gini_temporal    : Coeficiente de Gini sobre colas a lo largo del tiempo ∈ [0,1] (↓ = más equitativo)
+  • Gini_final       : Gini de la distribución de colas finales entre semáforos (↓ = más uniforme)
+  • CVaR95(cola)     : Valor esperado del 5% peor de la distribución de colas (↓ mejor)
+  • Δ Degradación    : ((caótico - ideal) / |ideal|) × 100  — resiliencia al estrés LATAM
+  • Resiliencia      : Alta |Δ|<10%, Media |Δ|<25%, Baja |Δ|≥25%
+  ⚠️  Episode Reward NO se incluye en rankings (escala incomparable entre FIXED/IPPO y CoSLight)
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════

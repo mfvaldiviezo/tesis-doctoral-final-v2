@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<additional>
+  <laneAreaDetector id="police_A0B0" lane="A0B0_0" pos="0" length="50" freq="3600" file="police_out.xml">
+    <param key="hasPolice" value="true"/>
+  </laneAreaDetector>
+  <laneAreaDetector id="police_B2B1" lane="B2B1_0" pos="0" length="50" freq="3600" file="police_out.xml">
+    <param key="hasPolice" value="true"/>
+  </laneAreaDetector>
+  <laneAreaDetector id="police_C1B1" lane="C1B1_0" pos="0" length="50" freq="3600" file="police_out.xml">
+    <param key="hasPolice" value="true"/>
+  </laneAreaDetector>
+  <laneAreaDetector id="police_D1C1" lane="D1C1_0" pos="0" length="50" freq="3600" file="police_out.xml">
+    <param key="hasPolice" value="true"/>
+  </laneAreaDetector>
+  <poi id="bache_0" color="0,0,0" layer="3" lane="A1B1_0" pos="25">
+    <param key="isBache" value="true"/>
+  </poi>
+  <poi id="bache_1" color="0,0,0" layer="3" lane="B1C1_0" pos="25">
+    <param key="isBache" value="true"/>
+  </poi>
+  <poi id="bache_2" color="0,0,0" layer="3" lane="C2C1_0" pos="25">
+    <param key="isBache" value="true"/>
+  </poi>
+  <poi id="bache_3" color="0,0,0" layer="3" lane="D2C2_0" pos="25">
+    <param key="isBache" value="true"/>
+  </poi>
+</additional>

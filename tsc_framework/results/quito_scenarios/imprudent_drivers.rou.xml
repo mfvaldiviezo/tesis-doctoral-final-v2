@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+  <!-- Tráfico Normal (Baseline) -->
+  <vType id="car" length="4.5" minGap="2.5" maxSpeed="13.89" sigma="0.5" tau="1.0" color="1,1,1"/>
+
+  <!-- Conductores Imprudentes (Quito) -->
+  <vType id="imprudent_richard" sigma="0.936" tau="1.076" speedFactor="1.127" accel="0.589" decel="0.883" color="1,0.576,0" />
+  <vType id="imprudent_alonso" sigma="0.918" tau="1.088" speedFactor="1.124" accel="0.978" decel="1.467" color="1,0.588,0" />
+  <vType id="imprudent_labeled" sigma="0.907" tau="1.095" speedFactor="1.121" accel="0.632" decel="0.948" color="1,0.595,0" />
+  <vType id="imprudent_yolanda" sigma="0.871" tau="1.119" speedFactor="1.114" accel="0.670" decel="1.005" color="1,0.619,0" />
+  <vType id="imprudent_andres" sigma="0.854" tau="1.130" speedFactor="1.111" accel="0.668" decel="1.002" color="1,0.630,0" />
+  <vType id="imprudent_furious" sigma="0.821" tau="1.153" speedFactor="1.104" accel="0.588" decel="0.882" color="1,0.653,0" />
+  <vType id="imprudent_pablo" sigma="0.747" tau="1.202" speedFactor="1.089" accel="0.500" decel="0.750" color="1,0.702,0" />
+
+  <!-- Distribución de Tráfico Mixto (50% normal, 50% imprudente) -->
+  <vTypeDistribution id="mixed_traffic" vTypes="car imprudent_richard imprudent_alonso imprudent_labeled imprudent_yolanda imprudent_andres imprudent_furious imprudent_pablo" probabilities="0.50 0.071 0.071 0.071 0.071 0.071 0.071 0.071"/>
+
+  <!-- Rutas de la Red Hangzhou 4x4 -->
+  <route id="r_WE_0" edges="A0B0 B0C0 C0D0"/>
+  <route id="r_WE_1" edges="A1B1 B1C1 C1D1"/>
+  <route id="r_WE_2" edges="A2B2 B2C2 C2D2"/>
+  <route id="r_WE_3" edges="A3B3 B3C3 C3D3"/>
+  <route id="r_EW_0" edges="D0C0 C0B0 B0A0"/>
+  <route id="r_EW_1" edges="D1C1 C1B1 B1A1"/>
+  <route id="r_EW_2" edges="D2C2 C2B2 B2A2"/>
+  <route id="r_EW_3" edges="D3C3 C3B3 B3A3"/>
+  <route id="r_SN_A" edges="A0A1 A1A2 A2A3"/>
+  <route id="r_SN_B" edges="B0B1 B1B2 B2B3"/>
+  <route id="r_SN_C" edges="C0C1 C1C2 C2C3"/>
+  <route id="r_SN_D" edges="D0D1 D1D2 D2D3"/>
+  <route id="r_NS_A" edges="A3A2 A2A1 A1A0"/>
+  <route id="r_NS_B" edges="B3B2 B2B1 B1B0"/>
+  <route id="r_NS_C" edges="C3C2 C2C1 C1C0"/>
+  <route id="r_NS_D" edges="D3D2 D2D1 D1D0"/>
+
+  <!-- Flujos Masivos de Tráfico (Period=10s para generar estrés pesado) -->
+  <flow id="f_mixed_000" route="r_WE_0" type="mixed_traffic" begin="0" end="3600" period="10"/>
+  <flow id="f_mixed_001" route="r_WE_1" type="mixed_traffic" begin="0" end="3600" period="10"/>
+  <flow id="f_mixed_002" route="r_WE_2" type="mixed_traffic" begin="0" end="3600" period="10"/>
+  <flow id="f_mixed_003" route="r_WE_3" type="mixed_traffic" begin="0" end="3600" period="10"/>
+  <flow id="f_mixed_004" route="r_EW_0" type="mixed_traffic" begin="0" end="3600" period="10"/>
+  <flow id="f_mixed_005" route="r_EW_1" type="mixed_traffic" begin="0" end="3600" period="10"/>
+  <flow id="f_mixed_006" route="r_EW_2" type="mixed_traffic" begin="0" end="3600" period="10"/>
+  <flow id="f_mixed_007" route="r_EW_3" type="mixed_traffic" begin="0" end="3600" period="10"/>
+  <flow id="f_mixed_008" route="r_SN_A" type="mixed_traffic" begin="0" end="3600" period="10"/>
+  <flow id="f_mixed_009" route="r_SN_B" type="mixed_traffic" begin="0" end="3600" period="10"/>
+  <flow id="f_mixed_010" route="r_SN_C" type="mixed_traffic" begin="0" end="3600" period="10"/>
+  <flow id="f_mixed_011" route="r_SN_D" type="mixed_traffic" begin="0" end="3600" period="10"/>
+  <flow id="f_mixed_012" route="r_NS_A" type="mixed_traffic" begin="0" end="3600" period="10"/>
+  <flow id="f_mixed_013" route="r_NS_B" type="mixed_traffic" begin="0" end="3600" period="10"/>
+  <flow id="f_mixed_014" route="r_NS_C" type="mixed_traffic" begin="0" end="3600" period="10"/>
+  <flow id="f_mixed_015" route="r_NS_D" type="mixed_traffic" begin="0" end="3600" period="10"/>
+</routes>

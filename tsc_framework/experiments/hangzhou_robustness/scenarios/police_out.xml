@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-05-25T10:33:47.856774-05:00 by Eclipse SUMO GUI 1.26.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Proyecto_Tesis_Final_V1\traffic_project\tsc_framework\sumo_configs\hangzhou\hangzhou_pedestrian.net.xml"/>
+        <route-files value="C:\Proyecto_Tesis_Final_V1\traffic_project\tsc_framework\experiments\hangzhou_robustness\scenarios\latam_imprudent_drivers.rou.xml"/>
+        <additional-files value="C:\Proyecto_Tesis_Final_V1\traffic_project\tsc_framework\experiments\hangzhou_robustness\scenarios\latam_infrastructure.add.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+        <step-length value="1.0"/>
+    </time>
+
+    <processing>
+        <lateral-resolution value="0.5"/>
+        <time-to-teleport value="300"/>
+    </processing>
+
+    <report>
+        <no-warnings value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="8957"/>
+    </traci_server>
+
+</sumoConfiguration>
+-->
+
+<detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e2_file.xsd">
+   <interval begin="0.00" end="3600.00" id="police_A0B0" sampledSeconds="0.00" nVehEntered="0" nVehLeft="0" nVehSeen="0" meanSpeed="-1.00" meanTimeLoss="-1.00" meanOccupancy="0.00" maxOccupancy="0.00" meanMaxJamLengthInVehicles="0.00" meanMaxJamLengthInMeters="0.00" maxJamLengthInVehicles="0" maxJamLengthInMeters="0.00" jamLengthInVehiclesSum="0" jamLengthInMetersSum="0.00" meanHaltingDuration="0.00" maxHaltingDuration="0.00" haltingDurationSum="0.00" meanIntervalHaltingDuration="0.00" maxIntervalHaltingDuration="0.00" intervalHaltingDurationSum="0.00" startedHalts="0.00" meanVehicleNumber="0.00" maxVehicleNumber="0" />
+   <interval begin="0.00" end="3600.00" id="police_B2B1" sampledSeconds="94.71" nVehEntered="87" nVehLeft="87" nVehSeen="87" meanSpeed="8.89" meanTimeLoss="0.61" meanOccupancy="0.10" maxOccupancy="19.39" meanMaxJamLengthInVehicles="0.00" meanMaxJamLengthInMeters="0.00" maxJamLengthInVehicles="2" maxJamLengthInMeters="6.15" jamLengthInVehiclesSum="2" jamLengthInMetersSum="6.15" meanHaltingDuration="1.40" maxHaltingDuration="2.00" haltingDurationSum="7.00" meanIntervalHaltingDuration="1.40" maxIntervalHaltingDuration="2.00" intervalHaltingDurationSum="7.00" startedHalts="5.00" meanVehicleNumber="0.03" maxVehicleNumber="5" />
+   <interval begin="0.00" end="3600.00" id="police_C1B1" sampledSeconds="913.06" nVehEntered="95" nVehLeft="95" nVehSeen="95" meanSpeed="3.09" meanTimeLoss="8.11" meanOccupancy="2.34" maxOccupancy="28.40" meanMaxJamLengthInVehicles="0.12" meanMaxJamLengthInMeters="0.80" maxJamLengthInVehicles="2" maxJamLengthInMeters="17.39" jamLengthInVehiclesSum="450" jamLengthInMetersSum="2866.49" meanHaltingDuration="3.73" maxHaltingDuration="26.00" haltingDurationSum="123.00" meanIntervalHaltingDuration="3.73" maxIntervalHaltingDuration="26.00" intervalHaltingDurationSum="123.00" startedHalts="40.00" meanVehicleNumber="0.26" maxVehicleNumber="4" />
+   <interval begin="0.00" end="3600.00" id="police_D1C1" sampledSeconds="0.00" nVehEntered="0" nVehLeft="0" nVehSeen="0" meanSpeed="-1.00" meanTimeLoss="-1.00" meanOccupancy="0.00" maxOccupancy="0.00" meanMaxJamLengthInVehicles="0.00" meanMaxJamLengthInMeters="0.00" maxJamLengthInVehicles="0" maxJamLengthInMeters="0.00" jamLengthInVehiclesSum="0" jamLengthInMetersSum="0.00" meanHaltingDuration="0.00" maxHaltingDuration="0.00" haltingDurationSum="0.00" meanIntervalHaltingDuration="0.00" maxIntervalHaltingDuration="0.00" intervalHaltingDurationSum="0.00" startedHalts="0.00" meanVehicleNumber="0.00" maxVehicleNumber="0" />
+</detector>

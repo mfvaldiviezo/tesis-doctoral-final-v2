@@ -1,0 +1,79 @@
+{
+  "richard": {
+    "n_samples": 7661,
+    "avg_accel": 0.2943684212900021,
+    "std_accel": 0.371057974808773,
+    "max_accel": 1.79545099078803,
+    "avg_jerk": 0.1269151025365807,
+    "max_jerk": 0.894200787384853,
+    "avg_speed": 24.1599007962407,
+    "max_speed": 91.0,
+    "imprudence_score": 0.7256019781253668
+  },
+  "alonso": {
+    "n_samples": 286974,
+    "avg_accel": 0.48888757864250937,
+    "std_accel": 0.29135897354241636,
+    "max_accel": 1.94,
+    "avg_jerk": 0.09559761610980486,
+    "max_jerk": 1.01,
+    "avg_speed": 26.28295444941784,
+    "max_speed": 129.0,
+    "imprudence_score": 0.40849659983593084
+  },
+  "labeled": {
+    "n_samples": 24455,
+    "avg_accel": 0.31600736045798405,
+    "std_accel": 0.3230410925942752,
+    "max_accel": 1.729999999999999,
+    "avg_jerk": 0.17423921488448169,
+    "max_jerk": 1.2899999999999996,
+    "avg_speed": 59.21717440196279,
+    "max_speed": 129.0,
+    "imprudence_score": 0.4024759744399033
+  },
+  "yolanda": {
+    "n_samples": 9243,
+    "avg_accel": 0.33487785842915296,
+    "std_accel": 0.2938330965922744,
+    "max_accel": 1.59848121266667,
+    "avg_jerk": 0.16553305124364665,
+    "max_jerk": 0.7638077898407379,
+    "avg_speed": 66.75332684193444,
+    "max_speed": 103.0,
+    "imprudence_score": 0.34913954242571194
+  },
+  "furious": {
+    "n_samples": 52159,
+    "avg_accel": 0.2940860751117353,
+    "std_accel": 0.2696752882912535,
+    "max_accel": 1.59848121266667,
+    "avg_jerk": 0.12596995506646655,
+    "max_jerk": 0.7638077898407379,
+    "avg_speed": 67.18689008608294,
+    "max_speed": 129.0,
+    "imprudence_score": 0.2852142919229748
+  },
+  "andres": {
+    "n_samples": 52691,
+    "avg_accel": 0.33383748647821976,
+    "std_accel": 0.31495828353172756,
+    "max_accel": 1.47938337514905,
+    "avg_jerk": 0.08595608156136314,
+    "max_jerk": 0.66,
+    "avg_speed": 19.512587874152647,
+    "max_speed": 108.0,
+    "imprudence_score": 0.21959818254342153
+  },
+  "pablo": {
+    "n_samples": 37806,
+    "avg_accel": 0.23670767828217038,
+    "std_accel": 0.2629354429446274,
+    "max_accel": 1.198506389,
+    "avg_jerk": 0.07256496270480876,
+    "max_jerk": 0.5,
+    "avg_speed": 21.861688620853833,
+    "max_speed": 79.0,
+    "imprudence_score": 0.11236203565420874
+  }
+}

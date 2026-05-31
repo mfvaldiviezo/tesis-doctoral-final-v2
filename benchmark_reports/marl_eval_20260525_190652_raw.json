@@ -1,0 +1,18 @@
+[
+  {
+    "algo": "IPPO",
+    "scenario": "ideal",
+    "success": true,
+    "elapsed_s": 230.9,
+    "episode_reward": -558402645.0,
+    "returncode": 0
+  },
+  {
+    "algo": "IPPO",
+    "scenario": "latam",
+    "success": true,
+    "elapsed_s": 960.2,
+    "episode_reward": -512415204.0,
+    "returncode": 0
+  }
+]

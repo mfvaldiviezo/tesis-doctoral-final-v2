@@ -1,0 +1,18 @@
+[
+  {
+    "algo": "MAXPRESSURE",
+    "scenario": "ideal",
+    "success": true,
+    "elapsed_s": 251.0,
+    "episode_reward": -636274769.0,
+    "returncode": 0
+  },
+  {
+    "algo": "MAXPRESSURE",
+    "scenario": "latam",
+    "success": true,
+    "elapsed_s": 1032.0,
+    "episode_reward": -630846158.0,
+    "returncode": 0
+  }
+]

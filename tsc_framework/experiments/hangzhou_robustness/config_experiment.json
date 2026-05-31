@@ -1,0 +1,59 @@
+{
+  "experiment_name": "hangzhou_robustness_imprudent_drivers",
+  "description": "Evaluación de robustez de agentes RL frente a conductores imprudentes basados en datos de Quito",
+  "hypothesis": "Los agentes RL entrenados en condiciones ideales muestran degradación de rendimiento y equidad cuando se exponen a conductores con comportamiento imprudente típico de Latinoamérica",
+  
+  "network": {
+    "net_file": "sumo_configs/hangzhou/hangzhou.net.xml",
+    "route_file": "sumo_configs/hangzhou/hangzhou.rou.xml",
+    "additional_files": []
+  },
+  
+  "imprudent_traffic": {
+    "source_file": "results/quito_scenarios/imprudent_drivers.rou.xml",
+    "mix_ratios": [0.0, 0.15, 0.30, 0.50],
+    "seed": 42
+  },
+  
+  "simulation": {
+    "steps_per_episode": 3600,
+    "delta_time": 10,
+    "n_episodes_per_scenario": 5,
+    "agent_type": "random",
+    "agent_checkpoint": null,
+    "use_gui": false
+  },
+  
+  "metrics": {
+    "primary": [
+      "average_delay",
+      "throughput",
+      "gini_index",
+      "cvar_risk"
+    ],
+    "secondary": [
+      "queue_length_max",
+      "waiting_time_total",
+      "co2_emissions",
+      "fuel_consumption"
+    ]
+  },
+  
+  "baselines": {
+    "fixed_time": {
+      "enabled": true,
+      "description": "Control semafórico de tiempo fijo tradicional"
+    },
+    "actuated": {
+      "enabled": false,
+      "description": "Control semafórico actuado por demanda"
+    }
+  },
+  
+  "output": {
+    "directory": "results/hangzhou_robustness_experiment",
+    "save_trajectories": false,
+    "save_summary": true,
+    "generate_plots": true
+  }
+}

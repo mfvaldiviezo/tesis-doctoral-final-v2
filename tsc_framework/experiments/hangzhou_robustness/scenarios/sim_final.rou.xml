@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="trip_0" depart="51.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="C1C0 C0B0 B0A0 A0A1 A1A2" />
+    </vehicle>
+    <vehicle id="trip_1" depart="501.00" type="normal" color="0,0.5,1">
+        <route edges="C2C1 C1C0 C0B0 B0B1" />
+    </vehicle>
+    <vehicle id="trip_7" depart="54.00" type="normal" color="0,0.5,1">
+        <route edges="B2C2 C2C1 C1B1" />
+    </vehicle>
+    <vehicle id="trip_5" depart="61.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="B1C1 C1B1 B1A1 A1A0 A0B0" />
+    </vehicle>
+    <vehicle id="trip_6" depart="476.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="A1A0 A0B0 B0B1 B1A1 A1A2 A2B2" />
+    </vehicle>
+    <vehicle id="trip_10" depart="919.00" type="normal" color="0,0.5,1">
+        <route edges="B1C1 C1C0 C0B0 B0A0" />
+    </vehicle>
+    <vehicle id="trip_9" depart="1116.00" type="normal" color="0,0.5,1">
+        <route edges="C1C0 C0B0 B0B1 B1C1 C1C2 C2B2" />
+    </vehicle>
+    <vehicle id="trip_4" depart="1209.00" type="normal" color="0,0.5,1">
+        <route edges="C0B0 B0B1 B1A1 A1A0" />
+    </vehicle>
+    <vehicle id="trip_8" depart="1466.00" type="normal" color="0,0.5,1">
+        <route edges="C0B0 B0A0 A0A1 A1A2 A2B2" />
+    </vehicle>
+    <vehicle id="trip_2" depart="1508.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="B0A0 A0A1 A1B1" />
+    </vehicle>
+    <vehicle id="trip_3" depart="1516.00" type="normal" color="0,0.5,1">
+        <route edges="A1A2 A2B2 B2B1 B1C1 C1C2" />
+    </vehicle>
+    <vehicle id="trip_59" depart="6.00" type="normal" color="0,0.5,1">
+        <route edges="A2A1 A1B1 B1B2 B2A2" />
+    </vehicle>
+    <vehicle id="trip_84" depart="14.00" type="normal" color="0,0.5,1">
+        <route edges="C0C1 C1B1 B1B0 B0A0" />
+    </vehicle>
+    <vehicle id="trip_67" depart="39.00" type="normal" color="0,0.5,1">
+        <route edges="B1A1 A1A2 A2B2 B2B1" />
+    </vehicle>
+    <vehicle id="trip_82" depart="43.00" type="normal" color="0,0.5,1">
+        <route edges="A1A0 A0B0 B0B1 B1A1" />
+    </vehicle>
+    <vehicle id="trip_23" depart="93.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="C2B2 B2A2 A2A1 A1A0" />
+    </vehicle>
+    <vehicle id="trip_95" depart="110.00" type="normal" color="0,0.5,1">
+        <route edges="B2A2 A2A1 A1B1 B1B2 B2C2 C2C1" />
+    </vehicle>
+    <vehicle id="trip_69" depart="118.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="B0C0 C0C1 C1B1 B1B0 B0A0" />
+    </vehicle>
+    <vehicle id="trip_86" depart="138.00" type="normal" color="0,0.5,1">
+        <route edges="A0B0 B0A0" />
+    </vehicle>
+    <vehicle id="trip_87" depart="145.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="A0B0 B0B1 B1A1" />
+    </vehicle>
+    <vehicle id="trip_70" depart="161.00" type="normal" color="0,0.5,1">
+        <route edges="B0A0 A0A1 A1B1 B1B0 B0C0 C0C1" />
+    </vehicle>
+    <vehicle id="trip_15" depart="189.00" type="normal" color="0,0.5,1">
+        <route edges="B1A1 A1A2" />
+    </vehicle>
+    <vehicle id="trip_61" depart="217.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="A2A1 A1B1 B1B2 B2C2" />
+    </vehicle>
+    <vehicle id="trip_43" depart="285.00" type="normal" color="0,0.5,1">
+        <route edges="A1B1 B1B0 B0B1" />
+    </vehicle>
+    <vehicle id="trip_33" depart="334.00" type="normal" color="0,0.5,1">
+        <route edges="C2C1 C1C0 C0B0 B0A0" />
+    </vehicle>
+    <vehicle id="trip_92" depart="389.00" type="normal" color="0,0.5,1">
+        <route edges="B2B1 B1C1" />
+    </vehicle>
+    <vehicle id="trip_99" depart="392.00" type="normal" color="0,0.5,1">
+        <route edges="A1A2 A2B2 B2B1 B1B0 B0A0" />
+    </vehicle>
+    <vehicle id="trip_22" depart="393.00" type="normal" color="0,0.5,1">
+        <route edges="B1B0 B0C0 C0C1" />
+    </vehicle>
+    <vehicle id="trip_77" depart="411.00" type="normal" color="0,0.5,1">
+        <route edges="C2C1 C1C2 C2B2" />
+    </vehicle>
+    <vehicle id="trip_39" depart="432.00" type="normal" color="0,0.5,1">
+        <route edges="B0B1 B1A1 A1A0" />
+    </vehicle>
+    <vehicle id="trip_89" depart="438.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="C1C2 C2B2 B2B1" />
+    </vehicle>
+    <vehicle id="trip_47" depart="449.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="B1B2 B2B1 B1B0" />
+    </vehicle>
+    <vehicle id="trip_81" depart="460.00" type="normal" color="0,0.5,1">
+        <route edges="A1A2 A2B2 B2B1 B1B0 B0A0" />
+    </vehicle>
+    <vehicle id="trip_83" depart="471.00" type="normal" color="0,0.5,1">
+        <route edges="C0C1 C1C0 C0B0" />
+    </vehicle>
+    <vehicle id="trip_91" depart="497.00" type="normal" color="0,0.5,1">
+        <route edges="C0C1 C1C2 C2B2 B2B1" />
+    </vehicle>
+    <vehicle id="trip_17" depart="541.00" type="normal" color="0,0.5,1">
+        <route edges="B1B0 B0C0 C0C1 C1B1" />
+    </vehicle>
+    <vehicle id="trip_74" depart="542.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="C0B0 B0B1 B1B2 B2A2 A2A1" />
+    </vehicle>
+    <vehicle id="trip_34" depart="552.00" type="normal" color="0,0.5,1">
+        <route edges="B2A2 A2A1 A1B1 B1B2" />
+    </vehicle>
+    <vehicle id="trip_13" depart="569.00" type="normal" color="0,0.5,1">
+        <route edges="B1C1 C1B1 B1A1" />
+    </vehicle>
+    <vehicle id="trip_88" depart="570.00" type="normal" color="0,0.5,1">
+        <route edges="B2C2 C2C1 C1C0 C0B0 B0A0" />
+    </vehicle>
+    <vehicle id="trip_20" depart="600.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="A1A0 A0B0 B0B1 B1C1 C1C0 C0B0" />
+    </vehicle>
+    <vehicle id="trip_40" depart="644.00" type="normal" color="0,0.5,1">
+        <route edges="C0C1 C1C2 C2B2" />
+    </vehicle>
+    <vehicle id="trip_36" depart="664.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="B0A0 A0A1 A1B1 B1C1 C1C2" />
+    </vehicle>
+    <vehicle id="trip_57" depart="696.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="B0B1 B1C1 C1C0" />
+    </vehicle>
+    <vehicle id="trip_16" depart="735.00" type="normal" color="0,0.5,1">
+        <route edges="B1B2 B2B1 B1A1 A1A2" />
+    </vehicle>
+    <vehicle id="trip_28" depart="758.00" type="normal" color="0,0.5,1">
+        <route edges="B1B0 B0B1 B1B2 B2A2 A2A1" />
+    </vehicle>
+    <vehicle id="trip_79" depart="764.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="C1C2 C2B2 B2B1 B1C1 C1C0" />
+    </vehicle>
+    <vehicle id="trip_64" depart="765.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="A2B2 B2B1 B1A1 A1B1" />
+    </vehicle>
+    <vehicle id="trip_19" depart="775.00" type="normal" color="0,0.5,1">
+        <route edges="C0B0 B0A0 A0A1 A1A2" />
+    </vehicle>
+    <vehicle id="trip_26" depart="778.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="B0A0 A0A1 A1A2" />
+    </vehicle>
+    <vehicle id="trip_52" depart="788.00" type="normal" color="0,0.5,1">
+        <route edges="C1B1 B1A1 A1A0" />
+    </vehicle>
+    <vehicle id="trip_78" depart="817.00" type="normal" color="0,0.5,1">
+        <route edges="C2B2 B2B1 B1B0 B0C0" />
+    </vehicle>
+    <vehicle id="trip_38" depart="821.00" type="normal" color="0,0.5,1">
+        <route edges="A0B0 B0B1 B1A1" />
+    </vehicle>
+    <vehicle id="trip_97" depart="824.00" type="normal" color="0,0.5,1">
+        <route edges="A1A2 A2B2 B2B1 B1A1 A1A0 A0B0" />
+    </vehicle>
+    <vehicle id="trip_94" depart="841.00" type="normal" color="0,0.5,1">
+        <route edges="B1B0 B0B1 B1C1" />
+    </vehicle>
+    <vehicle id="trip_51" depart="864.00" type="normal" color="0,0.5,1">
+        <route edges="A2A1 A1B1 B1C1 C1C2" />
+    </vehicle>
+    <vehicle id="trip_75" depart="866.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="B2C2 C2C1 C1B1" />
+    </vehicle>
+    <vehicle id="trip_93" depart="882.00" type="normal" color="0,0.5,1">
+        <route edges="A1A2 A2B2 B2B1 B1C1 C1C2" />
+    </vehicle>
+    <vehicle id="trip_58" depart="890.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="A1A2 A2B2 B2B1 B1B0 B0C0" />
+    </vehicle>
+    <vehicle id="trip_80" depart="924.00" type="normal" color="0,0.5,1">
+        <route edges="B2A2 A2A1 A1B1 B1B2 B2C2" />
+    </vehicle>
+    <vehicle id="trip_42" depart="939.00" type="normal" color="0,0.5,1">
+        <route edges="B1B2 B2C2 C2C1 C1C0" />
+    </vehicle>
+    <vehicle id="trip_18" depart="940.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="A0B0 B0B1 B1B2 B2C2 C2C1" />
+    </vehicle>
+    <vehicle id="trip_53" depart="958.00" type="normal" color="0,0.5,1">
+        <route edges="B1B2 B2C2 C2C1 C1B1" />
+    </vehicle>
+    <vehicle id="trip_73" depart="973.00" type="normal" color="0,0.5,1">
+        <route edges="A1B1 B1C1 C1C2" />
+    </vehicle>
+    <vehicle id="trip_71" depart="995.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="A1A0 A0B0 B0B1 B1B2 B2C2 C2C1" />
+    </vehicle>
+    <vehicle id="trip_48" depart="1010.00" type="normal" color="0,0.5,1">
+        <route edges="A1B1 B1B2 B2C2" />
+    </vehicle>
+    <vehicle id="trip_41" depart="1022.00" type="normal" color="0,0.5,1">
+        <route edges="A2B2 B2C2 C2C1 C1C0" />
+    </vehicle>
+    <vehicle id="trip_60" depart="1025.00" type="normal" color="0,0.5,1">
+        <route edges="C2C1 C1C0 C0B0 B0B1" />
+    </vehicle>
+    <vehicle id="trip_32" depart="1093.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="C1C0 C0B0 B0B1 B1B2 B2A2 A2A1" />
+    </vehicle>
+    <vehicle id="trip_56" depart="1099.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="A1A2 A2B2 B2B1 B1C1 C1C2" />
+    </vehicle>
+    <vehicle id="trip_54" depart="1133.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="B2C2 C2C1 C1C0 C0B0 B0B1" />
+    </vehicle>
+    <vehicle id="trip_35" depart="1140.00" type="normal" color="0,0.5,1">
+        <route edges="C1C0 C0B0 B0B1 B1C1 C1C2 C2B2" />
+    </vehicle>
+    <vehicle id="trip_44" depart="1149.00" type="normal" color="0,0.5,1">
+        <route edges="B0A0 A0A1 A1A2 A2B2 B2C2 C2C1" />
+    </vehicle>
+    <vehicle id="trip_46" depart="1195.00" type="normal" color="0,0.5,1">
+        <route edges="C0C1 C1B1 B1C1" />
+    </vehicle>
+    <vehicle id="trip_66" depart="1226.00" type="normal" color="0,0.5,1">
+        <route edges="B2C2 C2C1 C1C0 C0B0 B0A0 A0A1" />
+    </vehicle>
+    <vehicle id="trip_31" depart="1247.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="C1C0 C0B0 B0B1 B1A1 A1A0" />
+    </vehicle>
+    <vehicle id="trip_63" depart="1247.00" type="normal" color="0,0.5,1">
+        <route edges="C1C0 C0B0 B0B1 B1B2 B2C2" />
+    </vehicle>
+    <vehicle id="trip_50" depart="1285.00" type="normal" color="0,0.5,1">
+        <route edges="A1A2 A2B2 B2B1 B1A1 A1B1" />
+    </vehicle>
+    <vehicle id="trip_85" depart="1292.00" type="normal" color="0,0.5,1">
+        <route edges="A1A0 A0B0 B0C0 C0C1 C1C2 C2B2" />
+    </vehicle>
+    <vehicle id="trip_27" depart="1301.00" type="normal" color="0,0.5,1">
+        <route edges="B0B1 B1B2 B2A2" />
+    </vehicle>
+    <vehicle id="trip_96" depart="1323.00" type="normal" color="0,0.5,1">
+        <route edges="C1C2 C2B2 B2B1 B1C1 C1C0" />
+    </vehicle>
+    <vehicle id="trip_29" depart="1372.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="B1B0 B0A0 A0A1 A1A2 A2B2" />
+    </vehicle>
+    <vehicle id="trip_30" depart="1399.00" type="normal" color="0,0.5,1">
+        <route edges="B0B1 B1C1 C1C2 C2B2" />
+    </vehicle>
+    <vehicle id="trip_12" depart="1429.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="A0A1 A1B1 B1B2 B2A2 A2A1" />
+    </vehicle>
+    <vehicle id="trip_55" depart="1476.00" type="normal" color="0,0.5,1">
+        <route edges="A0A1 A1B1 B1C1 C1C2" />
+    </vehicle>
+    <vehicle id="trip_90" depart="1481.00" type="normal" color="0,0.5,1">
+        <route edges="C0B0 B0A0 A0A1 A1B1" />
+    </vehicle>
+    <vehicle id="trip_45" depart="1529.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="C0B0 B0B1" />
+    </vehicle>
+    <vehicle id="trip_76" depart="1546.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="A2B2 B2C2 C2C1 C1C0 C0B0" />
+    </vehicle>
+    <vehicle id="trip_14" depart="1563.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="A1B1 B1A1 A1A2 A2B2" />
+    </vehicle>
+    <vehicle id="trip_72" depart="1568.00" type="normal" color="0,0.5,1">
+        <route edges="A1A0 A0B0 B0B1 B1C1 C1C0 C0B0" />
+    </vehicle>
+    <vehicle id="trip_24" depart="1583.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="C1C2 C2B2 B2B1 B1B0 B0A0" />
+    </vehicle>
+    <vehicle id="trip_65" depart="1594.00" type="normal" color="0,0.5,1">
+        <route edges="A2A1 A1B1 B1C1 C1C0 C0B0" />
+    </vehicle>
+    <vehicle id="trip_98" depart="1639.00" type="normal" color="0,0.5,1">
+        <route edges="C2C1 C1B1 B1A1" />
+    </vehicle>
+    <vehicle id="trip_11" depart="1657.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="C0C1 C1C0 C0B0 B0B1" />
+    </vehicle>
+    <vehicle id="trip_37" depart="1683.00" type="normal" color="0,0.5,1">
+        <route edges="A0B0 B0A0" />
+    </vehicle>
+    <vehicle id="trip_62" depart="1723.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="C1C0 C0B0 B0C0" />
+    </vehicle>
+    <vehicle id="trip_25" depart="1751.00" type="normal" color="0,0.5,1">
+        <route edges="B0C0 C0C1 C1B1 B1A1 A1A0" />
+    </vehicle>
+    <vehicle id="trip_49" depart="1763.00" type="normal" color="0,0.5,1">
+        <route edges="A1A0 A0B0" />
+    </vehicle>
+    <vehicle id="trip_21" depart="1764.00" type="normal" color="0,0.5,1">
+        <route edges="C1C0 C0B0 B0B1 B1C1 C1B1" />
+    </vehicle>
+    <vehicle id="trip_68" depart="1799.00" type="imprudent" color="0.9,0,0.9">
+        <route edges="A1A2 A2B2 B2B1 B1B0" />
+    </vehicle>
+</routes>

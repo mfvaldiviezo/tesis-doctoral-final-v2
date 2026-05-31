@@ -1,0 +1,18 @@
+{
+  "scenario_name": "quito_imprudent_30pct_dense",
+  "generation_timestamp": "2026-05-23T14:50:17.043362",
+  "configuration": {
+    "mix_ratio": 0.3,
+    "seed": 42,
+    "net_file": "C:\\Proyecto_Tesis_Final_V1\\traffic_project\\tsc_framework\\sumo_configs\\networks\\hangzhou_4x4.net.xml",
+    "route_file": "C:\\Proyecto_Tesis_Final_V1\\traffic_project\\tsc_framework\\sumo_configs\\routes\\hangzhou\\hangzhou_dense.rou.xml",
+    "imprudent_file": "C:\\Proyecto_Tesis_Final_V1\\traffic_project\\tsc_framework\\results\\quito_scenarios\\imprudent_drivers_fixed.rou.xml"
+  },
+  "statistics": {
+    "total_vehicles": 3600,
+    "imprudent_vehicles": 1080,
+    "normal_vehicles": 2520,
+    "imprudent_percentage": 30.0
+  },
+  "description": "Escenario con 30% de vehículos con comportamiento imprudente basado en datos reales de Quito, Ecuador."
+}

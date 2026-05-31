@@ -1,0 +1,277 @@
+﻿# =============================================================================
+# default_config.yaml
+# ConfiguraciÃ³n maestra del framework TSC (Traffic Signal Control)
+# Doctoral Thesis Framework - Fase 0: Andamiaje
+# =============================================================================
+
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# 1. REPRODUCIBILIDAD
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+reproducibility:
+  global_seed: 42               # Semilla global para numpy, torch, random
+  sumo_seed: 42                 # Semilla para el simulador SUMO
+  np_seed: 42
+  torch_seed: 42
+
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# 2. CONFIGURACIÃ“N DE RED (DUAL: BENCHMARK + CUSTOM OSM)
+# Referencia: CapÃ­tulo 4.4.1 (Hangzhou benchmark) y CapÃ­tulo 5.5 (ValidaciÃ³n OSM)
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+network:
+  # Modo de operaciÃ³n: "benchmark" (Hangzhou 4x4) o "custom" (OpenStreetMap)
+  mode: "benchmark"
+  
+  # ConfiguraciÃ³n para modo BENCHMARK (reproducibilidad y comparativa SOTA)
+  # Referencia: CapÃ­tulo 4.4.1 - Red Hangzhou 4Ã—4 para comparativa SOTA
+  # NOTA: tls_id = "B1" es el primer nodo interno con 4 vÃ­as del grid alfanumÃ©rico.
+  # La red tiene 12 semÃ¡foros: B1, B2, C1, C2 (4 vÃ­as) + A1,A2,B0,B3,C0,C3,D1,D2 (T-junc.)
+  benchmark:
+    name: "hangzhou_4x4"
+    tls_id: "B1"                  # ID del primer semÃ¡foro controlable (primer nodo interno 4-vÃ­as)
+    all_tls_ids:                  # Todos los semÃ¡foros de la red para control multi-agente
+      - "B1"
+      - "B2"
+      - "C1"
+      - "C2"
+      - "A1"
+      - "A2"
+      - "B0"
+      - "B3"
+      - "C0"
+      - "C3"
+      - "D1"
+      - "D2"
+    network_file: "sumo_configs/networks/hangzhou_4x4.net.xml"
+    route_files_dir: "sumo_configs/routes/hangzhou/"
+    num_scenarios: 100            # NÃºmero de archivos .rou.xml para domain randomization
+    
+  # ConfiguraciÃ³n para modo CUSTOM (importaciÃ³n desde OpenStreetMap)
+  custom:
+    osm_file: ""                  # Ruta al archivo .osm (ej: "data/osm/bogota_centro.osm")
+    net_output: "sumo_configs/networks/custom.net.xml"
+    tls_mode: "actuated"          # "actuated" | "static" | "demand_based"
+    projection: "EPSG:4326"       # ProyecciÃ³n geogrÃ¡fica del archivo .osm
+    route_file: "sumo_configs/routes/custom_minimal.rou.xml"
+    remove_edges:                 # Tipos de vÃ­as a excluir del modelo
+      - "footway"
+      - "path"
+      - "steps"
+      - "pedestrian"
+
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# 3. PARÃMETROS DEL SIMULADOR SUMO
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+sumo:
+  sumo_home: "C:/Program Files (x86)/Eclipse/Sumo"  # Ruta tÃ­pica en Windows
+  sumo_binary: "sumo"             # "sumo" para sin GUI / "sumo-gui" para con GUI
+  use_gui: false
+  step_length: 5                  # Î´t: segundos de simulaciÃ³n por step de RL
+  begin_time: 0
+  end_time: 3600                  # DuraciÃ³n total de la simulaciÃ³n (segundos)
+  warmup_steps: 100               # Pasos previos al inicio del entrenamiento RL
+  teleport_time: -1               # -1 desactiva el teleport de vehÃ­culos bloqueados
+  additional_files: []            # Archivos adicionales de SUMO (detectores, etc.)
+  env_id: "SumoTSC-v0"
+
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# 4. ENTORNO RL (Gymnasium Custom Env)
+# Referencia: CapÃ­tulo 4.2.2 - Espacio de Estados 34D
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+environment:
+  env_id: "SumoTSC-v0"
+  max_green_time: 60            # Tiempo mÃ¡ximo de fase verde (segundos)
+  min_green_time: 10            # Tiempo mÃ­nimo de fase verde (segundos)
+  yellow_time: 3                # DuraciÃ³n fija de la fase amarilla
+  observation_radius: 200       # Radio de observaciÃ³n (metros)
+  normalize_obs: true
+  reward_type: "composite"      # "queue" | "delay" | "composite" | "cvar"
+  reward_weights:
+    queue_length: -0.35
+    avg_speed: 0.25
+    wait_time: -0.25
+    throughput: 0.15
+    delay: -0.4         # Peso principal para delay (eficiencia)
+    gini: -0.15         # PenalizaciÃ³n por inequidad (fairness)
+    cvar: -0.2          # PenalizaciÃ³n por riesgo (robustez)
+
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# 4. HIPERPARÃMETROS DEL AGENTE RL
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+agent:
+  algorithm: "PPO"              # "PPO" | "SAC" | "TD3"
+  total_timesteps: 1_000_000
+  n_envs: 4                     # Entornos paralelos para PPO
+  device: "cpu"                 # CPU-FORZADO (Cap. 4.3): NingÃºn tensor debe moverse a GPU
+
+  # HiperparÃ¡metros comunes
+  learning_rate: 3.0e-4
+  gamma: 0.99                   # Factor de descuento
+  batch_size: 64
+  buffer_size: 100_000          # Solo para SAC/TD3
+
+  # PPO especÃ­fico
+  ppo:
+    n_steps: 2048               # Steps por actualizaciÃ³n
+    n_epochs: 10
+    clip_range: 0.2
+    ent_coef: 0.01
+    vf_coef: 0.5
+    max_grad_norm: 0.5
+    gae_lambda: 0.95
+
+  # SAC especÃ­fico
+  sac:
+    tau: 0.005                  # Soft update coefficient
+    train_freq: 1
+    gradient_steps: 1
+    learning_starts: 10_000
+    ent_coef: "auto"            # EntropÃ­a automÃ¡tica
+
+  # Red neuronal (polÃ­tica)
+  policy:
+    type: "MlpPolicy"
+    net_arch: [256, 256]        # Capas ocultas del actor y crÃ­tico
+    activation_fn: "ReLU"
+
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# 5. RL SENSIBLE AL RIESGO (CVaR / Gini)
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+risk_metrics:
+  enable_cvar: true
+  cvar_alpha: 0.95              # Nivel de confianza para CVaR (VaR al 95%)
+  enable_gini: true
+  gini_weight: 0.1              # Peso de la penalizaciÃ³n Gini en la recompensa
+  rolling_window: 200           # Ventana de pasos para calcular mÃ©tricas de riesgo
+
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# 6. ROBUSTEZ Y EVALUACIÃ“N BAJO INCERTIDUMBRE (SLR 2026)
+# Referencias: CAREL, ERNIE
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+robustness:
+  enable: true
+  perturbation_types:
+    - "sensor_noise"            # Ruido en observaciones
+    - "detection_failure"       # PÃ©rdida parcial de detectores
+    - "demand_surge"            # Picos de demanda
+    - "phase_failure"           # Fallos en ejecuciÃ³n de fase
+  default_severity: 0.1         # Severidad base [0, 1]
+  default_probability: 0.2      # Probabilidad de ocurrencia [0, 1]
+  eval_freq: 10000              # Frecuencia de evaluaciÃ³n (timesteps)
+  n_eval_episodes: 10           # Episodios por evaluaciÃ³n
+  
+  adversarial_defense:
+    enable: false
+    epsilon: 0.05               # Magnitud perturbaciÃ³n adversarial
+    n_steps: 10                 # Pasos para PGD attack
+  
+  lipschitz_regularization:
+    enable: false
+    lambda_lip: 0.01            # Peso de regularizaciÃ³n Lipschitz
+    n_samples: 5                # Muestras para estimar constante
+
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# 7. TRANSFERENCIA Y GENERALIZACIÃ“N CROSS-CITY (SLR 2026)
+# Referencias: Universal-Light / UniTSA
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+transfer:
+  enable: true
+  adaptation_strategy: "fine_tune"  # "fine_tune" | "domain_randomization" | "feature_alignment"
+  
+  domain_randomization:
+    enable: true
+    n_variants: 10              # NÃºmero de variantes de dominio
+    randomize_params:
+      - "demand_scale"          # Escalar demanda [0.5, 2.0]
+      - "phase_duration"        # DuraciÃ³n fases Â±20%
+      - "turn_ratios"           # Ratios de giro Â±15%
+  
+  zero_shot_evaluation:
+    enable: true
+    target_domains: []          # Lista de dominios objetivo para evaluar
+    n_episodes: 20
+  
+  junction_matrix:
+    save_path: "outputs/junction_matrix.json"
+    auto_save: true
+
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# 8. FAIRNESS / EQUIDAD DISTRIBUTIVA (SLR 2026)
+# Referencias: VF-MAPPO, FairLight
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+fairness:
+  enable: true
+  metrics:
+    gini_coefficient: true      # Coeficiente de Gini por episodio
+    delay_distribution: true    # DistribuciÃ³n de delays por movimiento
+    max_min_ratio: true         # Ratio mÃ¡x/mÃ­n de espera
+  
+  evaluation:
+    per_movement: true          # Evaluar equidad por movimiento
+    per_lane: false             # Evaluar equidad por carril
+    threshold_gini: 0.3         # Umbral mÃ¡ximo aceptable de Gini
+
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# 9. EFICIENCIA Y EDGE DEPLOYMENT (SLR 2026)
+# Referencias: TinyLight
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+efficiency:
+  enable_profiling: true
+  profiling_freq: 1000          # Frecuencia de profiling (steps)
+  
+  pruning:
+    enable: false
+    method: "structured"        # "structured" | "unstructured"
+    sparsity_target: 0.5        # Objetivo de dispersiÃ³n
+  
+  quantization:
+    enable: false
+    precision: "int8"           # "int8" | "fp16"
+  
+  resource_limits:
+    max_memory_mb: 512          # LÃ­mite de memoria RAM
+    max_inference_ms: 10        # LÃ­mite de inferencia (ms)
+
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# 10. MÃ“DULO PROBABILÃSTICO (Vine Copulas)
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+copulas:
+  family: "vine"                # Familia de cÃ³pula: "vine" | "gaussian" | "t"
+  vine_type: "CVine"            # "CVine" | "DVine" | "RVine"
+  n_stress_scenarios: 1000      # NÃºmero de escenarios de estrÃ©s a generar
+  marginal_dist: "empirical"    # DistribuciÃ³n marginal: "empirical" | "kde" | "parametric"
+  stress_quantile: 0.95         # Cuantil para definir escenarios de estrÃ©s
+  calibration_data: ""          # Ruta al CSV de datos histÃ³ricos de trÃ¡fico
+
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# 7. RUTAS DE DATOS Y ARTEFACTOS
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  sumo_networks: "sumo_configs/networks"
+  sumo_routes: "sumo_configs/routes"
+  models_dir: "outputs/models"
+  logs_dir: "outputs/logs"
+  results_dir: "outputs/results"
+  tensorboard_dir: "outputs/tensorboard"
+
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# 8. LOGGING Y MONITOREO
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+logging:
+  level: "INFO"                 # "DEBUG" | "INFO" | "WARNING" | "ERROR"
+  log_interval: 1000            # Cada cuÃ¡ntos timesteps registrar mÃ©tricas
+  save_freq: 50_000             # Frecuencia de guardado de checkpoints
+  use_tensorboard: true
+  verbose: 1
+
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# 9. EVALUACIÃ“N Y ESTRÃ‰S
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+evaluation:
+  n_eval_episodes: 20
+  eval_freq: 10_000
+  deterministic: true
+  stress_test: false            # Activar para usar escenarios de cÃ³pula
+  model_checkpoint: ""          # Ruta al modelo .zip a evaluar
+

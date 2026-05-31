@@ -1,0 +1,18 @@
+[
+  {
+    "algo": "FIXED",
+    "scenario": "ideal",
+    "success": true,
+    "elapsed_s": 144.2,
+    "episode_reward": -172085733.0,
+    "returncode": 0
+  },
+  {
+    "algo": "FIXED",
+    "scenario": "latam",
+    "success": true,
+    "elapsed_s": 557.7,
+    "episode_reward": -158813263.0,
+    "returncode": 0
+  }
+]

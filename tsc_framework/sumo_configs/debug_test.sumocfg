@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+    <input>
+        <net-file value="C:\Proyecto_Tesis_Final_V1\traffic_project\tsc_framework\sumo_configs\networks\hangzhou_4x4.net.xml"/>
+        <route-files value="C:\Proyecto_Tesis_Final_V1\traffic_project\tsc_framework\sumo_configs\routes\hangzhou\hangzhou_minimal.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+        <step-length value="5"/>
+    </time>
+    <processing>
+        <time-to-teleport value="-1"/>
+    </processing>
+    <report>
+        <no-warnings value="true"/>
+        <no-step-log value="true"/>
+    </report>
+</configuration>

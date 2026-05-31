@@ -1,0 +1,18 @@
+{
+  "scenario_name": "imprudent_30pct",
+  "generation_timestamp": "2026-05-23T18:56:38.369244",
+  "configuration": {
+    "mix_ratio": 0.3,
+    "seed": 42,
+    "net_file": "sumo_configs/networks/hangzhou.net.xml",
+    "route_file": "sumo_configs/routes/hangzhou/hangzhou_minimal.rou.xml",
+    "imprudent_file": "results/quito_scenarios/imprudent_drivers.rou.xml"
+  },
+  "statistics": {
+    "total_vehicles": 3,
+    "imprudent_vehicles": 0,
+    "normal_vehicles": 3,
+    "imprudent_percentage": 0.0
+  },
+  "description": "Escenario con 30% de vehículos con comportamiento imprudente basado en datos reales de Quito, Ecuador."
+}

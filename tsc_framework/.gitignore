@@ -1,0 +1,46 @@
+# .gitignore para tsc_framework
+# ================================
+
+# ── Entornos Python ──────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Entornos virtuales ───────────────────────────────────────────────────────
+.env
+.venv
+env/
+venv/
+
+# ── Outputs del framework (permitir trackear modelos y reportes) ─────────────
+# outputs/
+# *.zip           # Modelos guardados por SB3
+
+# ── Datos sensibles / crudos ─────────────────────────────────────────────────
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# ── Configuraciones SUMO de red (permitir trackear barcelona.net.xml y quito.net.xml) ─────────────────────────
+# sumo_configs/networks/*.net.xml
+sumo_configs/routes/*.rou.xml
+
+# ── Jupyter ──────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── IDEs ─────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+
+# ── SO ───────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <input>
+        <net-file value="C:\Proyecto_Tesis_Final_V1\traffic_project\tsc_framework\sumo_configs\hangzhou\hangzhou_pedestrian.net.xml"/>
+        <route-files value="C:\Proyecto_Tesis_Final_V1\traffic_project\tsc_framework\experiments\hangzhou_robustness\scenarios\latam_imprudent_drivers.rou.xml"/>
+        <additional-files value="C:\Proyecto_Tesis_Final_V1\traffic_project\tsc_framework\experiments\hangzhou_robustness\scenarios\latam_infrastructure.add.xml"/>
+    </input>
+    <time><begin value="0"/><end value="3600"/></time>
+    <processing>
+        <time-to-teleport value="300"/>
+        <lateral-resolution value="0.5"/>
+    </processing>
+    <report><no-warnings value="true"/></report>
+</configuration>

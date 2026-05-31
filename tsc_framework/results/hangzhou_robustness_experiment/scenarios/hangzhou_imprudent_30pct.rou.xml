@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Escenario generado con inyección de tráfico imprudente -->
+<!-- Fecha: 2026-05-23T18:56:38.368922 -->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <vType id="car" length="4.5" minGap="2.5" maxSpeed="13.89" sigma="0.5" tau="1.0" />
+  <vType id="imprudent_furious" accel="1.7700" decel="2.6550" sigma="0.8990" tau="0.6990" speedFactor="1.2400" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_pablo" accel="0.7700" decel="1.1550" sigma="1.8460" tau="1.1730" speedFactor="1.0980" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_alonso" accel="0.3700" decel="0.5550" sigma="2.1900" tau="1.3450" speedFactor="1.0460" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_richard" accel="1.3000" decel="1.9500" sigma="0.5000" tau="0.5000" speedFactor="nan" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_andres" accel="0.5600" decel="0.8400" sigma="0.5000" tau="0.5000" speedFactor="nan" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_yolanda" accel="0.7600" decel="1.1400" sigma="0.5000" tau="0.5000" speedFactor="nan" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_labeled" accel="0.3600" decel="0.5400" sigma="0.5000" tau="0.5000" speedFactor="nan" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <route id="r_WE_0" edges="A0B0 B0C0 C0D0" />
+  <route id="r_WE_1" edges="A1B1 B1C1 C1D1" />
+  <route id="r_WE_2" edges="A2B2 B2C2 C2D2" />
+  <route id="r_WE_3" edges="A3B3 B3C3 C3D3" />
+  <route id="r_EW_0" edges="D0C0 C0B0 B0A0" />
+  <route id="r_EW_1" edges="D1C1 C1B1 B1A1" />
+  <route id="r_EW_2" edges="D2C2 C2B2 B2A2" />
+  <route id="r_EW_3" edges="D3C3 C3B3 B3A3" />
+  <route id="r_SN_A" edges="A0A1 A1A2 A2A3" />
+  <route id="r_SN_B" edges="B0B1 B1B2 B2B3" />
+  <route id="r_SN_C" edges="C0C1 C1C2 C2C3" />
+  <route id="r_SN_D" edges="D0D1 D1D2 D2D3" />
+  <route id="r_NS_A" edges="A3A2 A2A1 A1A0" />
+  <route id="r_NS_B" edges="B3B2 B2B1 B1B0" />
+  <route id="r_NS_C" edges="C3C2 C2C1 C1C0" />
+  <route id="r_NS_D" edges="D3D2 D2D1 D1D0" />
+  <vehicle id="vs0" type="car" route="r_WE_1" depart="0" />
+  <vehicle id="vs1" type="imprudent_alonso" route="r_EW_1" depart="5" speedFactor="1.273" sigma="0.356" />
+  <vehicle id="vs2" type="imprudent_yolanda" route="r_SN_B" depart="10" speedFactor="1.468" sigma="0.335" />
+</routes>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional xmlns="http://sumo.dlr.de">
+  <vType id="normal_car" color="0,0.5,1" sigma="0.5" tau="1.0" speedFactor="1.0" accel="1.0" decel="2.5"/>
+  <vType id="imprudent_0" color="0.8,0.0,0.8" sigma="0.25" tau="0.80" speedFactor="1.00" accel="0.56" decel="1.00"/>
+  <vType id="imprudent_1" color="0.8,0.0,0.8" sigma="0.25" tau="0.80" speedFactor="1.00" accel="1.04" decel="1.00"/>
+  <vType id="imprudent_2" color="0.8,0.0,0.8" sigma="0.25" tau="0.80" speedFactor="1.00" accel="0.50" decel="1.00"/>
+  <vType id="imprudent_3" color="0.8,0.0,0.8" sigma="0.25" tau="0.80" speedFactor="1.00" accel="0.59" decel="1.00"/>
+  <vType id="imprudent_4" color="0.8,0.0,0.8" sigma="0.25" tau="0.80" speedFactor="1.00" accel="0.50" decel="1.00"/>
+  <vType id="imprudent_5" color="0.8,0.0,0.8" sigma="0.25" tau="0.80" speedFactor="1.00" accel="0.50" decel="1.00"/>
+  <vType id="imprudent_6" color="0.8,0.0,0.8" sigma="0.25" tau="0.80" speedFactor="1.00" accel="0.50" decel="1.00"/>
+  <vType id="imprudent_7" color="0.8,0.0,0.8" sigma="0.25" tau="0.80" speedFactor="1.00" accel="0.90" decel="1.00"/>
+  <vType id="imprudent_8" color="0.8,0.0,0.8" sigma="0.25" tau="0.80" speedFactor="1.00" accel="0.62" decel="1.00"/>
+  <vType id="imprudent_9" color="0.8,0.0,0.8" sigma="0.25" tau="0.80" speedFactor="1.00" accel="0.52" decel="1.00"/>

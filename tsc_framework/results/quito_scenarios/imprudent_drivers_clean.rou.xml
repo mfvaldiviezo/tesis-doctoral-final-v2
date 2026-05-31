@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<routes><vType id="imprudent" accel="2.6" decel="4.5" sigma="0.3" tau="1.0" speedFactor="1.2" color="0.8,0.2,0.8,1" /><vehicle id="imp_1" type="imprudent" route="r0" depart="0" /><route id="r0" edges="B1-B2 B2-B3" /></routes>

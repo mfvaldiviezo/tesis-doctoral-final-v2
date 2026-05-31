@@ -1,0 +1,28 @@
+network:
+  benchmark:
+    network_file: sumo_configs/hangzhou/hangzhou_pedestrian.net.xml
+    route_files_dir: experiments/hangzhou_robustness/scenarios
+    route_file: experiments/hangzhou_robustness/scenarios/latam_imprudent_drivers.rou.xml
+    tls_id: B1
+
+sumo:
+  step_length: 5
+  end_time: 3600
+  gui: false
+  time_to_teleport: 300
+
+env:
+  reward_weights:
+    delay: 0.4
+    gini: 0.15
+    cvar: 0.2
+    queue_length: 0.25
+
+training:
+  total_timesteps: 100000
+  n_envs: 1
+  seed: 42
+
+latam_features:
+  enable_traci_chaos: true
+  lateral_resolution: 0.5

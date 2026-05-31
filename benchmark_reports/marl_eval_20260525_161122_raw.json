@@ -1,0 +1,69 @@
+[
+  {
+    "algo": "FIXED",
+    "scenario": "ideal",
+    "success": true,
+    "elapsed_s": 142.3,
+    "episode_reward": -160390844.0,
+    "returncode": 0
+  },
+  {
+    "algo": "FIXED",
+    "scenario": "latam",
+    "success": true,
+    "elapsed_s": 0,
+    "episode_reward": -160390844.0,
+    "returncode": 0,
+    "skipped": true
+  },
+  {
+    "algo": "MAXPRESSURE",
+    "scenario": "ideal",
+    "success": true,
+    "elapsed_s": 7.2,
+    "episode_reward": null,
+    "returncode": 0
+  },
+  {
+    "algo": "MAXPRESSURE",
+    "scenario": "latam",
+    "success": true,
+    "elapsed_s": 7.3,
+    "episode_reward": null,
+    "returncode": 0
+  },
+  {
+    "algo": "IPPO",
+    "scenario": "ideal",
+    "success": true,
+    "elapsed_s": 207.9,
+    "episode_reward": -568080058.0,
+    "returncode": 0
+  },
+  {
+    "algo": "IPPO",
+    "scenario": "latam",
+    "success": true,
+    "elapsed_s": 0,
+    "episode_reward": -568080058.0,
+    "returncode": 0,
+    "skipped": true
+  },
+  {
+    "algo": "CoLight",
+    "scenario": "ideal",
+    "success": true,
+    "elapsed_s": 254.9,
+    "episode_reward": 318.11031292058107,
+    "returncode": 0
+  },
+  {
+    "algo": "CoLight",
+    "scenario": "latam",
+    "success": true,
+    "elapsed_s": 0,
+    "episode_reward": 318.11031292058107,
+    "returncode": 0,
+    "skipped": true
+  }
+]

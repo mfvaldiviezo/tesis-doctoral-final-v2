@@ -1,0 +1,5 @@
+chaos_level,test,comparison,U_statistic,p_value,significant,stars,effect_size_r,effect_magnitude,median_ppo_chaos,median_ppo_ideal
+0.0,Mann-Whitney U,ppo_chaos vs ppo_ideal,51.5,0.93972,False,ns,-0.03,negligible,566.33,560.33
+0.15,Mann-Whitney U,ppo_chaos vs ppo_ideal,28.0,0.10411,False,ns,0.44,medium,617.41,882.5
+0.3,Mann-Whitney U,ppo_chaos vs ppo_ideal,46.0,0.791337,False,ns,0.08,negligible,594.86,683.93
+0.5,Mann-Whitney U,ppo_chaos vs ppo_ideal,48.0,0.909722,False,ns,0.04,negligible,622.42,671.6

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =======================================================================
+     test_intersecction.sumocfg
+     Archivo de configuración SUMO para pruebas del framework TSC
+     
+     Referencia: Capítulo 4.2.2 - Formulación del Espacio de Estados
+     Este archivo configura la simulación para:
+     - Usar la red de intersección 4 vías
+     - Cargar rutas nominales o de estrés
+     - Habilitar salida de datos para RL
+     
+     Uso: sumo -c test_intersection.sumocfg
+     ======================================================================= -->
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <!-- Entrada: Red y Rutas -->
+    <input>
+        <net-file value="networks/intersection_4way.net.xml"/>
+        <route-files value="routes/routes_nominal.rou.xml"/>
+        <additional-files value=""/>
+    </input>
+
+    <!-- Procesamiento de la red -->
+    <processing>
+        <time-to-teleport value="-1"/>
+        <waiting-time-memory value="1000"/>
+        <max-depart-delay value="100"/>
+        <emergency-decel-threshold value="4.5"/>
+        <action-step-length value="5"/>
+    </processing>
+
+    <!-- Tiempo de simulación -->
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+        <step-length value="5"/>
+    </time>
+
+    <!-- Salida de datos -->
+    <output>
+        <tripinfo-output value="output/tripinfo.xml"/>
+        <vehroute-output value="output/vehroute.xml"/>
+        <queue-output value="output/queue.xml"/>
+    </output>
+
+    <!-- Reportes y logs -->
+    <report>
+        <no-warnings value="true"/>
+        <log value="output/simulation.log"/>
+        <message-prefix value="true"/>
+    </report>
+
+    <!-- Simulación de tráfico -->
+    <traci_server>
+        <remote-port value="8813"/>
+    </traci_server>
+
+</configuration>

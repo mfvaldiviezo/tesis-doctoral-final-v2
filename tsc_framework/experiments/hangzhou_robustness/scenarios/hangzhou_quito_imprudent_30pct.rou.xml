@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Escenario generado con inyección de tráfico imprudente -->
+<!-- Fecha: 2026-05-23T14:42:38.963809 -->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <vType id="car" accel="2.6" decel="4.5" length="5.0" minGap="2.5" maxSpeed="13.89" sigma="0.5" />
+  <vType id="imprudent_0_nominal" accel="0.5581" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_1_nominal" accel="1.0400" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_2_nominal" accel="0.2500" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_3_nominal" accel="0.5872" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_4_nominal" accel="0.4065" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_5_nominal" accel="0.1700" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_6_nominal" accel="0.2500" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_7_nominal" accel="0.9000" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_8_nominal" accel="0.6200" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_9_nominal" accel="0.5242" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_10_nominal" accel="0.2700" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_11_nominal" accel="0.3600" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_12_nominal" accel="0.5700" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_13_nominal" accel="0.6972" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_14_nominal" accel="0.5443" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_15_nominal" accel="0.6116" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_16_nominal" accel="0.2200" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_17_nominal" accel="0.6500" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_18_nominal" accel="0.5400" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_19_nominal" accel="0.6600" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_20_nominal" accel="0.5398" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_21_nominal" accel="0.5398" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_22_nominal" accel="0.5200" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_23_nominal" accel="0.6024" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_24_nominal" accel="0.1793" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_25_nominal" accel="0.2600" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_26_nominal" accel="0.1331" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_27_nominal" accel="0.1500" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_28_nominal" accel="0.5887" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_29_nominal" accel="0.5382" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_30_nominal" accel="0.6359" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_31_nominal" accel="0.6529" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_32_nominal" accel="0.7146" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_33_nominal" accel="0.9900" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_34_nominal" accel="0.5353" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_35_nominal" accel="0.6529" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_36_nominal" accel="0.6147" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_37_nominal" accel="0.7171" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_38_nominal" accel="0.6162" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_39_nominal" accel="0.6896" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_40_nominal" accel="0.2700" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_41_nominal" accel="0.5413" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_42_nominal" accel="0.2800" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_43_nominal" accel="0.8400" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_44_nominal" accel="0.5327" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_45_nominal" accel="0.2369" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_46_nominal" accel="0.5200" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_47_nominal" accel="0.2700" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_48_nominal" accel="0.6529" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <vType id="imprudent_49_nominal" accel="1.5400" decel="0.5000" sigma="0.5000" tau="1.0000" speedFactor="1.0000" speedDev="0.1000" impatience="0.0000" laneChangeModel="LC2013" />
+  <route id="r_WE_0" edges="A0B0 B0C0 C0D0" />
+  <route id="r_WE_1" edges="A1B1 B1C1 C1D1" />
+  <route id="r_WE_2" edges="A2B2 B2C2 C2D2" />
+  <route id="r_WE_3" edges="A3B3 B3C3 C3D3" />
+  <route id="r_EW_0" edges="D0C0 C0B0 B0A0" />
+  <route id="r_EW_1" edges="D1C1 C1B1 B1A1" />
+  <route id="r_EW_2" edges="D2C2 C2B2 B2A2" />
+  <route id="r_EW_3" edges="D3C3 C3B3 B3A3" />
+  <route id="r_SN_A" edges="A0A1 A1A2 A2A3" />
+  <route id="r_SN_B" edges="B0B1 B1B2 B2B3" />
+  <route id="r_SN_C" edges="C0C1 C1C2 C2C3" />
+  <route id="r_SN_D" edges="D0D1 D1D2 D2D3" />
+  <route id="r_NS_A" edges="A3A2 A2A1 A1A0" />
+  <route id="r_NS_B" edges="B3B2 B2B1 B1B0" />
+  <route id="r_NS_C" edges="C3C2 C2C1 C1C0" />
+  <route id="r_NS_D" edges="D3D2 D2D1 D1D0" />
+  <vehicle id="v000" type="car" route="r_WE_1" depart="0" />
+  <vehicle id="v001" type="imprudent_17_nominal" route="r_SN_B" depart="5" speedFactor="1.273" sigma="0.356" />
+</routes>

@@ -1,0 +1,31 @@
+﻿<additional>
+  <!-- Lógica de Semáforo para 4 intersecciones centrales -->
+  <tlLogic id="J0" type="static" programID="0" offset="0">
+    <phase duration="55" state="GGGrrr"/>
+    <phase duration="5"  state="yyyrrr"/>
+    <phase duration="55" state="rrrGGG"/>
+    <phase duration="5"  state="rrryyy"/>
+  </tlLogic>
+  <tlLogic id="J1" type="static" programID="0" offset="30">
+    <phase duration="55" state="GGGrrr"/>
+    <phase duration="5"  state="yyyrrr"/>
+    <phase duration="55" state="rrrGGG"/>
+    <phase duration="5"  state="rrryyy"/>
+  </tlLogic>
+  <tlLogic id="J2" type="static" programID="0" offset="30">
+    <phase duration="55" state="GGGrrr"/>
+    <phase duration="5"  state="yyyrrr"/>
+    <phase duration="55" state="rrrGGG"/>
+    <phase duration="5"  state="rrryyy"/>
+  </tlLogic>
+  <tlLogic id="J3" type="static" programID="0" offset="0">
+    <phase duration="55" state="GGGrrr"/>
+    <phase duration="5"  state="yyyrrr"/>
+    <phase duration="55" state="rrrGGG"/>
+    <phase duration="5"  state="rrryyy"/>
+  </tlLogic>
+
+  <!-- Tipos de Vehículos -->
+  <vType id="normal" color="0,0.5,1" tau="1.0" sigma="0.5" speedFactor="1.0"/>
+  <vType id="imprudent" color="0.9,0,0.9" tau="0.7" sigma="0.95" speedFactor="1.4"/>
+</additional>

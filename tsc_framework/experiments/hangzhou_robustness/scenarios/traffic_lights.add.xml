@@ -1,0 +1,39 @@
+﻿<additional>
+    <tlLogic id="J0" type="actuated" programID="0" offset="0">
+        <phase duration="7"  state="rrrrGGrrrr"/>
+        <phase duration="4"  state="rrrryyrrrr"/>
+        <phase duration="30" state="rrrrrrrrrG"/>
+        <phase duration="4"  state="rrrrrrrrry"/>
+        <phase duration="30" state="GGrrrrrrrr"/>
+        <phase duration="4"  state="yyrrrrrrrr"/>
+        <phase duration="30" state="rrrrGGrrrr"/>
+        <phase duration="4"  state="rrrryyrrrr"/>
+    </tlLogic>
+    
+    <tlLogic id="J1" type="actuated" programID="0" offset="15">
+        <phase duration="7"  state="rrrrGGrrrr"/>
+        <phase duration="4"  state="rrrryyrrrr"/>
+        <phase duration="30" state="rrrrrrrrrG"/>
+        <phase duration="4"  state="rrrrrrrrry"/>
+        <phase duration="30" state="GGrrrrrrrr"/>
+        <phase duration="4"  state="yyrrrrrrrr"/>
+    </tlLogic>
+
+    <tlLogic id="J2" type="actuated" programID="0" offset="15">
+        <phase duration="7"  state="rrrrGGrrrr"/>
+        <phase duration="4"  state="rrrryyrrrr"/>
+        <phase duration="30" state="rrrrrrrrrG"/>
+        <phase duration="4"  state="rrrrrrrrry"/>
+        <phase duration="30" state="GGrrrrrrrr"/>
+        <phase duration="4"  state="yyrrrrrrrr"/>
+    </tlLogic>
+
+    <tlLogic id="J3" type="actuated" programID="0" offset="0">
+        <phase duration="7"  state="rrrrGGrrrr"/>
+        <phase duration="4"  state="rrrryyrrrr"/>
+        <phase duration="30" state="rrrrrrrrrG"/>
+        <phase duration="4"  state="rrrrrrrrry"/>
+        <phase duration="30" state="GGrrrrrrrr"/>
+        <phase duration="4"  state="yyrrrrrrrr"/>
+    </tlLogic>
+</additional>
